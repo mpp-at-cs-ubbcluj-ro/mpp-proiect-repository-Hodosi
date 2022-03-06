@@ -1,0 +1,6 @@
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetition\CSharp_ChildrenCompetition\CSharp_ChildrenCompetition\bin\Debug\CSharp_ChildrenCompetition.exe
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetition\CSharp_ChildrenCompetition\CSharp_ChildrenCompetition\bin\Debug\CSharp_ChildrenCompetition.pdb
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetition\CSharp_ChildrenCompetition\CSharp_ChildrenCompetition\obj\Debug\CSharp_ChildrenCompetition.csproj.AssemblyReference.cache
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetition\CSharp_ChildrenCompetition\CSharp_ChildrenCompetition\obj\Debug\CSharp_ChildrenCompetition.csproj.CoreCompileInputs.cache
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetition\CSharp_ChildrenCompetition\CSharp_ChildrenCompetition\obj\Debug\CSharp_ChildrenCompetition.exe
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetition\CSharp_ChildrenCompetition\CSharp_ChildrenCompetition\obj\Debug\CSharp_ChildrenCompetition.pdb

@@ -1,0 +1,11 @@
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetition\CSharp_ChildrenCompetition\TestChildrenCompetition\bin\Debug\TestChildrenCompetition.dll
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetition\CSharp_ChildrenCompetition\TestChildrenCompetition\bin\Debug\TestChildrenCompetition.pdb
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetition\CSharp_ChildrenCompetition\TestChildrenCompetition\bin\Debug\nunit.framework.dll
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetition\CSharp_ChildrenCompetition\TestChildrenCompetition\bin\Debug\nunit.framework.xml
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetition\CSharp_ChildrenCompetition\TestChildrenCompetition\obj\Debug\TestChildrenCompetition.csproj.AssemblyReference.cache
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetition\CSharp_ChildrenCompetition\TestChildrenCompetition\obj\Debug\TestChildrenCompetition.csproj.CoreCompileInputs.cache
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetition\CSharp_ChildrenCompetition\TestChildrenCompetition\obj\Debug\TestChildrenCompetition.csproj.CopyComplete
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetition\CSharp_ChildrenCompetition\TestChildrenCompetition\obj\Debug\TestChildrenCompetition.dll
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetition\CSharp_ChildrenCompetition\TestChildrenCompetition\obj\Debug\TestChildrenCompetition.pdb
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetition\CSharp_ChildrenCompetition\TestChildrenCompetition\bin\Debug\CSharp_ChildrenCompetition.exe
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetition\CSharp_ChildrenCompetition\TestChildrenCompetition\bin\Debug\CSharp_ChildrenCompetition.pdb
