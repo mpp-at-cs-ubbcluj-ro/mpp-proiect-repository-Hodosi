@@ -12,7 +12,8 @@ public class ParticipantTest {
         int id = 1;
         String name = "A";
         int age = 10;
-        Participant participant = new Participant(id, name, age);
+        Participant participant = new Participant(name, age);
+        participant.setId(id);
         assertEquals(id, participant.getId());
         assertEquals(name, participant.getName());
         assertEquals(age, participant.getAge());

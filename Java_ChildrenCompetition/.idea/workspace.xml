@@ -5,63 +5,70 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbe51b6f-7032-4a40-926b-adfa049f8c13" name="Changes" comment="Create model classes and repository interfaces">
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/CSharp_ChildrenCompetition.sln.DotSettings.user" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/bin/Debug/CSharp_ChildrenCompetition.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/bin/Debug/CSharp_ChildrenCompetition.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/model/Participant.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/model/Test.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/model/TestAgeCategory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/model/TestParticipantRelation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/model/TestType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/obj/Debug/CSharp_ChildrenCompetition.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/obj/Debug/CSharp_ChildrenCompetition.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/obj/Debug/CSharp_ChildrenCompetition.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/obj/Debug/CSharp_ChildrenCompetition.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/obj/Debug/CSharp_ChildrenCompetition.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/repository/AbstractRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/repository/HasId.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/repository/IRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/repository/ParticipantRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/repository/TestParticipantRelationRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/repository/TestRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/repository/ValidationException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/repository/Validator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/TestChildrenCompetition/Properties/AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/TestChildrenCompetition/TestChildrenCompetition.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/TestChildrenCompetition/Tests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/TestChildrenCompetition/bin/Debug/TestChildrenCompetition.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/TestChildrenCompetition/bin/Debug/TestChildrenCompetition.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/TestChildrenCompetition/bin/Debug/nunit.framework.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/TestChildrenCompetition/bin/Debug/nunit.framework.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/TestChildrenCompetition/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/TestChildrenCompetition/obj/Debug/TestChildrenCompetition.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/TestChildrenCompetition/obj/Debug/TestChildrenCompetition.csproj.CopyComplete" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/TestChildrenCompetition/obj/Debug/TestChildrenCompetition.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/TestChildrenCompetition/obj/Debug/TestChildrenCompetition.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/TestChildrenCompetition/obj/Debug/TestChildrenCompetition.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/TestChildrenCompetition/obj/Debug/TestChildrenCompetition.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/TestChildrenCompetition/packages.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/packages/NUnit.3.5.0/.signature.p7s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/packages/NUnit.3.5.0/CHANGES.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/packages/NUnit.3.5.0/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/packages/NUnit.3.5.0/NOTICES.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/packages/NUnit.3.5.0/NUnit.3.5.0.nupkg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/packages/NUnit.3.5.0/lib/dotnet/nunit.framework.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/packages/NUnit.3.5.0/lib/dotnet/nunit.framework.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/packages/NUnit.3.5.0/lib/net20/NUnit.System.Linq.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/packages/NUnit.3.5.0/lib/net20/nunit.framework.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/packages/NUnit.3.5.0/lib/net20/nunit.framework.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/packages/NUnit.3.5.0/lib/net35/nunit.framework.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/packages/NUnit.3.5.0/lib/net35/nunit.framework.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/packages/NUnit.3.5.0/lib/net40/nunit.framework.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/packages/NUnit.3.5.0/lib/net40/nunit.framework.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/packages/NUnit.3.5.0/lib/net45/nunit.framework.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/packages/NUnit.3.5.0/lib/net45/nunit.framework.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/packages/NUnit.3.5.0/lib/portable-net45+win8+wp8+wpa81+Xamarin.Mac+MonoAndroid10+MonoTouch10+Xamarin.iOS10/nunit.framework.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/packages/NUnit.3.5.0/lib/portable-net45+win8+wp8+wpa81+Xamarin.Mac+MonoAndroid10+MonoTouch10+Xamarin.iOS10/nunit.framework.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/competition.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/CurrentUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/IParticipantRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/ITestParticipantRelationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/ITestRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/IUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/JdbcUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/ParticipantDbRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/TestDbRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/TestParticipantRelationDbRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repository/UserDbRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/repository/ParticipantDbTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/repository/TestDbTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/repository/UserDbTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/competition.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/TestChildrenCompetition/obj/Debug/TestChildrenCompetition.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/TestChildrenCompetition/obj/Debug/TestChildrenCompetition.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/Participant.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/Participant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/TestAgeCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/TestAgeCategory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/TestParticipantRelation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/TestParticipantRelation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/TestType.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/TestType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/repository/AbstractRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/repository/HasId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/repository/IRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/repository/IRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/repository/ParticipantRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/repository/TestParticipantRelationRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/repository/TestRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/model/ParticipantTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/model/ParticipantTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.ParticipantTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/model.ParticipantTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/model.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/model.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.ParticipantTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-model.ParticipantTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Participant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Participant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/TestAgeCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/TestAgeCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/TestParticipantRelation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/TestParticipantRelation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/TestType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/TestType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/AbstractRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/HasId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/HasId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/IRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/IRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/ParticipantRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/TestParticipantRelationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/TestRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/ParticipantTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/ParticipantTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,12 +108,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Java_ChildrenCompetition" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Java_ChildrenCompetition" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="verification" type="c8890929:TasksNode$1" />
               </path>
             </expand>
@@ -128,6 +129,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="25xmEH5NjUa49XwCm2bZMvIuvYu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -138,13 +147,22 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Lab" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
   </component>
-  <component name="RunManager" selected="JAR Application.Java_ChildrenCompetition-1.0.jar">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MPP\mpp-proiect-repository-Hodosi\Java_ChildrenCompetition\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="repository" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.Java_ChildrenCompetition [test]">
     <configuration name="Java_ChildrenCompetition [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -235,10 +253,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JAR Application.Java_ChildrenCompetition-1.0.jar" />
-        <item itemvalue="Gradle.Java_ChildrenCompetition [jar]" />
         <item itemvalue="Gradle.Java_ChildrenCompetition [test]" />
         <item itemvalue="Gradle.Java_ChildrenCompetition [run]" />
+        <item itemvalue="JAR Application.Java_ChildrenCompetition-1.0.jar" />
+        <item itemvalue="Gradle.Java_ChildrenCompetition [jar]" />
         <item itemvalue="Gradle.Java_ChildrenCompetition [build]" />
       </list>
     </recent_temporary>
@@ -252,7 +270,11 @@
       <option name="presentableId" value="Default" />
       <updated>1646477001365</updated>
       <workItem from="1646477005194" duration="14937000" />
-      <workItem from="1646556790313" duration="5228000" />
+      <workItem from="1646556790313" duration="5860000" />
+      <workItem from="1646638179059" duration="4621000" />
+      <workItem from="1646646088564" duration="63000" />
+      <workItem from="1646990117289" duration="8066000" />
+      <workItem from="1647031804803" duration="12501000" />
     </task>
     <task id="LOCAL-00001" summary="Create model classes and repository interfaces">
       <created>1646491999942</created>

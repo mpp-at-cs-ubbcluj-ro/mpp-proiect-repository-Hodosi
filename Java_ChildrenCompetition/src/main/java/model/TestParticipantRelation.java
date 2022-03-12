@@ -1,7 +1,5 @@
 package model;
 
-import repository.HasId;
-
 public class TestParticipantRelation implements HasId<Tuple<Integer, Integer>> {
     Tuple<Integer, Integer> testParticipantID;
 

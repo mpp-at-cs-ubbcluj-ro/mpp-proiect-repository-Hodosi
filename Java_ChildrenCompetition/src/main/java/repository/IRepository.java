@@ -1,6 +1,8 @@
 package repository;
 
-public interface IRepository <ID, T> {
+import model.HasId;
+
+public interface IRepository <ID, T extends HasId<ID>> {
     int size();
     void save(T entity);
     void delete(ID id);
