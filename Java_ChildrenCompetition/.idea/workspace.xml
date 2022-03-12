@@ -4,71 +4,509 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbe51b6f-7032-4a40-926b-adfa049f8c13" name="Changes" comment="Create model classes and repository interfaces">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/competition.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Entity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/CurrentUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/IParticipantRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/ITestParticipantRelationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/ITestRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/IUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/JdbcUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/ParticipantDbRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/TestDbRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/TestParticipantRelationDbRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/UserDbRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/repository/ParticipantDbTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/repository/TestDbTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/repository/UserDbTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/competition.log" afterDir="false" />
+    <list default="true" id="fbe51b6f-7032-4a40-926b-adfa049f8c13" name="Changes" comment="Refactor model classes, repository interfaces and implement repo interfaces">
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/.idea/.idea.CSharp_ChildrenCompetitionGUI/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/.idea/.idea.CSharp_ChildrenCompetitionGUI/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/.idea/.idea.CSharp_ChildrenCompetitionGUI/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/.idea/.idea.CSharp_ChildrenCompetitionGUI/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/.idea/.idea.CSharp_ChildrenCompetitionGUI/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI.sln.DotSettings.user" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/App.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/Form1.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/Form1.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/Form1.resx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/Properties/Resources.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/Properties/Resources.resx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/Properties/Settings.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/Properties/Settings.settings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/bin/Debug/CSharp_ChildrenCompetitionGUI.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/bin/Debug/CSharp_ChildrenCompetitionGUI.exe.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/bin/Debug/CSharp_ChildrenCompetitionGUI.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/bin/Debug/ConnectionUtils.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/bin/Debug/ConnectionUtils.exe.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/bin/Debug/ConnectionUtils.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/bin/Debug/Mono.Data.Sqlite.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/bin/Debug/log4net.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/bin/Debug/log4net.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/database/competition.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/model/Entity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/model/HasId.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/model/Participant.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/model/Test.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/model/TestAgeCategory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/model/TestParticipantRelation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/model/TestType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/model/User.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/obj/Debug/CSharp_ChildrenCompetitionGUI.Form1.resources" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/obj/Debug/CSharp_ChildrenCompetitionGUI.Properties.Resources.resources" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/obj/Debug/CSharp_ChildrenCompetitionGUI.csproj.AssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/obj/Debug/CSharp_ChildrenCompetitionGUI.csproj.CopyComplete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/obj/Debug/CSharp_ChildrenCompetitionGUI.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/obj/Debug/CSharp_ChildrenCompetitionGUI.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/obj/Debug/CSharp_ChildrenCompetitionGUI.csproj.GenerateResource.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/obj/Debug/CSharp_ChildrenCompetitionGUI.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/obj/Debug/CSharp_ChildrenCompetitionGUI.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/repository/DBUtils.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/repository/IParticipantRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/repository/IRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/repository/ITestParticipantRelationRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/repository/ITestRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/repository/IUserRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/repository/ParticipantDbRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/repository/TestDbRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/repository/TestParticipantRelationDbRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/repository/UserDbRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/repository/ValidationException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/repository/Validator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/sqlite3.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/ConnectionFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/ConnectionUtils.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/MySqlConnectionFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/SqliteConnectionFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/app.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/bin/Debug/ConnectionUtils.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/bin/Debug/ConnectionUtils.exe.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/bin/Debug/ConnectionUtils.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/bin/Debug/EntityFramework.SqlServer.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/bin/Debug/EntityFramework.SqlServer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/bin/Debug/EntityFramework.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/bin/Debug/EntityFramework.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/bin/Debug/Mono.Data.Sqlite.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/bin/Debug/MySqlConnector.Logging.log4net.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/bin/Debug/MySqlConnector.Logging.log4net.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/bin/Debug/System.Data.SQLite.EF6.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/bin/Debug/System.Data.SQLite.Linq.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/bin/Debug/System.Data.SQLite.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/bin/Debug/System.Data.SQLite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/bin/Debug/System.Numerics.Vectors.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/bin/Debug/System.Numerics.Vectors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/bin/Debug/log4net.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/bin/Debug/log4net.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/bin/Debug/x64/SQLite.Interop.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/bin/Debug/x86/SQLite.Interop.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/obj/Debug/ConnectionUtils.csproj.AssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/obj/Debug/ConnectionUtils.csproj.CopyComplete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/obj/Debug/ConnectionUtils.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/obj/Debug/ConnectionUtils.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/obj/Debug/ConnectionUtils.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/obj/Debug/ConnectionUtils.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/ConnectionUtils/packages.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/EntityFramework.6.4.4.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/Icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/build/EntityFramework.DefaultItems.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/build/EntityFramework.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/build/EntityFramework.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/build/Microsoft.Data.Entity.Build.Tasks.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/build/netcoreapp3.0/EntityFramework.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/build/netcoreapp3.0/EntityFramework.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/buildTransitive/EntityFramework.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/buildTransitive/EntityFramework.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/buildTransitive/netcoreapp3.0/EntityFramework.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/buildTransitive/netcoreapp3.0/EntityFramework.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/content/net40/App.config.install.xdt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/content/net40/App.config.transform" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/content/net40/Web.config.install.xdt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/content/net40/Web.config.transform" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/lib/net40/EntityFramework.SqlServer.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/lib/net40/EntityFramework.SqlServer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/lib/net40/EntityFramework.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/lib/net40/EntityFramework.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/lib/net45/EntityFramework.SqlServer.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/lib/net45/EntityFramework.SqlServer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/lib/net45/EntityFramework.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/lib/net45/EntityFramework.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/lib/netstandard2.1/EntityFramework.SqlServer.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/lib/netstandard2.1/EntityFramework.SqlServer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/lib/netstandard2.1/EntityFramework.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/lib/netstandard2.1/EntityFramework.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/tools/EntityFramework6.PS2.psd1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/tools/EntityFramework6.PS2.psm1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/tools/EntityFramework6.psd1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/tools/EntityFramework6.psm1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/tools/about_EntityFramework6.help.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/tools/init.ps1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/tools/install.ps1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/tools/net40/any/ef6.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/tools/net40/any/ef6.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/tools/net40/win-x86/ef6.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/tools/net40/win-x86/ef6.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/tools/net45/any/ef6.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/tools/net45/any/ef6.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/tools/net45/win-x86/ef6.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/tools/net45/win-x86/ef6.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/tools/netcoreapp3.0/any/ef6.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/tools/netcoreapp3.0/any/ef6.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/EntityFramework.6.4.4/tools/netcoreapp3.0/any/ef6.runtimeconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Mono.Data.Sqlite.1.0.61/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Mono.Data.Sqlite.1.0.61/Mono.Data.Sqlite.1.0.61.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Mono.Data.Sqlite.1.0.61/lib/net40/Mono.Data.Sqlite.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/MySql.Data.8.0.10-rc.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/content/app.config.transform" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/content/docs/MySqlCommand.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/content/docs/MySqlCommandBuilder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/content/docs/MySqlConnection.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/content/docs/MySqlConnectionStringBuilder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/content/docs/MySqlDataAdapter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/content/docs/MySqlDataReader.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/content/docs/MySqlException.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/content/docs/MySqlHelper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/content/docs/MySqlParameter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/content/docs/MySqlParameterCollection.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/content/docs/MySqlTransaction.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/content/web.config.transform" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/net452/app.config.transform" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/net452/docs/MySqlCommand.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/net452/docs/MySqlCommandBuilder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/net452/docs/MySqlConnection.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/net452/docs/MySqlConnectionStringBuilder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/net452/docs/MySqlDataAdapter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/net452/docs/MySqlDataReader.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/net452/docs/MySqlException.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/net452/docs/MySqlHelper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/net452/docs/MySqlParameter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/net452/docs/MySqlParameterCollection.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/net452/docs/MySqlTransaction.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/net452/web.config.transform" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netcoreapp2.0/app.config.transform" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netcoreapp2.0/docs/MySqlCommand.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netcoreapp2.0/docs/MySqlCommandBuilder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netcoreapp2.0/docs/MySqlConnection.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netcoreapp2.0/docs/MySqlConnectionStringBuilder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netcoreapp2.0/docs/MySqlDataAdapter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netcoreapp2.0/docs/MySqlDataReader.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netcoreapp2.0/docs/MySqlException.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netcoreapp2.0/docs/MySqlHelper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netcoreapp2.0/docs/MySqlParameter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netcoreapp2.0/docs/MySqlParameterCollection.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netcoreapp2.0/docs/MySqlTransaction.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netcoreapp2.0/web.config.transform" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netstandard1.6/app.config.transform" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netstandard1.6/docs/MySqlCommand.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netstandard1.6/docs/MySqlCommandBuilder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netstandard1.6/docs/MySqlConnection.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netstandard1.6/docs/MySqlConnectionStringBuilder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netstandard1.6/docs/MySqlDataAdapter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netstandard1.6/docs/MySqlDataReader.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netstandard1.6/docs/MySqlException.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netstandard1.6/docs/MySqlHelper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netstandard1.6/docs/MySqlParameter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netstandard1.6/docs/MySqlParameterCollection.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netstandard1.6/docs/MySqlTransaction.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netstandard1.6/web.config.transform" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netstandard2.0/app.config.transform" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netstandard2.0/docs/MySqlCommand.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netstandard2.0/docs/MySqlCommandBuilder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netstandard2.0/docs/MySqlConnection.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netstandard2.0/docs/MySqlConnectionStringBuilder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netstandard2.0/docs/MySqlDataAdapter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netstandard2.0/docs/MySqlDataReader.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netstandard2.0/docs/MySqlException.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netstandard2.0/docs/MySqlHelper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netstandard2.0/docs/MySqlParameter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netstandard2.0/docs/MySqlParameterCollection.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netstandard2.0/docs/MySqlTransaction.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/contentFiles/any/netstandard2.0/web.config.transform" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/lib/net452/MySql.Data.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/lib/net452/MySql.Data.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/lib/netcoreapp2.0/MySql.Data.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/lib/netcoreapp2.0/MySql.Data.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/lib/netstandard1.6/MySql.Data.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/lib/netstandard1.6/MySql.Data.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/lib/netstandard2.0/MySql.Data.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySql.Data.8.0.10-rc/lib/netstandard2.0/MySql.Data.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySqlConnector.2.1.8/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySqlConnector.2.1.8/MySqlConnector.2.1.8.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySqlConnector.2.1.8/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySqlConnector.2.1.8/lib/net45/MySqlConnector.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySqlConnector.2.1.8/lib/net45/MySqlConnector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySqlConnector.2.1.8/lib/net461/MySqlConnector.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySqlConnector.2.1.8/lib/net461/MySqlConnector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySqlConnector.2.1.8/lib/net471/MySqlConnector.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySqlConnector.2.1.8/lib/net471/MySqlConnector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySqlConnector.2.1.8/lib/net5.0/MySqlConnector.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySqlConnector.2.1.8/lib/net5.0/MySqlConnector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySqlConnector.2.1.8/lib/net6.0/MySqlConnector.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySqlConnector.2.1.8/lib/net6.0/MySqlConnector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySqlConnector.2.1.8/lib/netcoreapp3.1/MySqlConnector.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySqlConnector.2.1.8/lib/netcoreapp3.1/MySqlConnector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySqlConnector.2.1.8/lib/netstandard2.0/MySqlConnector.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySqlConnector.2.1.8/lib/netstandard2.0/MySqlConnector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySqlConnector.2.1.8/lib/netstandard2.1/MySqlConnector.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySqlConnector.2.1.8/lib/netstandard2.1/MySqlConnector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySqlConnector.2.1.8/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySqlConnector.Logging.log4net.2.0.0/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySqlConnector.Logging.log4net.2.0.0/MySqlConnector.Logging.log4net.2.0.0.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySqlConnector.Logging.log4net.2.0.0/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySqlConnector.Logging.log4net.2.0.0/lib/net45/MySqlConnector.Logging.log4net.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySqlConnector.Logging.log4net.2.0.0/lib/net45/MySqlConnector.Logging.log4net.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySqlConnector.Logging.log4net.2.0.0/lib/netstandard2.0/MySqlConnector.Logging.log4net.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySqlConnector.Logging.log4net.2.0.0/lib/netstandard2.0/MySqlConnector.Logging.log4net.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/MySqlConnector.Logging.log4net.2.0.0/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/build/net20/Stub.System.Data.SQLite.Core.NetFramework.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/build/net20/x64/SQLite.Interop.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/build/net20/x86/SQLite.Interop.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/build/net40/Stub.System.Data.SQLite.Core.NetFramework.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/build/net40/x64/SQLite.Interop.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/build/net40/x86/SQLite.Interop.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/build/net45/Stub.System.Data.SQLite.Core.NetFramework.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/build/net45/x64/SQLite.Interop.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/build/net45/x86/SQLite.Interop.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/build/net451/Stub.System.Data.SQLite.Core.NetFramework.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/build/net451/x64/SQLite.Interop.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/build/net451/x86/SQLite.Interop.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/build/net46/Stub.System.Data.SQLite.Core.NetFramework.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/build/net46/x64/SQLite.Interop.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/build/net46/x86/SQLite.Interop.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/buildTransitive/net20/Stub.System.Data.SQLite.Core.NetFramework.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/buildTransitive/net40/Stub.System.Data.SQLite.Core.NetFramework.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/buildTransitive/net45/Stub.System.Data.SQLite.Core.NetFramework.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/buildTransitive/net451/Stub.System.Data.SQLite.Core.NetFramework.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/buildTransitive/net46/Stub.System.Data.SQLite.Core.NetFramework.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/lib/net20/System.Data.SQLite.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/lib/net20/System.Data.SQLite.dll.altconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/lib/net20/System.Data.SQLite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/lib/net40/System.Data.SQLite.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/lib/net40/System.Data.SQLite.dll.altconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/lib/net40/System.Data.SQLite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/lib/net45/System.Data.SQLite.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/lib/net45/System.Data.SQLite.dll.altconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/lib/net45/System.Data.SQLite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/lib/net451/System.Data.SQLite.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/lib/net451/System.Data.SQLite.dll.altconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/lib/net451/System.Data.SQLite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/lib/net46/System.Data.SQLite.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/lib/net46/System.Data.SQLite.dll.altconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5/lib/net46/System.Data.SQLite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Buffers.4.5.1/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Buffers.4.5.1/LICENSE.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Buffers.4.5.1/System.Buffers.4.5.1.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Buffers.4.5.1/THIRD-PARTY-NOTICES.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Buffers.4.5.1/lib/net461/System.Buffers.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Buffers.4.5.1/lib/net461/System.Buffers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Buffers.4.5.1/lib/netcoreapp2.0/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Buffers.4.5.1/lib/netstandard1.1/System.Buffers.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Buffers.4.5.1/lib/netstandard1.1/System.Buffers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Buffers.4.5.1/lib/netstandard2.0/System.Buffers.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Buffers.4.5.1/lib/netstandard2.0/System.Buffers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Buffers.4.5.1/lib/uap10.0.16299/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Buffers.4.5.1/ref/net45/System.Buffers.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Buffers.4.5.1/ref/net45/System.Buffers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Buffers.4.5.1/ref/netcoreapp2.0/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Buffers.4.5.1/ref/netstandard1.1/System.Buffers.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Buffers.4.5.1/ref/netstandard1.1/System.Buffers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Buffers.4.5.1/ref/netstandard2.0/System.Buffers.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Buffers.4.5.1/ref/netstandard2.0/System.Buffers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Buffers.4.5.1/ref/uap10.0.16299/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Buffers.4.5.1/useSharedDesignerContext.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Buffers.4.5.1/version.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.1.0.115.5/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.1.0.115.5/System.Data.SQLite.1.0.115.5.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.Core.1.0.115.5/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.Core.1.0.115.5/System.Data.SQLite.Core.1.0.115.5.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.EF6.1.0.115.5/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.EF6.1.0.115.5/System.Data.SQLite.EF6.1.0.115.5.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.EF6.1.0.115.5/content/net40/app.config.install.xdt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.EF6.1.0.115.5/content/net40/app.config.transform" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.EF6.1.0.115.5/content/net40/web.config.install.xdt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.EF6.1.0.115.5/content/net40/web.config.transform" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.EF6.1.0.115.5/content/net45/app.config.install.xdt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.EF6.1.0.115.5/content/net45/app.config.transform" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.EF6.1.0.115.5/content/net45/web.config.install.xdt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.EF6.1.0.115.5/content/net45/web.config.transform" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.EF6.1.0.115.5/content/net451/app.config.install.xdt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.EF6.1.0.115.5/content/net451/app.config.transform" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.EF6.1.0.115.5/content/net451/web.config.install.xdt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.EF6.1.0.115.5/content/net451/web.config.transform" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.EF6.1.0.115.5/content/net46/app.config.install.xdt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.EF6.1.0.115.5/content/net46/app.config.transform" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.EF6.1.0.115.5/content/net46/web.config.install.xdt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.EF6.1.0.115.5/content/net46/web.config.transform" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.EF6.1.0.115.5/lib/net40/System.Data.SQLite.EF6.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.EF6.1.0.115.5/lib/net45/System.Data.SQLite.EF6.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.EF6.1.0.115.5/lib/net451/System.Data.SQLite.EF6.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.EF6.1.0.115.5/lib/net46/System.Data.SQLite.EF6.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.EF6.1.0.115.5/lib/netstandard2.1/System.Data.SQLite.EF6.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.EF6.1.0.115.5/tools/net40/install.ps1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.EF6.1.0.115.5/tools/net45/install.ps1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.EF6.1.0.115.5/tools/net451/install.ps1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.EF6.1.0.115.5/tools/net46/install.ps1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.Linq.1.0.115.5/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.Linq.1.0.115.5/System.Data.SQLite.Linq.1.0.115.5.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.Linq.1.0.115.5/content/net20/app.config.transform" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.Linq.1.0.115.5/content/net20/web.config.transform" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.Linq.1.0.115.5/content/net40/app.config.transform" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.Linq.1.0.115.5/content/net40/web.config.transform" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.Linq.1.0.115.5/content/net45/app.config.transform" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.Linq.1.0.115.5/content/net45/web.config.transform" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.Linq.1.0.115.5/content/net451/app.config.transform" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.Linq.1.0.115.5/content/net451/web.config.transform" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.Linq.1.0.115.5/content/net46/app.config.transform" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.Linq.1.0.115.5/content/net46/web.config.transform" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.Linq.1.0.115.5/lib/net20/System.Data.SQLite.Linq.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.Linq.1.0.115.5/lib/net40/System.Data.SQLite.Linq.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.Linq.1.0.115.5/lib/net45/System.Data.SQLite.Linq.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.Linq.1.0.115.5/lib/net451/System.Data.SQLite.Linq.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.Linq.1.0.115.5/lib/net46/System.Data.SQLite.Linq.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.x64.1.0.115.5/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.x64.1.0.115.5/System.Data.SQLite.x64.1.0.115.5.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.x64.1.0.115.5/lib/net20/System.Data.SQLite.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.x64.1.0.115.5/lib/net20/System.Data.SQLite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.x64.1.0.115.5/lib/net40/System.Data.SQLite.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.x64.1.0.115.5/lib/net40/System.Data.SQLite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.x64.1.0.115.5/lib/net45/System.Data.SQLite.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.x64.1.0.115.5/lib/net45/System.Data.SQLite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.x64.1.0.115.5/lib/net451/System.Data.SQLite.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.x64.1.0.115.5/lib/net451/System.Data.SQLite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.x64.1.0.115.5/lib/net46/System.Data.SQLite.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.x64.1.0.115.5/lib/net46/System.Data.SQLite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.x86.1.0.115.5/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.x86.1.0.115.5/System.Data.SQLite.x86.1.0.115.5.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.x86.1.0.115.5/lib/net20/System.Data.SQLite.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.x86.1.0.115.5/lib/net20/System.Data.SQLite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.x86.1.0.115.5/lib/net40/System.Data.SQLite.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.x86.1.0.115.5/lib/net40/System.Data.SQLite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.x86.1.0.115.5/lib/net45/System.Data.SQLite.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.x86.1.0.115.5/lib/net45/System.Data.SQLite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.x86.1.0.115.5/lib/net451/System.Data.SQLite.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.x86.1.0.115.5/lib/net451/System.Data.SQLite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.x86.1.0.115.5/lib/net46/System.Data.SQLite.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Data.SQLite.x86.1.0.115.5/lib/net46/System.Data.SQLite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Diagnostics.DiagnosticSource.5.0.1/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Diagnostics.DiagnosticSource.5.0.1/Icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Diagnostics.DiagnosticSource.5.0.1/LICENSE.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Diagnostics.DiagnosticSource.5.0.1/System.Diagnostics.DiagnosticSource.5.0.1.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Diagnostics.DiagnosticSource.5.0.1/THIRD-PARTY-NOTICES.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Diagnostics.DiagnosticSource.5.0.1/lib/net45/System.Diagnostics.DiagnosticSource.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Diagnostics.DiagnosticSource.5.0.1/lib/net45/System.Diagnostics.DiagnosticSource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Diagnostics.DiagnosticSource.5.0.1/lib/net46/System.Diagnostics.DiagnosticSource.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Diagnostics.DiagnosticSource.5.0.1/lib/net46/System.Diagnostics.DiagnosticSource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Diagnostics.DiagnosticSource.5.0.1/lib/net5.0/System.Diagnostics.DiagnosticSource.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Diagnostics.DiagnosticSource.5.0.1/lib/net5.0/System.Diagnostics.DiagnosticSource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Diagnostics.DiagnosticSource.5.0.1/lib/netstandard1.1/System.Diagnostics.DiagnosticSource.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Diagnostics.DiagnosticSource.5.0.1/lib/netstandard1.1/System.Diagnostics.DiagnosticSource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Diagnostics.DiagnosticSource.5.0.1/lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Diagnostics.DiagnosticSource.5.0.1/lib/netstandard1.3/System.Diagnostics.DiagnosticSource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Diagnostics.DiagnosticSource.5.0.1/lib/portable-net45+win8+wpa81/System.Diagnostics.DiagnosticSource.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Diagnostics.DiagnosticSource.5.0.1/lib/portable-net45+win8+wpa81/System.Diagnostics.DiagnosticSource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Diagnostics.DiagnosticSource.5.0.1/useSharedDesignerContext.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Diagnostics.DiagnosticSource.5.0.1/version.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Memory.4.5.4/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Memory.4.5.4/LICENSE.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Memory.4.5.4/System.Memory.4.5.4.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Memory.4.5.4/THIRD-PARTY-NOTICES.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Memory.4.5.4/lib/net461/System.Memory.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Memory.4.5.4/lib/net461/System.Memory.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Memory.4.5.4/lib/netcoreapp2.1/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Memory.4.5.4/lib/netstandard1.1/System.Memory.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Memory.4.5.4/lib/netstandard1.1/System.Memory.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Memory.4.5.4/lib/netstandard2.0/System.Memory.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Memory.4.5.4/lib/netstandard2.0/System.Memory.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Memory.4.5.4/ref/netcoreapp2.1/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Memory.4.5.4/useSharedDesignerContext.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Memory.4.5.4/version.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/LICENSE.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/System.Numerics.Vectors.4.5.0.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/THIRD-PARTY-NOTICES.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/lib/MonoAndroid10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/lib/MonoTouch10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/lib/net46/System.Numerics.Vectors.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/lib/net46/System.Numerics.Vectors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/lib/netcoreapp2.0/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/lib/netstandard1.0/System.Numerics.Vectors.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/lib/netstandard1.0/System.Numerics.Vectors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/lib/netstandard2.0/System.Numerics.Vectors.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/lib/netstandard2.0/System.Numerics.Vectors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/lib/uap10.0.16299/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/lib/xamarinios10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/lib/xamarinmac20/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/lib/xamarintvos10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/lib/xamarinwatchos10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/ref/MonoAndroid10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/ref/MonoTouch10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/ref/net45/System.Numerics.Vectors.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/ref/net45/System.Numerics.Vectors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/ref/net46/System.Numerics.Vectors.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/ref/net46/System.Numerics.Vectors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/ref/netcoreapp2.0/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/ref/netstandard1.0/System.Numerics.Vectors.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/ref/netstandard1.0/System.Numerics.Vectors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/ref/netstandard2.0/System.Numerics.Vectors.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/ref/netstandard2.0/System.Numerics.Vectors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/ref/uap10.0.16299/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/ref/xamarinios10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/ref/xamarinmac20/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/ref/xamarintvos10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/ref/xamarinwatchos10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/useSharedDesignerContext.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Numerics.Vectors.4.5.0/version.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Runtime.CompilerServices.Unsafe.5.0.0/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Runtime.CompilerServices.Unsafe.5.0.0/Icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Runtime.CompilerServices.Unsafe.5.0.0/LICENSE.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Runtime.CompilerServices.Unsafe.5.0.0/System.Runtime.CompilerServices.Unsafe.5.0.0.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Runtime.CompilerServices.Unsafe.5.0.0/THIRD-PARTY-NOTICES.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Runtime.CompilerServices.Unsafe.5.0.0/lib/net45/System.Runtime.CompilerServices.Unsafe.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Runtime.CompilerServices.Unsafe.5.0.0/lib/net45/System.Runtime.CompilerServices.Unsafe.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Runtime.CompilerServices.Unsafe.5.0.0/lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Runtime.CompilerServices.Unsafe.5.0.0/lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Runtime.CompilerServices.Unsafe.5.0.0/lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Runtime.CompilerServices.Unsafe.5.0.0/lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Runtime.CompilerServices.Unsafe.5.0.0/lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Runtime.CompilerServices.Unsafe.5.0.0/lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Runtime.CompilerServices.Unsafe.5.0.0/ref/net461/System.Runtime.CompilerServices.Unsafe.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Runtime.CompilerServices.Unsafe.5.0.0/ref/net461/System.Runtime.CompilerServices.Unsafe.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Runtime.CompilerServices.Unsafe.5.0.0/ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Runtime.CompilerServices.Unsafe.5.0.0/ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Runtime.CompilerServices.Unsafe.5.0.0/ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Runtime.CompilerServices.Unsafe.5.0.0/ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Runtime.CompilerServices.Unsafe.5.0.0/ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Runtime.CompilerServices.Unsafe.5.0.0/ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Runtime.CompilerServices.Unsafe.5.0.0/useSharedDesignerContext.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Runtime.CompilerServices.Unsafe.5.0.0/version.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Threading.Tasks.Extensions.4.3.0/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Threading.Tasks.Extensions.4.3.0/System.Threading.Tasks.Extensions.4.3.0.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Threading.Tasks.Extensions.4.3.0/ThirdPartyNotices.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Threading.Tasks.Extensions.4.3.0/dotnet_library_license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Threading.Tasks.Extensions.4.3.0/lib/netstandard1.0/System.Threading.Tasks.Extensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Threading.Tasks.Extensions.4.3.0/lib/netstandard1.0/System.Threading.Tasks.Extensions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Threading.Tasks.Extensions.4.3.0/lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/System.Threading.Tasks.Extensions.4.3.0/lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/log4net.2.0.10/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/log4net.2.0.10/lib/net20/log4net.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/log4net.2.0.10/lib/net20/log4net.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/log4net.2.0.10/lib/net35-client/log4net.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/log4net.2.0.10/lib/net35-client/log4net.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/log4net.2.0.10/lib/net35/log4net.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/log4net.2.0.10/lib/net35/log4net.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/log4net.2.0.10/lib/net40-client/log4net.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/log4net.2.0.10/lib/net40-client/log4net.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/log4net.2.0.10/lib/net40/log4net.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/log4net.2.0.10/lib/net40/log4net.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/log4net.2.0.10/lib/net45/log4net.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/log4net.2.0.10/lib/net45/log4net.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/log4net.2.0.10/lib/netstandard1.3/log4net.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/log4net.2.0.10/lib/netstandard1.3/log4net.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/log4net.2.0.10/lib/netstandard2.0/log4net.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/log4net.2.0.10/lib/netstandard2.0/log4net.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/log4net.2.0.10/log4net.2.0.10.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/packages/log4net.2.0.10/package-icon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/TestChildrenCompetition/obj/Debug/TestChildrenCompetition.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetition/CSharp_ChildrenCompetition/TestChildrenCompetition/obj/Debug/TestChildrenCompetition.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/Participant.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/Participant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/TestAgeCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/TestAgeCategory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/TestParticipantRelation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/TestParticipantRelation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/TestType.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/model/TestType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/repository/AbstractRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/repository/HasId.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/repository/IRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/repository/IRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/repository/ParticipantRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/repository/TestParticipantRelationRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/repository/TestRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/model/ParticipantTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/model/ParticipantTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/model.ParticipantTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/model.ParticipantTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/model.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/model.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-model.ParticipantTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-model.ParticipantTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Participant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Participant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/TestAgeCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/TestAgeCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/TestParticipantRelation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/TestParticipantRelation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/TestType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/TestType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/AbstractRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/HasId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/HasId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/IRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/IRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/ParticipantRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/TestParticipantRelationRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/TestRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/model/ParticipantTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/ParticipantTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +712,9 @@
       <workItem from="1646638179059" duration="4621000" />
       <workItem from="1646646088564" duration="63000" />
       <workItem from="1646990117289" duration="8066000" />
-      <workItem from="1647031804803" duration="12501000" />
+      <workItem from="1647031804803" duration="12763000" />
+      <workItem from="1647077659476" duration="6143000" />
+      <workItem from="1647120359825" duration="4280000" />
     </task>
     <task id="LOCAL-00001" summary="Create model classes and repository interfaces">
       <created>1646491999942</created>
@@ -283,7 +723,21 @@
       <option name="project" value="LOCAL" />
       <updated>1646491999943</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Refactor model classes, repository interfaces and implement repo interfaces">
+      <created>1647044549644</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1647044549644</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Refactor model classes, repository interfaces and implement repo interfaces">
+      <created>1647044590809</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1647044590809</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,6 +758,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Create model classes and repository interfaces" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create model classes and repository interfaces" />
+    <MESSAGE value="Refactor model classes, repository interfaces and implement repo interfaces" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor model classes, repository interfaces and implement repo interfaces" />
   </component>
 </project>

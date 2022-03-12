@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp_ChildrenCompetitionGUI", "CSharp_ChildrenCompetitionGUI\CSharp_ChildrenCompetitionGUI.csproj", "{641D46CC-5669-4BAA-B278-F5DF5607021F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectionUtils", "ConnectionUtils\ConnectionUtils.csproj", "{16EF4721-BF2E-44FE-A788-6A255DDAC5F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{641D46CC-5669-4BAA-B278-F5DF5607021F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{641D46CC-5669-4BAA-B278-F5DF5607021F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{641D46CC-5669-4BAA-B278-F5DF5607021F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{641D46CC-5669-4BAA-B278-F5DF5607021F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16EF4721-BF2E-44FE-A788-6A255DDAC5F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16EF4721-BF2E-44FE-A788-6A255DDAC5F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16EF4721-BF2E-44FE-A788-6A255DDAC5F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16EF4721-BF2E-44FE-A788-6A255DDAC5F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
