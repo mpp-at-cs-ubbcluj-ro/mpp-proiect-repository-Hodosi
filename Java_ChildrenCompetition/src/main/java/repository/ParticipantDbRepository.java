@@ -1,7 +1,6 @@
 package repository;
 
 import model.Participant;
-import model.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -9,6 +8,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
 
 public class ParticipantDbRepository implements IParticipantRepository<Integer, Participant> {
@@ -64,13 +65,15 @@ public class ParticipantDbRepository implements IParticipantRepository<Integer, 
         try(PreparedStatement preparedStatement = connection.prepareStatement(query)){
             preparedStatement.setInt(1, id);
             try(ResultSet resultSet = preparedStatement.executeQuery()){
-                int idParticipant = resultSet.getInt("id_participant");
-                String nameParticipant = resultSet.getString("name");
-                int age = resultSet.getInt("age");
-                Participant participant = new Participant(nameParticipant, age);
-                participant.setId(idParticipant);
-                logger.traceExit(participant);
-                return participant;
+                if(resultSet.next()) {
+                    int idParticipant = resultSet.getInt("id_participant");
+                    String nameParticipant = resultSet.getString("name");
+                    int age = resultSet.getInt("age");
+                    Participant participant = new Participant(nameParticipant, age);
+                    participant.setId(idParticipant);
+                    logger.traceExit(participant);
+                    return participant;
+                }
             }
         } catch (SQLException exception){
             logger.error(exception);
@@ -89,13 +92,15 @@ public class ParticipantDbRepository implements IParticipantRepository<Integer, 
         try(PreparedStatement preparedStatement = connection.prepareStatement(query)){
             preparedStatement.setString(1, name);
             try(ResultSet resultSet = preparedStatement.executeQuery()){
-                int idParticipant = resultSet.getInt("id_participant");
-                String nameParticipant = resultSet.getString("name");
-                int age = resultSet.getInt("age");
-                Participant participant = new Participant(nameParticipant, age);
-                participant.setId(idParticipant);
-                logger.traceExit(participant);
-                return participant;
+                if(resultSet.next()) {
+                    int idParticipant = resultSet.getInt("id_participant");
+                    String nameParticipant = resultSet.getString("name");
+                    int age = resultSet.getInt("age");
+                    Participant participant = new Participant(nameParticipant, age);
+                    participant.setId(idParticipant);
+                    logger.traceExit(participant);
+                    return participant;
+                }
             }
         } catch (SQLException exception){
             logger.error(exception);
@@ -108,5 +113,32 @@ public class ParticipantDbRepository implements IParticipantRepository<Integer, 
     @Override
     public Iterable<Participant> findAll() {
         return null;
+    }
+
+    @Override
+    public Iterable<Participant> findAllParticipantsForTest(int integer) {
+        logger.traceEntry("finding all participants for a test");
+        Connection connection = dbUtils.getConnection();
+        List<Participant> partcipantList = new ArrayList<>();
+        String query = "SELECT * from test_participant_relation TPR INNER JOIN participants P ON TPR.id_participant = P.id_participant where id_test = ? ";
+        try(PreparedStatement preparedStatement = connection.prepareStatement(query)){
+            preparedStatement.setInt(1, integer);
+            try (ResultSet resultSet = preparedStatement.executeQuery()){
+                while (resultSet.next()){
+                    int idParticipant = resultSet.getInt("id_participant");
+                    String name = resultSet.getString("name");
+                    int age = resultSet.getInt("age");
+                    Participant participant = new Participant(name, age);
+                    participant.setId(idParticipant);
+                    partcipantList.add(participant);
+                }
+            }
+        } catch (SQLException exception){
+            logger.error(exception);
+            System.err.println("Error DB " + exception);
+        }
+        logger.traceExit();
+
+        return partcipantList;
     }
 }

@@ -18,6 +18,7 @@ public class UserDbRepository implements IUserRepository<Integer, User>{
     public UserDbRepository(Properties properties) {
         logger.info("initializing UserDbRepository with properties: {} ", properties);
         dbUtils = new JdbcUtils(properties);
+        currentUser = null;
     }
 
     @Override
@@ -90,15 +91,17 @@ public class UserDbRepository implements IUserRepository<Integer, User>{
         try(PreparedStatement preparedStatement = connection.prepareStatement(query)){
             preparedStatement.setInt(1, id);
             try(ResultSet resultSet = preparedStatement.executeQuery()){
-                int idUser = resultSet.getInt("id_user");
-                String firstname = resultSet.getString("firstname");
-                String lastname = resultSet.getString("lastname");
-                String username = resultSet.getString("username");
-                String password = resultSet.getString("password");
-                User user = new User(firstname, lastname, username, password);
-                user.setId(idUser);
-                logger.traceExit(user);
-                return user;
+                if(resultSet.next()) {
+                    int idUser = resultSet.getInt("id_user");
+                    String firstname = resultSet.getString("firstname");
+                    String lastname = resultSet.getString("lastname");
+                    String username = resultSet.getString("username");
+                    String password = resultSet.getString("password");
+                    User user = new User(firstname, lastname, username, password);
+                    user.setId(idUser);
+                    logger.traceExit(user);
+                    return user;
+                }
             }
         } catch (SQLException exception){
             logger.error(exception);
@@ -117,15 +120,17 @@ public class UserDbRepository implements IUserRepository<Integer, User>{
         try(PreparedStatement preparedStatement = connection.prepareStatement(query)){
             preparedStatement.setString(1, username);
             try(ResultSet resultSet = preparedStatement.executeQuery()){
-                int idUser = resultSet.getInt("id_user");
-                String firstname = resultSet.getString("firstname");
-                String lastname = resultSet.getString("lastname");
-                String usernameUser = resultSet.getString("username");
-                String password = resultSet.getString("password");
-                User user = new User(firstname, lastname, usernameUser, password);
-                user.setId(idUser);
-                logger.traceExit(user);
-                return user;
+                if(resultSet.next()) {
+                    int idUser = resultSet.getInt("id_user");
+                    String firstname = resultSet.getString("firstname");
+                    String lastname = resultSet.getString("lastname");
+                    String usernameUser = resultSet.getString("username");
+                    String password = resultSet.getString("password");
+                    User user = new User(firstname, lastname, usernameUser, password);
+                    user.setId(idUser);
+                    logger.traceExit(user);
+                    return user;
+                }
             }
         } catch (SQLException exception){
             logger.error(exception);

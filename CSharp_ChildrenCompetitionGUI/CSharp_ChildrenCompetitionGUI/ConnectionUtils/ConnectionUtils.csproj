@@ -46,10 +46,6 @@
           <HintPath>..\packages\log4net.2.0.10\lib\net45\log4net.dll</HintPath>
           <Private>True</Private>
         </Reference>
-        <Reference Include="Mono.Data.Sqlite, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756">
-          <HintPath>..\packages\Mono.Data.Sqlite.1.0.61\lib\net40\Mono.Data.Sqlite.dll</HintPath>
-          <Private>True</Private>
-        </Reference>
         <Reference Include="mscorlib" />
         <Reference Include="MySqlConnector.Logging.log4net, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d33d3e53aa5f8c92">
           <HintPath>..\packages\MySqlConnector.Logging.log4net.2.0.0\lib\net45\MySqlConnector.Logging.log4net.dll</HintPath>

@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
 }
 
 group 'ro.ubbcluj.mpp'
@@ -40,4 +41,9 @@ jar {
 
 test {
     useJUnitPlatform()
+}
+
+javafx {
+    version = "17"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
 }

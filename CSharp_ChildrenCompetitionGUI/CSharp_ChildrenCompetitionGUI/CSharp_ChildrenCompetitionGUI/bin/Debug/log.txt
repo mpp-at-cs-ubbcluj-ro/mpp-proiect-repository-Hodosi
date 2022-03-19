@@ -1,0 +1,10 @@
+2022-03-14 10:26:23,456 [1] INFO  UserDbRepository [(null)] - Creating UserDbRepository
+2022-03-14 10:26:23,509 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-14 10:26:23,603 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-14 10:26:23,606 [1] INFO  UserDbRepository [(null)] - Find one with value testUsername
+2022-03-14 10:26:23,607 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-14 10:26:23,608 [1] INFO  UserDbRepository [(null)] - Creating ParticipantDbRepository
+2022-03-14 10:26:23,609 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-14 10:26:23,609 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-14 10:26:23,610 [1] INFO  UserDbRepository [(null)] - Find one with value testName
+2022-03-14 10:26:23,611 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}

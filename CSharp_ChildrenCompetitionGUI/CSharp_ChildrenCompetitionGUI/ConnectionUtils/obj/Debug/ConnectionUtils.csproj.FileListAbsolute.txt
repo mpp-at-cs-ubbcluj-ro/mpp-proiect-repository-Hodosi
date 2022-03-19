@@ -1,7 +1,6 @@
 C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionGUI\CSharp_ChildrenCompetitionGUI\ConnectionUtils\bin\Debug\ConnectionUtils.exe
 C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionGUI\CSharp_ChildrenCompetitionGUI\ConnectionUtils\bin\Debug\ConnectionUtils.pdb
 C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionGUI\CSharp_ChildrenCompetitionGUI\ConnectionUtils\bin\Debug\log4net.dll
-C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionGUI\CSharp_ChildrenCompetitionGUI\ConnectionUtils\bin\Debug\Mono.Data.Sqlite.dll
 C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionGUI\CSharp_ChildrenCompetitionGUI\ConnectionUtils\bin\Debug\MySqlConnector.Logging.log4net.dll
 C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionGUI\CSharp_ChildrenCompetitionGUI\ConnectionUtils\bin\Debug\System.Numerics.Vectors.dll
 C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionGUI\CSharp_ChildrenCompetitionGUI\ConnectionUtils\bin\Debug\log4net.xml

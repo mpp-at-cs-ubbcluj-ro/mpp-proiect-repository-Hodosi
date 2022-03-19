@@ -58,10 +58,12 @@ namespace CSharp_ChildrenCompetitionGUI.repository
                 var paramUN = command.CreateParameter();
                 paramUN.ParameterName = "@un";
                 paramUN.Value = entity.username;
+                command.Parameters.Add(paramUN);
 
                 var paramPW = command.CreateParameter();
                 paramPW.ParameterName = "@pw";
                 paramPW.Value = entity.password;
+                command.Parameters.Add(paramPW);
 
                 var result = command.ExecuteNonQuery();
             }

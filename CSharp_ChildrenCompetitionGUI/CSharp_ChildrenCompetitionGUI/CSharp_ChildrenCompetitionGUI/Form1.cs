@@ -51,8 +51,30 @@ namespace CSharp_ChildrenCompetitionGUI
 
             IUserRepository<int, User> userRepository = new UserDbRepository(props);
             User user = new User("testFirstname", "testLastname", "testUsername", "testPassword");
-            userRepository.save(user);
+            // userRepository.save(user);
+
+            User userById = userRepository.findOne(1);
+            appendResultText = userById.username + "\n";
+            resultText += appendResultText;
             
+            User userByUsername = userRepository.findByUsername("testUsername");
+            appendResultText = userByUsername.username + "\n";
+            resultText += appendResultText;
+
+            IParticipantRepository<int, Participant> participantRepository = new ParticipantDbRepository(props);
+            Participant participant = new Participant("testName", 6);
+            // participantRepository.save(participant);
+
+            Participant participantById = participantRepository.findOne(1);
+            appendResultText = participantById.name + "\n";
+            resultText += appendResultText;
+
+            Participant participantByName = participantRepository.findByName("testName");
+            appendResultText = participantByName.name + "\n";
+            resultText += appendResultText;
+            
+            
+                
             label1.Text = resultText;
             button1.Enabled = false;
         }

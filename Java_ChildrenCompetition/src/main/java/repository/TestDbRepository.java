@@ -3,7 +3,6 @@ package repository;
 import model.Test;
 import model.TestAgeCategory;
 import model.TestType;
-import model.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -18,10 +17,14 @@ import java.util.Properties;
 public class TestDbRepository implements ITestRepository<Integer, Test>{
     private final JdbcUtils dbUtils;
     private static final Logger logger = LogManager.getLogger();
+    private ITestAgeCategoryRepository<Integer, TestAgeCategory> testAgeCategoryRepository;
+    private ITestTypeRepository<Integer, TestType> testTypeRepository;
 
     public TestDbRepository(Properties properties){
         logger.info("initializing TestDbRepository with properties: {} ", properties);
         dbUtils = new JdbcUtils(properties);
+        testAgeCategoryRepository = new TestAgeCategoryDbRepository(properties);
+        testTypeRepository = new TestTypeDbRepository(properties);
     }
 
     @Override
@@ -44,53 +47,6 @@ public class TestDbRepository implements ITestRepository<Integer, Test>{
 
     }
 
-    public TestType findOneTestType(Integer id){
-        logger.traceEntry("finding task with id {} ", id);
-        Connection connection = dbUtils.getConnection();
-        String query = "SELECT * from test_type where id_test_type = ?";
-
-        try(PreparedStatement preparedStatement = connection.prepareStatement(query)){
-            preparedStatement.setInt(1, id);
-            try(ResultSet resultSet = preparedStatement.executeQuery()){
-                int idType = resultSet.getInt("id_test_type");
-                String type = resultSet.getString("type");
-                TestType testType = new TestType(type);
-                testType.setId(idType);
-                logger.traceExit(testType);
-                return testType;
-            }
-        } catch (SQLException exception){
-            logger.error(exception);
-            System.err.println("Error DB " + exception);
-        }
-
-        return null;
-    }
-
-    public TestAgeCategory findOneTestAgeCategory(Integer id){
-        logger.traceEntry("finding task with id {} ", id);
-        Connection connection = dbUtils.getConnection();
-        String query = "SELECT * from test_age_category where id_test_age_category = ?";
-
-        try(PreparedStatement preparedStatement = connection.prepareStatement(query)){
-            preparedStatement.setInt(1, id);
-            try(ResultSet resultSet = preparedStatement.executeQuery()){
-                int idAgeCategory = resultSet.getInt("id_test_age_category");
-                int minAge = resultSet.getInt("min_age");
-                int maxAge = resultSet.getInt("max_age");
-                TestAgeCategory testAgeCategory = new TestAgeCategory(minAge, maxAge);
-                testAgeCategory.setId(idAgeCategory);
-                logger.traceExit(testAgeCategory);
-                return testAgeCategory;
-            }
-        } catch (SQLException exception){
-            logger.error(exception);
-            System.err.println("Error DB " + exception);
-        }
-
-        return null;
-    }
-
     @Override
     public Test findOne(Integer id) {
         logger.traceEntry("finding task with id {} ", id);
@@ -100,15 +56,17 @@ public class TestDbRepository implements ITestRepository<Integer, Test>{
         try(PreparedStatement preparedStatement = connection.prepareStatement(query)){
             preparedStatement.setInt(1, id);
             try(ResultSet resultSet = preparedStatement.executeQuery()){
-                int idTest = resultSet.getInt("id_test");
-                int idTestType = resultSet.getInt("id_test_type");
-                int idAgeCategory = resultSet.getInt("id_test_age_category");
-                TestType testType = findOneTestType(idTestType);
-                TestAgeCategory testAgeCategory = findOneTestAgeCategory(idAgeCategory);
-                Test test = new Test(testType, testAgeCategory);
-                test.setId(idTest);
-                logger.traceExit(test);
-                return test;
+                if(resultSet.next()) {
+                    int idTest = resultSet.getInt("id_test");
+                    int idTestType = resultSet.getInt("id_test_type");
+                    int idAgeCategory = resultSet.getInt("id_test_age_category");
+                    TestType testType = testTypeRepository.findOne(idTestType);
+                    TestAgeCategory testAgeCategory = testAgeCategoryRepository.findOne(idAgeCategory);
+                    Test test = new Test(testType, testAgeCategory);
+                    test.setId(idTest);
+                    logger.traceExit(test);
+                    return test;
+                }
             }
         } catch (SQLException exception){
             logger.error(exception);
@@ -130,8 +88,37 @@ public class TestDbRepository implements ITestRepository<Integer, Test>{
                     int idTest = resultSet.getInt("id_test");
                     int idTestType = resultSet.getInt("id_test_type");
                     int idAgeCategory = resultSet.getInt("id_test_age_category");
-                    TestType testType = findOneTestType(idTestType);
-                    TestAgeCategory testAgeCategory = findOneTestAgeCategory(idAgeCategory);
+                    TestType testType = testTypeRepository.findOne(idTestType);
+                    TestAgeCategory testAgeCategory = testAgeCategoryRepository.findOne(idAgeCategory);
+                    Test test = new Test(testType, testAgeCategory);
+                    test.setId(idTest);
+                    testList.add(test);
+                }
+            }
+        } catch (SQLException exception){
+            logger.error(exception);
+            System.err.println("Error DB " + exception);
+        }
+        logger.traceExit();
+
+        return testList;
+    }
+
+    @Override
+    public Iterable<Test> findAllTestsForParticipant(int id) {
+        logger.traceEntry("finding all test for a participant");
+        Connection connection = dbUtils.getConnection();
+        List<Test> testList = new ArrayList<>();
+        String query = "SELECT * from test_participant_relation TPR INNER JOIN tests T ON TPR.id_test = T.id_test where id_participant = ?";
+        try(PreparedStatement preparedStatement = connection.prepareStatement(query)){
+            preparedStatement.setInt(1, id);
+            try (ResultSet resultSet = preparedStatement.executeQuery()){
+                while (resultSet.next()){
+                    int idTest = resultSet.getInt("id_test");
+                    int idTestType = resultSet.getInt("id_test_type");
+                    int idAgeCategory = resultSet.getInt("id_test_age_category");
+                    TestType testType = testTypeRepository.findOne(idTestType);
+                    TestAgeCategory testAgeCategory = testAgeCategoryRepository.findOne(idAgeCategory);
                     Test test = new Test(testType, testAgeCategory);
                     test.setId(idTest);
                     testList.add(test);

@@ -21,10 +21,9 @@ public class Entity<ID> implements HasId<ID> {
         if(this == o){
             return true;
         }
-        if(!(o instanceof Entity)){
+        if(!(o instanceof Entity<?> entity)){
             return false;
         }
-        Entity<?> entity = (Entity<?>) o;
         return this.getId().equals(entity.getId());
     }
 

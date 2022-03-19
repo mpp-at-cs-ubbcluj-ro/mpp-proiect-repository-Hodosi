@@ -18,6 +18,7 @@ namespace CSharp_ChildrenCompetitionGUI
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
+            log4net.Config.XmlConfigurator.Configure();
             XmlConfigurator.Configure(new System.IO.FileInfo(args[0]));
             
             Application.Run(new Form1());
