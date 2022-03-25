@@ -17,8 +17,8 @@ import java.util.Properties;
 public class TestDbRepository implements ITestRepository<Integer, Test>{
     private final JdbcUtils dbUtils;
     private static final Logger logger = LogManager.getLogger();
-    private ITestAgeCategoryRepository<Integer, TestAgeCategory> testAgeCategoryRepository;
-    private ITestTypeRepository<Integer, TestType> testTypeRepository;
+    private final ITestAgeCategoryRepository<Integer, TestAgeCategory> testAgeCategoryRepository;
+    private final ITestTypeRepository<Integer, TestType> testTypeRepository;
 
     public TestDbRepository(Properties properties){
         logger.info("initializing TestDbRepository with properties: {} ", properties);

@@ -30,7 +30,7 @@ namespace CSharp_ChildrenCompetitionGUI.repository
 
             using (var command = conn.CreateCommand())
             {
-                command.CommandText = "INSERT into participants(name, age) values (@nm,@ag)";
+                command.CommandText = "INSERT into participants(name, age, username) values (@nm,@ag,@usnm)";
                 var paramNM = command.CreateParameter();
                 paramNM.ParameterName = "@nm";
                 paramNM.Value = entity.name;
@@ -39,6 +39,11 @@ namespace CSharp_ChildrenCompetitionGUI.repository
                 var paramAG = command.CreateParameter();
                 paramAG.ParameterName = "@ag";
                 paramAG.Value = entity.age;
+                command.Parameters.Add(paramAG);
+                
+                var paramUSNM = command.CreateParameter();
+                paramAG.ParameterName = "@usnm";
+                paramAG.Value = entity.username;
                 command.Parameters.Add(paramAG);
                 
                 var result = command.ExecuteNonQuery();
@@ -76,7 +81,8 @@ namespace CSharp_ChildrenCompetitionGUI.repository
                         int idP = dataR.GetInt32(0);
                         String name = dataR.GetString(1);
                         int age= dataR.GetInt32(2);
-                        Participant participant = new Participant(name, age);
+                        string username = dataR.GetString(3);
+                        Participant participant = new Participant(username, name, age);
                         participant.id = idP;
                         log.InfoFormat("Exiting findOne with value{0}", participant);
                         return participant;
@@ -92,19 +98,20 @@ namespace CSharp_ChildrenCompetitionGUI.repository
             throw new System.NotImplementedException();
         }
 
-        public Participant findByName(string name)
+        public Participant findByUsername(string username)
         {
             // throw new System.NotImplementedException();
-            log.InfoFormat("Find one with value {0}", name);
+            log.InfoFormat("Find one with value {0}", username);
             IDbConnection conn = DBUtils.getConnection(props);
 
             using (var comm = conn.CreateCommand())
             {
-                comm.CommandText = "SELECT * from participants where name = @nm";
-                IDbDataParameter paramNM = comm.CreateParameter();
-                paramNM.ParameterName = "@nm";
-                paramNM.Value = name;
-                comm.Parameters.Add(paramNM);
+                comm.CommandText = "SELECT * from participants where username = @usnm";
+                
+                IDbDataParameter paramUSNM = comm.CreateParameter();
+                paramUSNM.ParameterName = "@usnm";
+                paramUSNM.Value = username;
+                comm.Parameters.Add(paramUSNM);
 
                 using (var dataR = comm.ExecuteReader())
                 {
@@ -113,7 +120,8 @@ namespace CSharp_ChildrenCompetitionGUI.repository
                         int id = dataR.GetInt32(0);
                         String nameP = dataR.GetString(1);
                         int age = dataR.GetInt32(2);
-                        Participant participant = new Participant(nameP, age);
+                        string usernameP = dataR.GetString(3);
+                        Participant participant = new Participant(usernameP, nameP, age);
                         participant.id = id;
                         log.InfoFormat("Exiting findOne with value{0}", participant);
                         return participant;
@@ -122,6 +130,38 @@ namespace CSharp_ChildrenCompetitionGUI.repository
             }
             log.InfoFormat("exiting findOne with value{0}", null);
             return null;
+        }
+
+        public IEnumerable<Participant> findAllParticipantsForTest(int id)
+        {
+            // throw new NotImplementedException();
+            IDbConnection con = DBUtils.getConnection(props);
+            IList<Participant> participantList = new List<Participant>();
+            using (var comm = con.CreateCommand())
+            {
+                comm.CommandText = "SELECT * FROM test_participant_relation TPR INNER JOIN participants P ON TPR.id_participant = P.id_participant WHERE id_test = @idt";
+
+                IDbDataParameter paramIDT = comm.CreateParameter();
+                paramIDT.ParameterName = "@idt";
+                paramIDT.Value = id;
+                comm.Parameters.Add(paramIDT);
+                
+                using (var dataR = comm.ExecuteReader())
+                {
+                    while (dataR.Read())
+                    {
+                        int idP = dataR.GetInt32(0);
+                        String nameP = dataR.GetString(1);
+                        int age = dataR.GetInt32(2);
+                        string usernameP = dataR.GetString(3);
+                        Participant participant = new Participant(usernameP, nameP, age);
+                        participant.id = idP;
+                        participantList.Add(participant);
+                    }
+                }
+            }
+
+            return participantList;
         }
     }
 }

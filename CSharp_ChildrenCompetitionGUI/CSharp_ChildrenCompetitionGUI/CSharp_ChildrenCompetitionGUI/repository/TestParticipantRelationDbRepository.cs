@@ -66,31 +66,31 @@ namespace CSharp_ChildrenCompetitionGUI.repository
             throw new NotImplementedException();
         }
 
-        public IEnumerable<int> findAllParticipantsIDForTest(int id)
-        {
-            // throw new NotImplementedException();
-            IDbConnection con = DBUtils.getConnection(props);
-            IList<int> participantIdList = new List<int>();
-            using (var comm = con.CreateCommand())
-            {
-                comm.CommandText = "SELECT * from test_participant_relation where id_test = @idt";
-                
-                var paramIDT = comm.CreateParameter();
-                paramIDT.ParameterName = "@idt";
-                paramIDT.Value = id;
-                comm.Parameters.Add(paramIDT);
-
-                using (var dataR = comm.ExecuteReader())
-                {
-                    while (dataR.Read())
-                    {
-                        int idP = dataR.GetInt32(1);
-                        participantIdList.Add(idP);
-                    }
-                }
-            }
-
-            return participantIdList;
-        }
+        // public IEnumerable<int> findAllParticipantsIDForTest(int id)
+        // {
+        //     // throw new NotImplementedException();
+        //     IDbConnection con = DBUtils.getConnection(props);
+        //     IList<int> participantIdList = new List<int>();
+        //     using (var comm = con.CreateCommand())
+        //     {
+        //         comm.CommandText = "SELECT * from test_participant_relation where id_test = @idt";
+        //         
+        //         var paramIDT = comm.CreateParameter();
+        //         paramIDT.ParameterName = "@idt";
+        //         paramIDT.Value = id;
+        //         comm.Parameters.Add(paramIDT);
+        //
+        //         using (var dataR = comm.ExecuteReader())
+        //         {
+        //             while (dataR.Read())
+        //             {
+        //                 int idP = dataR.GetInt32(1);
+        //                 participantIdList.Add(idP);
+        //             }
+        //         }
+        //     }
+        //
+        //     return participantIdList;
+        // }
     }
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="model.ParticipantTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-17T14:35:31" hostname="DESKTOP-RPSMHMT" time="0.038">
+<testsuite name="model.ParticipantTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-25T22:18:48" hostname="DESKTOP-RPSMHMT" time="0.089">
   <properties/>
-  <testcase name="Test Participant" classname="model.ParticipantTest" time="0.038"/>
+  <testcase name="Test Participant" classname="model.ParticipantTest" time="0.089"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

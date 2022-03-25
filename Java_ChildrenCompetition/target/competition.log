@@ -19082,3 +19082,154 @@
 25 Mar 2022 19:44:42,037 TRACE repository.JdbcUtils 48 getConnection - Enter
 25 Mar 2022 19:44:42,038 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@59ba2ce8)
 25 Mar 2022 19:44:42,038 TRACE repository.UserDbRepository 131 findByUsername - Exit with(Entity{id=1})
+26 Mar 2022 00:18:49,982 INFO  repository.ParticipantDbRepository 20 <init> - initializing UserDbRepository with properties: {jdbc.url=jdbc:sqlite:C:/MPP/mpp-proiect-repository-Hodosi/Java_ChildrenCompetition/database/competition.db} 
+26 Mar 2022 00:18:49,996 TRACE repository.ParticipantDbRepository 90 findByUsername - Enter finding task with username t1 
+26 Mar 2022 00:18:49,997 TRACE repository.JdbcUtils 48 getConnection - Enter
+26 Mar 2022 00:18:49,997 TRACE repository.JdbcUtils 25 getNewConnection - Enter
+26 Mar 2022 00:18:49,998 INFO  repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/MPP/mpp-proiect-repository-Hodosi/Java_ChildrenCompetition/database/competition.db
+26 Mar 2022 00:18:49,999 INFO  repository.JdbcUtils 31 getNewConnection - user: null
+26 Mar 2022 00:18:50,000 INFO  repository.JdbcUtils 32 getNewConnection - pass: null
+26 Mar 2022 00:18:50,683 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6a14dc87)
+26 Mar 2022 00:18:50,692 TRACE repository.ParticipantDbRepository 104 findByUsername - Exit with(Entity{id=1})
+26 Mar 2022 00:18:50,723 INFO  repository.TestDbRepository 24 <init> - initializing TestDbRepository with properties: {jdbc.url=jdbc:sqlite:C:/MPP/mpp-proiect-repository-Hodosi/Java_ChildrenCompetition/database/competition.db} 
+26 Mar 2022 00:18:50,725 INFO  repository.TestAgeCategoryDbRepository 18 <init> - initializing TestDbRepository with properties: {jdbc.url=jdbc:sqlite:C:/MPP/mpp-proiect-repository-Hodosi/Java_ChildrenCompetition/database/competition.db} 
+26 Mar 2022 00:18:50,728 INFO  repository.TestTypeDbRepository 18 <init> - initializing TestDbRepository with properties: {jdbc.url=jdbc:sqlite:C:/MPP/mpp-proiect-repository-Hodosi/Java_ChildrenCompetition/database/competition.db} 
+26 Mar 2022 00:18:50,729 TRACE repository.TestDbRepository 52 findOne - Enter finding task with id 1 
+26 Mar 2022 00:18:50,730 TRACE repository.JdbcUtils 48 getConnection - Enter
+26 Mar 2022 00:18:50,730 TRACE repository.JdbcUtils 25 getNewConnection - Enter
+26 Mar 2022 00:18:50,730 INFO  repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/MPP/mpp-proiect-repository-Hodosi/Java_ChildrenCompetition/database/competition.db
+26 Mar 2022 00:18:50,731 INFO  repository.JdbcUtils 31 getNewConnection - user: null
+26 Mar 2022 00:18:50,731 INFO  repository.JdbcUtils 32 getNewConnection - pass: null
+26 Mar 2022 00:18:50,733 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@18a5a695)
+26 Mar 2022 00:18:50,734 TRACE repository.TestTypeDbRepository 44 findOne - Enter finding task with id 1 
+26 Mar 2022 00:18:50,735 TRACE repository.JdbcUtils 48 getConnection - Enter
+26 Mar 2022 00:18:50,735 TRACE repository.JdbcUtils 25 getNewConnection - Enter
+26 Mar 2022 00:18:50,735 INFO  repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/MPP/mpp-proiect-repository-Hodosi/Java_ChildrenCompetition/database/competition.db
+26 Mar 2022 00:18:50,735 INFO  repository.JdbcUtils 31 getNewConnection - user: null
+26 Mar 2022 00:18:50,736 INFO  repository.JdbcUtils 32 getNewConnection - pass: null
+26 Mar 2022 00:18:50,738 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@66e9f434)
+26 Mar 2022 00:18:50,740 TRACE repository.TestTypeDbRepository 56 findOne - Exit with(Entity{id=1})
+26 Mar 2022 00:18:50,741 TRACE repository.TestAgeCategoryDbRepository 44 findOne - Enter finding task with id 1 
+26 Mar 2022 00:18:50,741 TRACE repository.JdbcUtils 48 getConnection - Enter
+26 Mar 2022 00:18:50,741 TRACE repository.JdbcUtils 25 getNewConnection - Enter
+26 Mar 2022 00:18:50,742 INFO  repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/MPP/mpp-proiect-repository-Hodosi/Java_ChildrenCompetition/database/competition.db
+26 Mar 2022 00:18:50,742 INFO  repository.JdbcUtils 31 getNewConnection - user: null
+26 Mar 2022 00:18:50,742 INFO  repository.JdbcUtils 32 getNewConnection - pass: null
+26 Mar 2022 00:18:50,744 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@55d2d56d)
+26 Mar 2022 00:18:50,746 TRACE repository.TestAgeCategoryDbRepository 57 findOne - Exit with(Entity{id=1})
+26 Mar 2022 00:18:50,747 TRACE repository.TestDbRepository 67 findOne - Exit with(Entity{id=1})
+26 Mar 2022 00:18:50,748 TRACE repository.TestDbRepository 52 findOne - Enter finding task with id 2 
+26 Mar 2022 00:18:50,748 TRACE repository.JdbcUtils 48 getConnection - Enter
+26 Mar 2022 00:18:50,748 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@18a5a695)
+26 Mar 2022 00:18:50,749 TRACE repository.TestTypeDbRepository 44 findOne - Enter finding task with id 1 
+26 Mar 2022 00:18:50,749 TRACE repository.JdbcUtils 48 getConnection - Enter
+26 Mar 2022 00:18:50,750 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@66e9f434)
+26 Mar 2022 00:18:50,750 TRACE repository.TestTypeDbRepository 56 findOne - Exit with(Entity{id=1})
+26 Mar 2022 00:18:50,751 TRACE repository.TestAgeCategoryDbRepository 44 findOne - Enter finding task with id 2 
+26 Mar 2022 00:18:50,751 TRACE repository.JdbcUtils 48 getConnection - Enter
+26 Mar 2022 00:18:50,751 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@55d2d56d)
+26 Mar 2022 00:18:50,752 TRACE repository.TestAgeCategoryDbRepository 57 findOne - Exit with(Entity{id=2})
+26 Mar 2022 00:18:50,752 TRACE repository.TestDbRepository 67 findOne - Exit with(Entity{id=2})
+26 Mar 2022 00:18:50,755 TRACE repository.TestDbRepository 52 findOne - Enter finding task with id 3 
+26 Mar 2022 00:18:50,755 TRACE repository.JdbcUtils 48 getConnection - Enter
+26 Mar 2022 00:18:50,757 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@18a5a695)
+26 Mar 2022 00:18:50,758 TRACE repository.TestTypeDbRepository 44 findOne - Enter finding task with id 1 
+26 Mar 2022 00:18:50,758 TRACE repository.JdbcUtils 48 getConnection - Enter
+26 Mar 2022 00:18:50,760 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@66e9f434)
+26 Mar 2022 00:18:50,761 TRACE repository.TestTypeDbRepository 56 findOne - Exit with(Entity{id=1})
+26 Mar 2022 00:18:50,762 TRACE repository.TestAgeCategoryDbRepository 44 findOne - Enter finding task with id 3 
+26 Mar 2022 00:18:50,762 TRACE repository.JdbcUtils 48 getConnection - Enter
+26 Mar 2022 00:18:50,762 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@55d2d56d)
+26 Mar 2022 00:18:50,763 TRACE repository.TestAgeCategoryDbRepository 57 findOne - Exit with(Entity{id=3})
+26 Mar 2022 00:18:50,764 TRACE repository.TestDbRepository 67 findOne - Exit with(Entity{id=3})
+26 Mar 2022 00:18:50,765 TRACE repository.TestDbRepository 52 findOne - Enter finding task with id 4 
+26 Mar 2022 00:18:50,767 TRACE repository.JdbcUtils 48 getConnection - Enter
+26 Mar 2022 00:18:50,768 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@18a5a695)
+26 Mar 2022 00:18:50,770 TRACE repository.TestTypeDbRepository 44 findOne - Enter finding task with id 2 
+26 Mar 2022 00:18:50,770 TRACE repository.JdbcUtils 48 getConnection - Enter
+26 Mar 2022 00:18:50,771 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@66e9f434)
+26 Mar 2022 00:18:50,772 TRACE repository.TestTypeDbRepository 56 findOne - Exit with(Entity{id=2})
+26 Mar 2022 00:18:50,772 TRACE repository.TestAgeCategoryDbRepository 44 findOne - Enter finding task with id 1 
+26 Mar 2022 00:18:50,773 TRACE repository.JdbcUtils 48 getConnection - Enter
+26 Mar 2022 00:18:50,773 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@55d2d56d)
+26 Mar 2022 00:18:50,774 TRACE repository.TestAgeCategoryDbRepository 57 findOne - Exit with(Entity{id=1})
+26 Mar 2022 00:18:50,774 TRACE repository.TestDbRepository 67 findOne - Exit with(Entity{id=4})
+26 Mar 2022 00:18:50,775 TRACE repository.TestDbRepository 52 findOne - Enter finding task with id 5 
+26 Mar 2022 00:18:50,776 TRACE repository.JdbcUtils 48 getConnection - Enter
+26 Mar 2022 00:18:50,776 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@18a5a695)
+26 Mar 2022 00:18:50,777 TRACE repository.TestTypeDbRepository 44 findOne - Enter finding task with id 2 
+26 Mar 2022 00:18:50,777 TRACE repository.JdbcUtils 48 getConnection - Enter
+26 Mar 2022 00:18:50,778 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@66e9f434)
+26 Mar 2022 00:18:50,779 TRACE repository.TestTypeDbRepository 56 findOne - Exit with(Entity{id=2})
+26 Mar 2022 00:18:50,780 TRACE repository.TestAgeCategoryDbRepository 44 findOne - Enter finding task with id 2 
+26 Mar 2022 00:18:50,780 TRACE repository.JdbcUtils 48 getConnection - Enter
+26 Mar 2022 00:18:50,781 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@55d2d56d)
+26 Mar 2022 00:18:50,782 TRACE repository.TestAgeCategoryDbRepository 57 findOne - Exit with(Entity{id=2})
+26 Mar 2022 00:18:50,783 TRACE repository.TestDbRepository 67 findOne - Exit with(Entity{id=5})
+26 Mar 2022 00:18:50,784 TRACE repository.TestDbRepository 52 findOne - Enter finding task with id 6 
+26 Mar 2022 00:18:50,784 TRACE repository.JdbcUtils 48 getConnection - Enter
+26 Mar 2022 00:18:50,784 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@18a5a695)
+26 Mar 2022 00:18:50,785 TRACE repository.TestTypeDbRepository 44 findOne - Enter finding task with id 2 
+26 Mar 2022 00:18:50,785 TRACE repository.JdbcUtils 48 getConnection - Enter
+26 Mar 2022 00:18:50,786 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@66e9f434)
+26 Mar 2022 00:18:50,787 TRACE repository.TestTypeDbRepository 56 findOne - Exit with(Entity{id=2})
+26 Mar 2022 00:18:50,787 TRACE repository.TestAgeCategoryDbRepository 44 findOne - Enter finding task with id 3 
+26 Mar 2022 00:18:50,787 TRACE repository.JdbcUtils 48 getConnection - Enter
+26 Mar 2022 00:18:50,787 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@55d2d56d)
+26 Mar 2022 00:18:50,788 TRACE repository.TestAgeCategoryDbRepository 57 findOne - Exit with(Entity{id=3})
+26 Mar 2022 00:18:50,789 TRACE repository.TestDbRepository 67 findOne - Exit with(Entity{id=6})
+26 Mar 2022 00:18:50,789 TRACE repository.TestDbRepository 52 findOne - Enter finding task with id 7 
+26 Mar 2022 00:18:50,790 TRACE repository.JdbcUtils 48 getConnection - Enter
+26 Mar 2022 00:18:50,790 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@18a5a695)
+26 Mar 2022 00:18:50,790 TRACE repository.TestTypeDbRepository 44 findOne - Enter finding task with id 3 
+26 Mar 2022 00:18:50,791 TRACE repository.JdbcUtils 48 getConnection - Enter
+26 Mar 2022 00:18:50,791 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@66e9f434)
+26 Mar 2022 00:18:50,792 TRACE repository.TestTypeDbRepository 56 findOne - Exit with(Entity{id=3})
+26 Mar 2022 00:18:50,793 TRACE repository.TestAgeCategoryDbRepository 44 findOne - Enter finding task with id 1 
+26 Mar 2022 00:18:50,793 TRACE repository.JdbcUtils 48 getConnection - Enter
+26 Mar 2022 00:18:50,794 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@55d2d56d)
+26 Mar 2022 00:18:50,795 TRACE repository.TestAgeCategoryDbRepository 57 findOne - Exit with(Entity{id=1})
+26 Mar 2022 00:18:50,796 TRACE repository.TestDbRepository 67 findOne - Exit with(Entity{id=7})
+26 Mar 2022 00:18:50,796 TRACE repository.TestDbRepository 52 findOne - Enter finding task with id 8 
+26 Mar 2022 00:18:50,800 TRACE repository.JdbcUtils 48 getConnection - Enter
+26 Mar 2022 00:18:50,801 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@18a5a695)
+26 Mar 2022 00:18:50,802 TRACE repository.TestTypeDbRepository 44 findOne - Enter finding task with id 3 
+26 Mar 2022 00:18:50,802 TRACE repository.JdbcUtils 48 getConnection - Enter
+26 Mar 2022 00:18:50,802 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@66e9f434)
+26 Mar 2022 00:18:50,816 TRACE repository.TestTypeDbRepository 56 findOne - Exit with(Entity{id=3})
+26 Mar 2022 00:18:50,817 TRACE repository.TestAgeCategoryDbRepository 44 findOne - Enter finding task with id 2 
+26 Mar 2022 00:18:50,818 TRACE repository.JdbcUtils 48 getConnection - Enter
+26 Mar 2022 00:18:50,820 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@55d2d56d)
+26 Mar 2022 00:18:50,821 TRACE repository.TestAgeCategoryDbRepository 57 findOne - Exit with(Entity{id=2})
+26 Mar 2022 00:18:50,821 TRACE repository.TestDbRepository 67 findOne - Exit with(Entity{id=8})
+26 Mar 2022 00:18:50,822 TRACE repository.TestDbRepository 52 findOne - Enter finding task with id 9 
+26 Mar 2022 00:18:50,824 TRACE repository.JdbcUtils 48 getConnection - Enter
+26 Mar 2022 00:18:50,826 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@18a5a695)
+26 Mar 2022 00:18:50,834 TRACE repository.TestTypeDbRepository 44 findOne - Enter finding task with id 3 
+26 Mar 2022 00:18:50,835 TRACE repository.JdbcUtils 48 getConnection - Enter
+26 Mar 2022 00:18:50,835 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@66e9f434)
+26 Mar 2022 00:18:50,839 TRACE repository.TestTypeDbRepository 56 findOne - Exit with(Entity{id=3})
+26 Mar 2022 00:18:50,841 TRACE repository.TestAgeCategoryDbRepository 44 findOne - Enter finding task with id 3 
+26 Mar 2022 00:18:50,841 TRACE repository.JdbcUtils 48 getConnection - Enter
+26 Mar 2022 00:18:50,842 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@55d2d56d)
+26 Mar 2022 00:18:50,842 TRACE repository.TestAgeCategoryDbRepository 57 findOne - Exit with(Entity{id=3})
+26 Mar 2022 00:18:50,842 TRACE repository.TestDbRepository 67 findOne - Exit with(Entity{id=9})
+26 Mar 2022 00:18:50,851 INFO  repository.UserDbRepository 19 <init> - initializing UserDbRepository with properties: {jdbc.url=jdbc:sqlite:C:/MPP/mpp-proiect-repository-Hodosi/Java_ChildrenCompetition/database/competition.db} 
+26 Mar 2022 00:18:50,851 TRACE repository.UserDbRepository 87 findOne - Enter finding task with id 1 
+26 Mar 2022 00:18:50,851 TRACE repository.JdbcUtils 48 getConnection - Enter
+26 Mar 2022 00:18:50,852 TRACE repository.JdbcUtils 25 getNewConnection - Enter
+26 Mar 2022 00:18:50,852 INFO  repository.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/MPP/mpp-proiect-repository-Hodosi/Java_ChildrenCompetition/database/competition.db
+26 Mar 2022 00:18:50,852 INFO  repository.JdbcUtils 31 getNewConnection - user: null
+26 Mar 2022 00:18:50,852 INFO  repository.JdbcUtils 32 getNewConnection - pass: null
+26 Mar 2022 00:18:50,854 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@59ba2ce8)
+26 Mar 2022 00:18:50,856 TRACE repository.UserDbRepository 102 findOne - Exit with(Entity{id=1})
+26 Mar 2022 00:18:50,857 TRACE repository.UserDbRepository 116 findByUsername - Enter finding task with username testUsername 
+26 Mar 2022 00:18:50,857 TRACE repository.JdbcUtils 48 getConnection - Enter
+26 Mar 2022 00:18:50,858 TRACE repository.JdbcUtils 57 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@59ba2ce8)
+26 Mar 2022 00:18:50,859 TRACE repository.UserDbRepository 131 findByUsername - Exit with(Entity{id=1})
+26 Mar 2022 00:19:09,681 INFO  repository.UserDbRepository 19 <init> - initializing UserDbRepository with properties: {jdbc.url=jdbc:sqlite:C:/MPP/mpp-proiect-repository-Hodosi/Java_ChildrenCompetition/database/competition.db} 
+26 Mar 2022 00:19:09,691 INFO  repository.TestDbRepository 24 <init> - initializing TestDbRepository with properties: {jdbc.url=jdbc:sqlite:C:/MPP/mpp-proiect-repository-Hodosi/Java_ChildrenCompetition/database/competition.db} 
+26 Mar 2022 00:19:09,692 INFO  repository.TestAgeCategoryDbRepository 18 <init> - initializing TestDbRepository with properties: {jdbc.url=jdbc:sqlite:C:/MPP/mpp-proiect-repository-Hodosi/Java_ChildrenCompetition/database/competition.db} 
+26 Mar 2022 00:19:09,694 INFO  repository.TestTypeDbRepository 18 <init> - initializing TestDbRepository with properties: {jdbc.url=jdbc:sqlite:C:/MPP/mpp-proiect-repository-Hodosi/Java_ChildrenCompetition/database/competition.db} 
+26 Mar 2022 00:19:09,695 INFO  repository.ParticipantDbRepository 20 <init> - initializing UserDbRepository with properties: {jdbc.url=jdbc:sqlite:C:/MPP/mpp-proiect-repository-Hodosi/Java_ChildrenCompetition/database/competition.db} 
+26 Mar 2022 00:19:09,699 INFO  repository.TestParticipantRelationDbRepository 17 <init> - initializing TestDbRepository with properties: {jdbc.url=jdbc:sqlite:C:/MPP/mpp-proiect-repository-Hodosi/Java_ChildrenCompetition/database/competition.db} 

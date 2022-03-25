@@ -8,3 +8,91 @@
 2022-03-14 10:26:23,609 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
 2022-03-14 10:26:23,610 [1] INFO  UserDbRepository [(null)] - Find one with value testName
 2022-03-14 10:26:23,611 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-25 21:40:55,004 [1] INFO  UserDbRepository [(null)] - Creating UserDbRepository
+2022-03-25 21:40:55,070 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-25 21:40:55,501 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-25 21:40:55,506 [1] INFO  UserDbRepository [(null)] - Find one with value testUsername
+2022-03-25 21:40:55,507 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-25 21:40:55,508 [1] INFO  UserDbRepository [(null)] - Creating ParticipantDbRepository
+2022-03-25 21:40:55,509 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-25 21:40:55,510 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-25 21:40:55,511 [1] INFO  UserDbRepository [(null)] - Find one with value testName
+2022-03-25 21:40:55,511 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-26 00:08:18,966 [1] INFO  UserDbRepository [(null)] - Creating UserDbRepository
+2022-03-26 00:08:19,002 [1] INFO  UserDbRepository [(null)] - Creating TestDbRepository
+2022-03-26 00:08:19,003 [1] INFO  UserDbRepository [(null)] - Creating TestAgeCategoryDbRepository
+2022-03-26 00:08:19,003 [1] INFO  UserDbRepository [(null)] - Creating TestTypeDbRepository
+2022-03-26 00:08:19,004 [1] INFO  UserDbRepository [(null)] - Creating ParticipantDbRepository
+2022-03-26 00:08:19,005 [1] INFO  UserDbRepository [(null)] - Creating TestParticipantRelationRepository
+2022-03-26 00:15:42,618 [1] INFO  UserDbRepository [(null)] - Creating UserDbRepository
+2022-03-26 00:15:42,675 [1] INFO  UserDbRepository [(null)] - Creating TestDbRepository
+2022-03-26 00:15:42,676 [1] INFO  UserDbRepository [(null)] - Creating TestAgeCategoryDbRepository
+2022-03-26 00:15:42,677 [1] INFO  UserDbRepository [(null)] - Creating TestTypeDbRepository
+2022-03-26 00:15:42,677 [1] INFO  UserDbRepository [(null)] - Creating ParticipantDbRepository
+2022-03-26 00:15:42,678 [1] INFO  UserDbRepository [(null)] - Creating TestParticipantRelationRepository
+2022-03-26 00:52:17,568 [1] INFO  UserDbRepository [(null)] - Creating UserDbRepository
+2022-03-26 00:52:17,605 [1] INFO  UserDbRepository [(null)] - Creating TestDbRepository
+2022-03-26 00:52:17,606 [1] INFO  UserDbRepository [(null)] - Creating TestAgeCategoryDbRepository
+2022-03-26 00:52:17,606 [1] INFO  UserDbRepository [(null)] - Creating TestTypeDbRepository
+2022-03-26 00:52:17,607 [1] INFO  UserDbRepository [(null)] - Creating ParticipantDbRepository
+2022-03-26 00:52:17,607 [1] INFO  UserDbRepository [(null)] - Creating TestParticipantRelationRepository
+2022-03-26 00:52:21,867 [1] INFO  UserDbRepository [(null)] - Find one with value asda
+2022-03-26 00:52:22,063 [1] INFO  UserDbRepository [(null)] - exiting findOne with value{0}
+2022-03-26 00:52:24,773 [1] INFO  UserDbRepository [(null)] - Find one with value asda
+2022-03-26 00:52:24,777 [1] INFO  UserDbRepository [(null)] - exiting findOne with value{0}
+2022-03-26 00:52:47,356 [1] INFO  UserDbRepository [(null)] - Find one with value testFirstname
+2022-03-26 00:52:47,357 [1] INFO  UserDbRepository [(null)] - exiting findOne with value{0}
+2022-03-26 00:52:48,768 [1] INFO  UserDbRepository [(null)] - Find one with value testFirstname
+2022-03-26 00:52:48,769 [1] INFO  UserDbRepository [(null)] - exiting findOne with value{0}
+2022-03-26 00:52:49,336 [1] INFO  UserDbRepository [(null)] - Find one with value testFirstname
+2022-03-26 00:52:49,336 [1] INFO  UserDbRepository [(null)] - exiting findOne with value{0}
+2022-03-26 00:52:49,528 [1] INFO  UserDbRepository [(null)] - Find one with value testFirstname
+2022-03-26 00:52:49,529 [1] INFO  UserDbRepository [(null)] - exiting findOne with value{0}
+2022-03-26 00:53:14,560 [1] INFO  UserDbRepository [(null)] - Find one with value testUsername
+2022-03-26 00:53:14,570 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-26 00:53:35,061 [1] INFO  UserDbRepository [(null)] - Find one with value testUsername
+2022-03-26 00:53:35,062 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-26 00:53:46,432 [1] INFO  UserDbRepository [(null)] - Find one with value testUsername
+2022-03-26 00:53:46,433 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-26 01:04:26,833 [1] INFO  UserDbRepository [(null)] - Creating UserDbRepository
+2022-03-26 01:04:26,871 [1] INFO  UserDbRepository [(null)] - Creating TestDbRepository
+2022-03-26 01:04:26,872 [1] INFO  UserDbRepository [(null)] - Creating TestAgeCategoryDbRepository
+2022-03-26 01:04:26,873 [1] INFO  UserDbRepository [(null)] - Creating TestTypeDbRepository
+2022-03-26 01:04:26,873 [1] INFO  UserDbRepository [(null)] - Creating ParticipantDbRepository
+2022-03-26 01:04:26,874 [1] INFO  UserDbRepository [(null)] - Creating TestParticipantRelationRepository
+2022-03-26 01:04:47,343 [1] INFO  UserDbRepository [(null)] - Find one with value testUsername
+2022-03-26 01:04:47,537 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-26 01:08:29,819 [1] INFO  UserDbRepository [(null)] - Creating UserDbRepository
+2022-03-26 01:08:29,859 [1] INFO  UserDbRepository [(null)] - Creating TestDbRepository
+2022-03-26 01:08:29,860 [1] INFO  UserDbRepository [(null)] - Creating TestAgeCategoryDbRepository
+2022-03-26 01:08:29,860 [1] INFO  UserDbRepository [(null)] - Creating TestTypeDbRepository
+2022-03-26 01:08:29,861 [1] INFO  UserDbRepository [(null)] - Creating ParticipantDbRepository
+2022-03-26 01:08:29,863 [1] INFO  UserDbRepository [(null)] - Creating TestParticipantRelationRepository
+2022-03-26 01:09:38,455 [1] INFO  UserDbRepository [(null)] - Creating UserDbRepository
+2022-03-26 01:09:38,480 [1] INFO  UserDbRepository [(null)] - Creating TestDbRepository
+2022-03-26 01:09:38,481 [1] INFO  UserDbRepository [(null)] - Creating TestAgeCategoryDbRepository
+2022-03-26 01:09:38,481 [1] INFO  UserDbRepository [(null)] - Creating TestTypeDbRepository
+2022-03-26 01:09:38,482 [1] INFO  UserDbRepository [(null)] - Creating ParticipantDbRepository
+2022-03-26 01:09:38,482 [1] INFO  UserDbRepository [(null)] - Creating TestParticipantRelationRepository
+2022-03-26 01:14:24,284 [1] INFO  UserDbRepository [(null)] - Creating UserDbRepository
+2022-03-26 01:14:24,321 [1] INFO  UserDbRepository [(null)] - Creating TestDbRepository
+2022-03-26 01:14:24,322 [1] INFO  UserDbRepository [(null)] - Creating TestAgeCategoryDbRepository
+2022-03-26 01:14:24,322 [1] INFO  UserDbRepository [(null)] - Creating TestTypeDbRepository
+2022-03-26 01:14:24,323 [1] INFO  UserDbRepository [(null)] - Creating ParticipantDbRepository
+2022-03-26 01:14:24,324 [1] INFO  UserDbRepository [(null)] - Creating TestParticipantRelationRepository
+2022-03-26 01:14:37,797 [1] INFO  UserDbRepository [(null)] - Creating UserDbRepository
+2022-03-26 01:14:37,823 [1] INFO  UserDbRepository [(null)] - Creating TestDbRepository
+2022-03-26 01:14:37,824 [1] INFO  UserDbRepository [(null)] - Creating TestAgeCategoryDbRepository
+2022-03-26 01:14:37,825 [1] INFO  UserDbRepository [(null)] - Creating TestTypeDbRepository
+2022-03-26 01:14:37,825 [1] INFO  UserDbRepository [(null)] - Creating ParticipantDbRepository
+2022-03-26 01:14:37,826 [1] INFO  UserDbRepository [(null)] - Creating TestParticipantRelationRepository
+2022-03-26 01:14:49,576 [1] INFO  UserDbRepository [(null)] - Find one with value testUsername
+2022-03-26 01:14:49,767 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-26 01:14:56,761 [1] INFO  UserDbRepository [(null)] - Find one with value testUsername
+2022-03-26 01:14:56,762 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-26 01:40:05,110 [1] INFO  UserDbRepository [(null)] - Creating UserDbRepository
+2022-03-26 01:40:05,136 [1] INFO  UserDbRepository [(null)] - Creating TestDbRepository
+2022-03-26 01:40:05,137 [1] INFO  UserDbRepository [(null)] - Creating TestAgeCategoryDbRepository
+2022-03-26 01:40:05,137 [1] INFO  UserDbRepository [(null)] - Creating TestTypeDbRepository
+2022-03-26 01:40:05,138 [1] INFO  UserDbRepository [(null)] - Creating ParticipantDbRepository
+2022-03-26 01:40:05,139 [1] INFO  UserDbRepository [(null)] - Creating TestParticipantRelationRepository
