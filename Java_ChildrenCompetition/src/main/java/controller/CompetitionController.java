@@ -19,25 +19,26 @@ import java.util.stream.IntStream;
 
 
 public class CompetitionController {
-    public static IUserService<Integer, User> userService;
-    public static ITestService<Integer, Test> testService;
-    public static IParticipantService<Integer, Participant> participantService;
-    public static ITestParticipantRelationService<Tuple<Integer, Integer>, TestParticipantRelation> testParticipantRelationService;
+    private IUserService<Integer, User> userService;
+    private ITestService<Integer, Test> testService;
+    private IParticipantService<Integer, Participant> participantService;
+    private ITestParticipantRelationService<Tuple<Integer, Integer>, TestParticipantRelation> testParticipantRelationService;
 
-    public static void setUserService(IUserService<Integer, User> userService){
-        CompetitionController.userService = userService;
+
+    public void setUserService(IUserService<Integer, User> userService){
+        this.userService = userService;
     }
 
-    public static void setTestService(ITestService<Integer, Test> testService){
-        CompetitionController.testService = testService;
+    public void setTestService(ITestService<Integer, Test> testService){
+        this.testService = testService;
     }
 
-    public static void setParticipantService(IParticipantService<Integer, Participant> participantService){
-        CompetitionController.participantService = participantService;
+    public void setParticipantService(IParticipantService<Integer, Participant> participantService){
+        this.participantService = participantService;
     }
 
-    public static void setTestParticipantRelationService(ITestParticipantRelationService<Tuple<Integer, Integer>, TestParticipantRelation> testParticipantRelationService){
-        CompetitionController.testParticipantRelationService = testParticipantRelationService;
+    public void setTestParticipantRelationService(ITestParticipantRelationService<Tuple<Integer, Integer>, TestParticipantRelation> testParticipantRelationService){
+        this.testParticipantRelationService = testParticipantRelationService;
     }
 
     ObservableList<TestDTO> testObservableList = FXCollections.observableArrayList();
@@ -74,6 +75,9 @@ public class CompetitionController {
     TableView<Participant> tableViewParticipant;
 
     @FXML
+    TableColumn<Participant, String> participantsTableColumnUsername;
+
+    @FXML
     TableColumn<Participant, String> participantsTableColumnName;
 
     @FXML
@@ -81,6 +85,9 @@ public class CompetitionController {
 
     @FXML
     TextField textFieldNameSignUp;
+
+    @FXML
+    TextField textFieldUsernameSignUp;
 
     @FXML
     ComboBox<Integer> comboBoxAgeSignUp;
@@ -137,6 +144,7 @@ public class CompetitionController {
     }
 
     private void initViewParticipants(){
+        participantsTableColumnUsername.setCellValueFactory(new PropertyValueFactory<>("username"));
         participantsTableColumnName.setCellValueFactory(new PropertyValueFactory<>("name"));
         participantsTableColumnAge.setCellValueFactory(new PropertyValueFactory<>("age"));
         tableViewParticipant.setItems(participantObservableList);
@@ -157,12 +165,18 @@ public class CompetitionController {
 
     @FXML
     void signUpForTest(){
+        String username = textFieldUsernameSignUp.getText().trim();
         String name = textFieldNameSignUp.getText().trim();
         int age = comboBoxAgeSignUp.getValue();
         TestDTO testDTO = tableViewTests.getSelectionModel().getSelectedItem();
 
+        if(username.equals("")){
+            labelProgramError.setText("Last error: Username can't be empty");
+            return;
+        }
+
         if(name.equals("")){
-            labelProgramError.setText("Last error: Invalid name");
+            labelProgramError.setText("Last error: Username can't be empty");
             return;
         }
 
@@ -172,14 +186,14 @@ public class CompetitionController {
         }
 
         try{
-            participantService.save(name, age, testDTO.getId());
+            participantService.save(username, name, age, testDTO.getId());
         }
-        catch (TestJoinedException | TestLimitException | InvalidParticipantAgeException exception){
+        catch (TestJoinedException | TestLimitException | InvalidUsernameException exception){
             labelProgramError.setText("Last error: " + exception.getMessage());
             return;
         }
 
-        Participant participant = participantService.findByName(name);
+        Participant participant = participantService.findByUsername(username);
 
         testParticipantRelationService.save(testDTO.getId(), participant.getId());
 

@@ -25,7 +25,7 @@ public class ParticipantDbTest {
         }
 
         IParticipantRepository<Integer, Participant> participantRepository = new ParticipantDbRepository(properties);
-        Participant participant = participantRepository.findByName("test1");
+        Participant participant = participantRepository.findByUsername("t1");
         assertEquals(1, participant.getId());
         assertEquals("test1", participant.getName());
         assertEquals(6, participant.getAge());

@@ -12,7 +12,7 @@
 
 <AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CompetitionController">
    <children>
-      <AnchorPane fx:id="loginAnchorPane" layoutX="12.0" layoutY="12.0" prefHeight="575.0" prefWidth="776.0">
+      <AnchorPane fx:id="loginAnchorPane" layoutX="12.0" layoutY="12.0" prefHeight="575.0" prefWidth="776.0" visible="false">
          <children>
             <Button layoutX="327.0" layoutY="326.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="26.0" prefWidth="158.0" text="Login" />
             <TextField fx:id="textFieldUsernameLogin" layoutX="388.0" layoutY="218.0" text="testUsername" />
@@ -22,7 +22,7 @@
             <PasswordField fx:id="passwordFieldLogin" layoutX="388.0" layoutY="261.0" />
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="mainAnchorPane" layoutX="12.0" layoutY="12.0" prefHeight="575.0" prefWidth="776.0" visible="false">
+      <AnchorPane fx:id="mainAnchorPane" layoutX="12.0" layoutY="12.0" prefHeight="575.0" prefWidth="776.0">
          <children>
             <Button layoutX="557.0" layoutY="534.0" mnemonicParsing="false" onAction="#logoutAction" prefHeight="26.0" prefWidth="87.0" text="Logout" />
             <TableView fx:id="tableViewTests" layoutX="13.0" layoutY="50.0" prefHeight="245.0" prefWidth="394.0">
@@ -39,8 +39,9 @@
             </Label>
             <TableView fx:id="tableViewParticipant" layoutX="440.0" layoutY="50.0" prefHeight="470.0" prefWidth="322.0">
               <columns>
-                <TableColumn fx:id="participantsTableColumnName" prefWidth="179.99996948242188" text="Name" />
-                <TableColumn fx:id="participantsTableColumnAge" prefWidth="137.59991455078125" text="Age" />
+                <TableColumn fx:id="participantsTableColumnUsername" prefWidth="120.0" text="Username" />
+                <TableColumn fx:id="participantsTableColumnName" minWidth="9.60009765625" prefWidth="116.79998779296875" text="Name" />
+                  <TableColumn fx:id="participantsTableColumnAge" prefWidth="84.0" text="Age" />
               </columns>
             </TableView>
             <Label alignment="CENTER" layoutX="440.0" layoutY="14.0" prefHeight="26.0" prefWidth="322.0" text="Participants">
@@ -54,20 +55,26 @@
                </font>
             </Label>
             <Label layoutX="17.0" layoutY="373.0" prefHeight="18.0" prefWidth="385.0" text=" * Please select a test before sign up" />
-            <TextField fx:id="textFieldNameSignUp" layoutX="180.0" layoutY="418.0" prefHeight="26.0" prefWidth="226.0" />
-            <ComboBox fx:id="comboBoxAgeSignUp" layoutX="178.0" layoutY="452.0" prefHeight="26.0" prefWidth="226.0" />
+            <TextField fx:id="textFieldNameSignUp" layoutX="183.0" layoutY="440.0" prefHeight="26.0" prefWidth="226.0" />
+            <ComboBox fx:id="comboBoxAgeSignUp" layoutX="183.0" layoutY="474.0" prefHeight="26.0" prefWidth="226.0" />
             <Button fx:id="buttonTestSignUp" layoutX="166.0" layoutY="534.0" mnemonicParsing="false" onAction="#signUpForTest" prefHeight="26.0" prefWidth="87.0" text="Sign up" />
-            <Label alignment="CENTER" layoutX="17.0" layoutY="418.0" prefHeight="26.0" prefWidth="150.0" text="Name:">
+            <Label alignment="CENTER" layoutX="20.0" layoutY="440.0" prefHeight="26.0" prefWidth="150.0" text="Name:">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="15.0" layoutY="452.0" prefHeight="26.0" prefWidth="150.0" text="Age:">
+            <Label alignment="CENTER" layoutX="18.0" layoutY="474.0" prefHeight="26.0" prefWidth="150.0" text="Age:">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
             <Label fx:id="labelProgramError" alignment="CENTER" layoutX="21.0" layoutY="501.0" prefHeight="18.0" prefWidth="385.0" text="Last error: null" textFill="RED" />
+            <TextField fx:id="textFieldUsernameSignUp" layoutX="183.0" layoutY="405.0" prefHeight="26.0" prefWidth="226.0" />
+            <Label alignment="CENTER" layoutX="19.0" layoutY="405.0" prefHeight="26.0" prefWidth="150.0" text="Username:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </children>

@@ -35,16 +35,20 @@ public class Main extends Application {
         ITestParticipantRelationRepository<Tuple<Integer, Integer>, TestParticipantRelation> testParticipantRelationRepository = new TestParticipantRelationDbRepository(properties);
         ITestParticipantRelationService<Tuple<Integer, Integer>, TestParticipantRelation> testParticipantRelationService = new TestParticipantRelationService(testParticipantRelationRepository);
 
-        CompetitionController.setUserService(userService);
-        CompetitionController.setTestService(testService);
-        CompetitionController.setParticipantService(participantService);
-        CompetitionController.setTestParticipantRelationService(testParticipantRelationService);
-
         primaryStage.setTitle("Competition");
         FXMLLoader loader = new FXMLLoader();
         Pane pane = loader.load(
                 getClass().getResourceAsStream("views/competitionPage.fxml")
         );
+
+        CompetitionController competitionController = loader.getController();
+
+        competitionController.setUserService(userService);
+        competitionController.setTestService(testService);
+        competitionController.setParticipantService(participantService);
+        competitionController.setTestParticipantRelationService(testParticipantRelationService);
+
+        loader.setController(competitionController);
 
         Scene scene = new Scene(pane, 800, 600);
         primaryStage.setScene(scene);

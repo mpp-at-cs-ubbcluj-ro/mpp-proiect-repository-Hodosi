@@ -1,6 +1,6 @@
 package service;
 
-import exception.InvalidParticipantAgeException;
+import exception.InvalidUsernameException;
 import exception.TestJoinedException;
 import exception.TestLimitException;
 import model.Participant;
@@ -20,15 +20,15 @@ public class ParticipantService implements IParticipantService<Integer, Particip
     }
 
     @Override
-    public void save(String name, int age, int testId) {
-        Participant participant = participantRepository.findByName(name);
+    public void save(String username, String name, int age, int testId) {
+        Participant participant = participantRepository.findByUsername(username);
         if(participant == null){
-            Participant newParticipant = new Participant(name, age);
+            Participant newParticipant = new Participant(username, name, age);
             participantRepository.save(newParticipant);
             return;
         }
-        if(participant.getAge() != age){
-            throw new InvalidParticipantAgeException();
+        if(participant.getAge() != age || !participant.getName().equals(name)){
+            throw new InvalidUsernameException();
         }
 
         List<Test> testList = (List<Test>) testRepository.findAllTestsForParticipant(participant.getId());
@@ -42,9 +42,10 @@ public class ParticipantService implements IParticipantService<Integer, Particip
     }
 
     @Override
-    public Participant findByName(String name) {
-        return participantRepository.findByName(name);
+    public Participant findByUsername(String username) {
+        return participantRepository.findByUsername(username);
     }
+
 
     @Override
     public List<Participant> findAllParticipantsForTest(Integer id) {

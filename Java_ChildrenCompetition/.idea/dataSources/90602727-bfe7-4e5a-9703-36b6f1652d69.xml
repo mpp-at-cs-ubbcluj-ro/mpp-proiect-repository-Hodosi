@@ -1352,146 +1352,150 @@
       <Position>3</Position>
       <DataType>integer|0s</DataType>
     </column>
-    <index id="500" parent="170" name="participants_id_participant_uindex">
+    <column id="500" parent="170" name="username">
+      <Position>4</Position>
+      <DataType>varchar(60)|0s</DataType>
+    </column>
+    <index id="501" parent="170" name="participants_id_participant_uindex">
       <ColNames>id_participant</ColNames>
       <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
-    <key id="501" parent="170" name="participants_pk">
+    <key id="502" parent="170" name="participants_pk">
       <ColNames>id_participant</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>participants_id_participant_uindex</UnderlyingIndexName>
     </key>
-    <column id="502" parent="171" name="type">
+    <column id="503" parent="171" name="type">
       <Position>1</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="503" parent="171" name="name">
+    <column id="504" parent="171" name="name">
       <Position>2</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="504" parent="171" name="tbl_name">
+    <column id="505" parent="171" name="tbl_name">
       <Position>3</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="505" parent="171" name="rootpage">
+    <column id="506" parent="171" name="rootpage">
       <Position>4</Position>
       <DataType>int|0s</DataType>
     </column>
-    <column id="506" parent="171" name="sql">
+    <column id="507" parent="171" name="sql">
       <Position>5</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="507" parent="172" name="name">
+    <column id="508" parent="172" name="name">
       <Position>1</Position>
     </column>
-    <column id="508" parent="172" name="seq">
+    <column id="509" parent="172" name="seq">
       <Position>2</Position>
     </column>
-    <column id="509" parent="173" name="id_test_age_category">
+    <column id="510" parent="173" name="id_test_age_category">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="510" parent="173" name="min_age">
+    <column id="511" parent="173" name="min_age">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
     </column>
-    <column id="511" parent="173" name="max_age">
+    <column id="512" parent="173" name="max_age">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
     </column>
-    <index id="512" parent="173" name="test_age_category_id_test_age_category_uindex">
+    <index id="513" parent="173" name="test_age_category_id_test_age_category_uindex">
       <ColNames>id_test_age_category</ColNames>
       <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
-    <key id="513" parent="173" name="test_age_category_pk">
+    <key id="514" parent="173" name="test_age_category_pk">
       <ColNames>id_test_age_category</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>test_age_category_id_test_age_category_uindex</UnderlyingIndexName>
     </key>
-    <column id="514" parent="174" name="id_test">
+    <column id="515" parent="174" name="id_test">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
     </column>
-    <column id="515" parent="174" name="id_participant">
+    <column id="516" parent="174" name="id_participant">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
     </column>
-    <column id="516" parent="175" name="id_test_type">
+    <column id="517" parent="175" name="id_test_type">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="517" parent="175" name="type">
+    <column id="518" parent="175" name="type">
       <Position>2</Position>
       <DataType>varchar(30)|0s</DataType>
     </column>
-    <index id="518" parent="175" name="test_type_id_test_type_uindex">
+    <index id="519" parent="175" name="test_type_id_test_type_uindex">
       <ColNames>id_test_type</ColNames>
       <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
-    <key id="519" parent="175" name="test_type_pk">
+    <key id="520" parent="175" name="test_type_pk">
       <ColNames>id_test_type</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>test_type_id_test_type_uindex</UnderlyingIndexName>
     </key>
-    <column id="520" parent="176" name="id_test">
+    <column id="521" parent="176" name="id_test">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="521" parent="176" name="id_test_type">
+    <column id="522" parent="176" name="id_test_type">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
     </column>
-    <column id="522" parent="176" name="id_test_age_category">
+    <column id="523" parent="176" name="id_test_age_category">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
     </column>
-    <index id="523" parent="176" name="test_id_test_uindex">
+    <index id="524" parent="176" name="test_id_test_uindex">
       <ColNames>id_test</ColNames>
       <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
-    <key id="524" parent="176" name="test_pk">
+    <key id="525" parent="176" name="test_pk">
       <ColNames>id_test</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>test_id_test_uindex</UnderlyingIndexName>
     </key>
-    <column id="525" parent="177" name="id_user">
+    <column id="526" parent="177" name="id_user">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="526" parent="177" name="firstname">
+    <column id="527" parent="177" name="firstname">
       <Position>2</Position>
       <DataType>varchar(30)|0s</DataType>
     </column>
-    <column id="527" parent="177" name="lastname">
+    <column id="528" parent="177" name="lastname">
       <Position>3</Position>
       <DataType>varchar(30)|0s</DataType>
     </column>
-    <column id="528" parent="177" name="username">
+    <column id="529" parent="177" name="username">
       <Position>4</Position>
       <DataType>varchar(30)|0s</DataType>
     </column>
-    <column id="529" parent="177" name="password">
+    <column id="530" parent="177" name="password">
       <Position>5</Position>
       <DataType>varchar(100)|0s</DataType>
     </column>
-    <index id="530" parent="177" name="users_id_user_uindex">
+    <index id="531" parent="177" name="users_id_user_uindex">
       <ColNames>id_user</ColNames>
       <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
-    <key id="531" parent="177" name="users_pk">
+    <key id="532" parent="177" name="users_pk">
       <ColNames>id_user</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>users_id_user_uindex</UnderlyingIndexName>

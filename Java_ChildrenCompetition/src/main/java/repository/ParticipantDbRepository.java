@@ -30,11 +30,12 @@ public class ParticipantDbRepository implements IParticipantRepository<Integer, 
     public void save(Participant participant) {
         logger.traceEntry("saving task {} ", participant);
         Connection connection = dbUtils.getConnection();
-        String query = "INSERT into participants(name, age) values (?,?)";
+        String query = "INSERT into participants(name, age, username) values (?,?,?)";
 
         try(PreparedStatement preparedStatement = connection.prepareStatement(query)){
             preparedStatement.setString(1, participant.getName());
             preparedStatement.setInt(2, participant.getAge());
+            preparedStatement.setString(3, participant.getUsername());
 
             int result = preparedStatement.executeUpdate();
             logger.trace("saved {} instances", result);
@@ -67,9 +68,10 @@ public class ParticipantDbRepository implements IParticipantRepository<Integer, 
             try(ResultSet resultSet = preparedStatement.executeQuery()){
                 if(resultSet.next()) {
                     int idParticipant = resultSet.getInt("id_participant");
+                    String username = resultSet.getString("username");
                     String nameParticipant = resultSet.getString("name");
                     int age = resultSet.getInt("age");
-                    Participant participant = new Participant(nameParticipant, age);
+                    Participant participant = new Participant(username, nameParticipant, age);
                     participant.setId(idParticipant);
                     logger.traceExit(participant);
                     return participant;
@@ -84,19 +86,20 @@ public class ParticipantDbRepository implements IParticipantRepository<Integer, 
     }
 
     @Override
-    public Participant findByName(String name) {
-        logger.traceEntry("finding task with name {} ", name);
+    public Participant findByUsername(String username) {
+        logger.traceEntry("finding task with username {} ", username);
         Connection connection = dbUtils.getConnection();
-        String query = "SELECT * from participants where name = ?";
+        String query = "SELECT * from participants where username = ?";
 
         try(PreparedStatement preparedStatement = connection.prepareStatement(query)){
-            preparedStatement.setString(1, name);
+            preparedStatement.setString(1, username);
             try(ResultSet resultSet = preparedStatement.executeQuery()){
                 if(resultSet.next()) {
                     int idParticipant = resultSet.getInt("id_participant");
+                    String usernameParticipant = resultSet.getString("username");
                     String nameParticipant = resultSet.getString("name");
                     int age = resultSet.getInt("age");
-                    Participant participant = new Participant(nameParticipant, age);
+                    Participant participant = new Participant(usernameParticipant, nameParticipant, age);
                     participant.setId(idParticipant);
                     logger.traceExit(participant);
                     return participant;
@@ -126,9 +129,10 @@ public class ParticipantDbRepository implements IParticipantRepository<Integer, 
             try (ResultSet resultSet = preparedStatement.executeQuery()){
                 while (resultSet.next()){
                     int idParticipant = resultSet.getInt("id_participant");
+                    String username = resultSet.getString("username");
                     String name = resultSet.getString("name");
                     int age = resultSet.getInt("age");
-                    Participant participant = new Participant(name, age);
+                    Participant participant = new Participant(username, name, age);
                     participant.setId(idParticipant);
                     partcipantList.add(participant);
                 }
