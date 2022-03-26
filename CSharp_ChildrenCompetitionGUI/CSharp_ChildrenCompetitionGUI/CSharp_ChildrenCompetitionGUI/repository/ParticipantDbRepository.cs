@@ -31,6 +31,7 @@ namespace CSharp_ChildrenCompetitionGUI.repository
             using (var command = conn.CreateCommand())
             {
                 command.CommandText = "INSERT into participants(name, age, username) values (@nm,@ag,@usnm)";
+                
                 var paramNM = command.CreateParameter();
                 paramNM.ParameterName = "@nm";
                 paramNM.Value = entity.name;
@@ -42,9 +43,9 @@ namespace CSharp_ChildrenCompetitionGUI.repository
                 command.Parameters.Add(paramAG);
                 
                 var paramUSNM = command.CreateParameter();
-                paramAG.ParameterName = "@usnm";
-                paramAG.Value = entity.username;
-                command.Parameters.Add(paramAG);
+                paramUSNM.ParameterName = "@usnm";
+                paramUSNM.Value = entity.username;
+                command.Parameters.Add(paramUSNM);
                 
                 var result = command.ExecuteNonQuery();
             }
@@ -140,7 +141,8 @@ namespace CSharp_ChildrenCompetitionGUI.repository
             using (var comm = con.CreateCommand())
             {
                 comm.CommandText = "SELECT * FROM test_participant_relation TPR INNER JOIN participants P ON TPR.id_participant = P.id_participant WHERE id_test = @idt";
-
+                // comm.CommandText = "SELECT P.id_participant, P.name, P.age, P.username  FROM test_participant_relation TPR INNER JOIN participants P ON TPR.id_participant = P.id_participant WHERE id_test = @idt";
+                
                 IDbDataParameter paramIDT = comm.CreateParameter();
                 paramIDT.ParameterName = "@idt";
                 paramIDT.Value = id;
@@ -150,10 +152,14 @@ namespace CSharp_ChildrenCompetitionGUI.repository
                 {
                     while (dataR.Read())
                     {
-                        int idP = dataR.GetInt32(0);
-                        String nameP = dataR.GetString(1);
-                        int age = dataR.GetInt32(2);
-                        string usernameP = dataR.GetString(3);
+                        // int idP = dataR.GetInt32(0);
+                        int idP = int.Parse(dataR["id_participant"].ToString());
+                        // String nameP = dataR.GetString(1);
+                        String nameP = dataR["name"].ToString();
+                        // int age = dataR.GetInt32(2);
+                        int age = int.Parse(dataR["age"].ToString());
+                        // string usernameP = dataR.GetString(3);
+                        string usernameP = dataR["username"].ToString();
                         Participant participant = new Participant(usernameP, nameP, age);
                         participant.id = idP;
                         participantList.Add(participant);

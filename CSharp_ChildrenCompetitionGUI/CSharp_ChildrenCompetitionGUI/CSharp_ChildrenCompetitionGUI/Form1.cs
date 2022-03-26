@@ -49,73 +49,6 @@ namespace CSharp_ChildrenCompetitionGUI
         {
             this.testParticipantRelationService = testParticipantRelationService;
         }
-        
-        // static string GetConnectionStringByName(string name)
-        // {
-        //     // Assume failure.
-        //     string returnValue = null;
-        //
-        //     // Look for the name in the connectionStrings section.
-        //     ConnectionStringSettings settings =ConfigurationManager.ConnectionStrings[name];
-        //
-        //     // If found, return the connection string.
-        //     if (settings != null)
-        //         returnValue = settings.ConnectionString;
-        //
-        //     return returnValue;
-        // }
-        //
-        // private void initStructure()
-        // {
-        //     IDictionary<String, string> props = new SortedList<String, String>();
-        //     props.Add("ConnectionString", GetConnectionStringByName("competitionDB"));
-        //     
-        //     
-        // }
-
-        // private void button1_Click(object sender, EventArgs e)
-        // {
-        //     // throw new System.NotImplementedException();
-        //     string resultText = "Start";
-        //     string appendResultText ="Configuration settings for competionDB: " + GetConnectionStringByName("competitionDB") + "\n";
-        //     resultText += appendResultText;
-        //     
-        //     IDictionary<String, string> props = new SortedList<String, String>();
-        //     props.Add("ConnectionString", GetConnectionStringByName("competitionDB"));
-        //
-        //     appendResultText = "UserDB ...\n";
-        //     resultText += appendResultText;
-        //
-        //     IUserRepository<int, User> userRepository = new UserDbRepository(props);
-        //     User user = new User("testFirstname", "testLastname", "testUsername", "testPassword");
-        //     // userRepository.save(user);
-        //
-        //     User userById = userRepository.findOne(1);
-        //     appendResultText = userById.username + "\n";
-        //     resultText += appendResultText;
-        //     
-        //     User userByUsername = userRepository.findByUsername("testUsername");
-        //     appendResultText = userByUsername.username + "\n";
-        //     resultText += appendResultText;
-        //
-        //     IParticipantRepository<int, Participant> participantRepository = new ParticipantDbRepository(props);
-        //     Participant participant = new Participant("testName", 6);
-        //     // participantRepository.save(participant);
-        //
-        //     Participant participantById = participantRepository.findOne(1);
-        //     appendResultText = participantById.name + "\n";
-        //     resultText += appendResultText;
-        //
-        //     Participant participantByName = participantRepository.findByName("testName");
-        //     appendResultText = participantByName.name + "\n";
-        //     resultText += appendResultText;
-        //     
-        //     
-        //         
-        //     label1.Text = resultText;
-        //     button1.Enabled = false;
-        // }
-
 
         private void loginButton_Click(object sender, EventArgs e)
         {
@@ -140,13 +73,16 @@ namespace CSharp_ChildrenCompetitionGUI
 
         private void initLoginPage()
         {
-            // panelMain.Visible = false;
+            //panelMain.Visible = false;
             panelLogin.Visible = true;
         }
         private void initMainPage()
         {
             panelLogin.Visible = false;
             panelMain.Visible = true;
+            updateViewTest();
+            updateViewParticpants();
+            updateComboBoxAge();
         }
 
         private void buttonLogout_Click(object sender, EventArgs e)
@@ -155,6 +91,121 @@ namespace CSharp_ChildrenCompetitionGUI
             userService.logout();
             panelLogin.Visible = true;
             panelMain.Visible = false;
+        }
+
+        private void updateViewTest()
+        {
+            List<TestDTO> testDtos = testService.findAllTestDTOs();
+            dataGridViewTests.Rows.Clear();
+            foreach (TestDTO testDto in testDtos)
+            {
+                dataGridViewTests.Rows.Add(testDto.testType, testDto.testAgeCategory, testDto.noCompetitors);
+            }
+
+            dataGridViewTests.Rows[0].Selected = true;
+        }
+
+        private void updateViewParticpants()
+        {
+            // int testId = dataGridViewTests.SelectedRows[0].Index + 1;
+            if (dataGridViewTests.CurrentCell == null)
+            {
+                return;
+            }
+            int testId = dataGridViewTests.CurrentCell.RowIndex + 1;
+            List<Participant> participantList = participantService.findAllParticipantsForTest(testId);
+            dataGridViewParticipants.Rows.Clear();
+            foreach (Participant participant in participantList)
+            {
+                dataGridViewParticipants.Rows.Add(participant.username, participant.name, participant.age);
+            }
+            dataGridViewTests.Rows[testId - 1].Selected = true;
+        }
+
+        private void updateComboBoxAge()
+        {
+            var datasource = new List<int>();
+            if (dataGridViewTests.SelectedRows.Count == 0)
+            {
+                return;
+            }
+            string ageCategory = dataGridViewTests.SelectedRows[0].Cells[1].Value.ToString();
+            if(ageCategory.Contains("6"))
+            {
+                datasource.AddRange(Enumerable.Range(6, 3));
+            }
+            else if(ageCategory.Contains("9"))
+            {
+                datasource.AddRange(Enumerable.Range(9, 3));
+            }
+            else
+            {
+                datasource.AddRange(Enumerable.Range(12, 4));
+            }
+
+            comboBoxAgeSignUp.DataSource = datasource;
+        }
+
+        private void dataGridViewTests_SelectionChanged(object sender, EventArgs e)
+        {
+            // throw new System.NotImplementedException();
+            updateViewParticpants();
+            updateComboBoxAge();
+        }
+
+        private void buttonSignUpFoTest_Click(object sender, EventArgs e)
+        {
+            // throw new System.NotImplementedException();
+            string username = textBoxUsernameSignUp.Text.Trim();
+            string name = textBoxNameSignUp.Text.Trim();
+            int age = int.Parse(comboBoxAgeSignUp.Text);
+
+            if (username.Equals(""))
+            {
+                labelProgramError.Text = "Last error: Username can't be empty";
+                return;
+            }
+
+            if (name.Equals(""))
+            {
+                labelProgramError.Text = "Last error: Name can't be empty";
+                return;
+            }
+            int testId = dataGridViewTests.CurrentCell.RowIndex + 1;
+            if (testId < 1 || testId > 9)
+            {
+                labelProgramError.Text = "Last error: No test selected";
+                return;
+            }
+
+            try
+            {
+                participantService.save(username, name, age, testId);
+            }
+            catch (TestJoinedException exception)
+            {
+                labelProgramError.Text = "Last error: " + exception.Message;
+                return;
+            }
+            catch (TestLimitException exception)
+            {
+                labelProgramError.Text = "Last error: " + exception.Message;
+                return;
+            }
+            catch (InvalidUsernameException exception)
+            {
+                labelProgramError.Text = "Last error: " + exception.Message;
+                return;
+            }
+
+            Participant participant = participantService.findByUsername(username);
+            
+            testParticipantRelationService.save(testId, participant.id);
+            
+            updateViewTest();
+            updateViewParticpants();
+            updateComboBoxAge();
+
         }
     }
 }
