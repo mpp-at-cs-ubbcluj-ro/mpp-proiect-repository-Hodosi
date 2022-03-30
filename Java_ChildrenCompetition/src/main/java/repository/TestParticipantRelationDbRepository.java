@@ -9,7 +9,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Properties;
 
-public class TestParticipantRelationDbRepository implements ITestParticipantRelationRepository<Tuple<Integer, Integer>, TestParticipantRelation> {
+public class TestParticipantRelationDbRepository implements ITestParticipantRelationRepository {
     private final JdbcUtils dbUtils;
     private static final Logger logger = LogManager.getLogger();
 

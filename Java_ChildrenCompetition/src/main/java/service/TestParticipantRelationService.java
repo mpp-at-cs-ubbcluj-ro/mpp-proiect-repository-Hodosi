@@ -4,10 +4,10 @@ import model.TestParticipantRelation;
 import model.Tuple;
 import repository.ITestParticipantRelationRepository;
 
-public class TestParticipantRelationService implements ITestParticipantRelationService<Tuple<Integer, Integer>, TestParticipantRelation>{
-    public final ITestParticipantRelationRepository<Tuple<Integer, Integer>, TestParticipantRelation> testParticipantRelationRepository;
+public class TestParticipantRelationService implements ITestParticipantRelationService {
+    public final ITestParticipantRelationRepository testParticipantRelationRepository;
 
-    public TestParticipantRelationService(ITestParticipantRelationRepository<Tuple<Integer, Integer>, TestParticipantRelation> testParticipantRelationRepository) {
+    public TestParticipantRelationService(ITestParticipantRelationRepository testParticipantRelationRepository) {
         this.testParticipantRelationRepository = testParticipantRelationRepository;
     }
 

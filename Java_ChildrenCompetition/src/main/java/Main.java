@@ -4,7 +4,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-import model.*;
 import repository.*;
 import service.*;
 
@@ -23,17 +22,17 @@ public class Main extends Application {
             System.out.println("Cannot find bd.config " + e);
         }
 
-        IUserRepository<Integer, User> userRepository = new UserDbRepository(properties);
-        IUserService<Integer, User> userService = new UserService(userRepository);
+        IUserRepository userRepository = new UserDbRepository(properties);
+        IUserService userService = new UserService(userRepository);
 
-        ITestRepository<Integer, Test> testRepository = new TestDbRepository(properties);
-        IParticipantRepository<Integer, Participant> participantRepository = new ParticipantDbRepository(properties);
+        ITestRepository testRepository = new TestDbRepository(properties);
+        IParticipantRepository participantRepository = new ParticipantDbRepository(properties);
 
-        IParticipantService<Integer, Participant> participantService = new ParticipantService(participantRepository, testRepository);
-        ITestService<Integer, Test> testService = new TestService(testRepository, participantRepository);
+        IParticipantService participantService = new ParticipantService(participantRepository, testRepository);
+        ITestService testService = new TestService(testRepository, participantRepository);
 
-        ITestParticipantRelationRepository<Tuple<Integer, Integer>, TestParticipantRelation> testParticipantRelationRepository = new TestParticipantRelationDbRepository(properties);
-        ITestParticipantRelationService<Tuple<Integer, Integer>, TestParticipantRelation> testParticipantRelationService = new TestParticipantRelationService(testParticipantRelationRepository);
+        ITestParticipantRelationRepository testParticipantRelationRepository = new TestParticipantRelationDbRepository(properties);
+        ITestParticipantRelationService testParticipantRelationService = new TestParticipantRelationService(testParticipantRelationRepository);
 
         primaryStage.setTitle("Competition");
         FXMLLoader loader = new FXMLLoader();

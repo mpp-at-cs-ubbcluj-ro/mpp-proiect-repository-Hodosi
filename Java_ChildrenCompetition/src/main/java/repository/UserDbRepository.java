@@ -10,7 +10,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Properties;
 
-public class UserDbRepository implements IUserRepository<Integer, User>{
+public class UserDbRepository implements IUserRepository {
     private User currentUser;
     private final JdbcUtils dbUtils;
     private static final Logger logger = LogManager.getLogger();

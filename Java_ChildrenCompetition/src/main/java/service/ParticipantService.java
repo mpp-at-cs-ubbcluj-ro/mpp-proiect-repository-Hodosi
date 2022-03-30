@@ -10,11 +10,11 @@ import repository.ITestRepository;
 
 import java.util.List;
 
-public class ParticipantService implements IParticipantService<Integer, Participant> {
-    public final IParticipantRepository<Integer, Participant> participantRepository;
-    public final ITestRepository<Integer, Test> testRepository;
+public class ParticipantService implements IParticipantService {
+    public final IParticipantRepository participantRepository;
+    public final ITestRepository testRepository;
 
-    public ParticipantService(IParticipantRepository<Integer, Participant> participantRepository, ITestRepository<Integer, Test> testRepository) {
+    public ParticipantService(IParticipantRepository participantRepository, ITestRepository testRepository) {
         this.participantRepository = participantRepository;
         this.testRepository = testRepository;
     }

@@ -73,7 +73,7 @@ namespace CSharp_ChildrenCompetitionGUI
 
         private void initLoginPage()
         {
-            //panelMain.Visible = false;
+            panelMain.Visible = false;
             panelLogin.Visible = true;
         }
         private void initMainPage()
@@ -89,8 +89,8 @@ namespace CSharp_ChildrenCompetitionGUI
         {
             // throw new System.NotImplementedException();
             userService.logout();
-            panelLogin.Visible = true;
             panelMain.Visible = false;
+            panelLogin.Visible = true;
         }
 
         private void updateViewTest()

@@ -5,15 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbe51b6f-7032-4a40-926b-adfa049f8c13" name="Changes" comment="Code refactoring: add username for participants">
-      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI.csproj.DotSettings" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/Form1.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/Form1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/bin/Debug/CSharp_ChildrenCompetitionGUI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/bin/Debug/CSharp_ChildrenCompetitionGUI.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/bin/Debug/CSharp_ChildrenCompetitionGUI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/bin/Debug/CSharp_ChildrenCompetitionGUI.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/bin/Debug/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/bin/Debug/log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/database/competition.db" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/database/competition.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/repository/ParticipantDbRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/repository/ParticipantDbRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/obj/Debug/CSharp_ChildrenCompetitionGUI.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/obj/Debug/CSharp_ChildrenCompetitionGUI.csproj.GenerateResource.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/obj/Debug/CSharp_ChildrenCompetitionGUI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/obj/Debug/CSharp_ChildrenCompetitionGUI.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/obj/Debug/CSharp_ChildrenCompetitionGUI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/obj/Debug/CSharp_ChildrenCompetitionGUI.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/repository/TestDbRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/repository/TestDbRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/CompetitionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/CompetitionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/IParticipantRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/IParticipantRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/ITestAgeCategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/ITestAgeCategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/ITestParticipantRelationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/ITestParticipantRelationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/ITestRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/ITestRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/ITestTypeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/ITestTypeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/IUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/IUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/ParticipantDbRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/ParticipantDbRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/TestAgeCategoryDbRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/TestAgeCategoryDbRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/TestDbRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/TestDbRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/TestParticipantRelationDbRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/TestParticipantRelationDbRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/TestTypeDbRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/TestTypeDbRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/UserDbRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/UserDbRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/IParticipantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/IParticipantService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/ITestParticipantRelationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ITestParticipantRelationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/ITestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ITestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/ParticipantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ParticipantService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/TestParticipantRelationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/TestParticipantRelationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/TestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/repository/ParticipantDbTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/repository/ParticipantDbTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/repository/TestDbTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/repository/TestDbTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/repository/UserDbTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/repository/UserDbTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +270,8 @@
       <workItem from="1647898032751" duration="1304000" />
       <workItem from="1648033331813" duration="149000" />
       <workItem from="1648226720041" duration="16171000" />
-      <workItem from="1648293121421" duration="5497000" />
+      <workItem from="1648293121421" duration="6697000" />
+      <workItem from="1648667931718" duration="3395000" />
     </task>
     <task id="LOCAL-00001" summary="Create model classes and repository interfaces">
       <created>1646491999942</created>

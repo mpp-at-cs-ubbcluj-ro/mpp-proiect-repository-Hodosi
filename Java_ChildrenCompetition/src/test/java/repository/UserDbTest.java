@@ -22,7 +22,7 @@ public class UserDbTest {
             System.out.println("Cannot find bd.config " + e);
         }
 
-        IUserRepository<Integer, User> userRepository = new UserDbRepository(properties);
+        IUserRepository userRepository = new UserDbRepository(properties);
         User user = userRepository.findOne(1);
         assertEquals(1, user.getId());
         assertEquals("testFirstname", user.getFirstname());

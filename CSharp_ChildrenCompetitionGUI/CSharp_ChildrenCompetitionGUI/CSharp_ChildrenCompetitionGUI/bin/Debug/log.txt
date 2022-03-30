@@ -1788,3 +1788,443 @@
 2022-03-26 18:14:52,005 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
 2022-03-26 18:14:52,005 [1] INFO  UserDbRepository [(null)] - Find one with value 3
 2022-03-26 18:14:52,005 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-26 22:23:22,508 [1] INFO  UserDbRepository [(null)] - Creating UserDbRepository
+2022-03-26 22:23:22,540 [1] INFO  UserDbRepository [(null)] - Creating TestDbRepository
+2022-03-26 22:23:22,541 [1] INFO  UserDbRepository [(null)] - Creating TestAgeCategoryDbRepository
+2022-03-26 22:23:22,542 [1] INFO  UserDbRepository [(null)] - Creating TestTypeDbRepository
+2022-03-26 22:23:22,543 [1] INFO  UserDbRepository [(null)] - Creating ParticipantDbRepository
+2022-03-26 22:23:22,544 [1] INFO  UserDbRepository [(null)] - Creating TestParticipantRelationRepository
+2022-03-26 22:23:24,545 [1] INFO  UserDbRepository [(null)] - Find one with value testUsername
+2022-03-26 22:23:24,727 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-26 22:23:24,736 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-26 22:23:24,736 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-26 22:23:24,737 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-26 22:23:24,737 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-26 22:23:24,738 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-26 22:23:24,738 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-26 22:23:24,739 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-26 22:23:24,739 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-26 22:23:24,739 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-26 22:23:24,739 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-26 22:23:24,740 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-26 22:23:24,740 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-26 22:23:24,740 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-26 22:23:24,741 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-26 22:23:24,741 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-26 22:23:24,741 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-26 22:23:24,742 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-26 22:23:24,742 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-26 22:23:24,742 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-26 22:23:24,743 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-26 22:23:24,743 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-26 22:23:24,743 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-26 22:23:24,744 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-26 22:23:24,744 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-26 22:23:24,744 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-26 22:23:24,744 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-26 22:23:24,745 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-26 22:23:24,745 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-26 22:23:24,745 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-26 22:23:24,745 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-26 22:23:24,746 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-26 22:23:24,746 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-26 22:23:24,746 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-26 22:23:24,747 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-26 22:23:24,747 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-26 22:23:24,747 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-26 22:29:05,386 [1] INFO  UserDbRepository [(null)] - Creating UserDbRepository
+2022-03-26 22:29:05,415 [1] INFO  UserDbRepository [(null)] - Creating TestDbRepository
+2022-03-26 22:29:05,416 [1] INFO  UserDbRepository [(null)] - Creating TestAgeCategoryDbRepository
+2022-03-26 22:29:05,417 [1] INFO  UserDbRepository [(null)] - Creating TestTypeDbRepository
+2022-03-26 22:29:05,418 [1] INFO  UserDbRepository [(null)] - Creating ParticipantDbRepository
+2022-03-26 22:29:05,419 [1] INFO  UserDbRepository [(null)] - Creating TestParticipantRelationRepository
+2022-03-26 22:29:24,442 [1] INFO  UserDbRepository [(null)] - Creating UserDbRepository
+2022-03-26 22:29:24,467 [1] INFO  UserDbRepository [(null)] - Creating TestDbRepository
+2022-03-26 22:29:24,469 [1] INFO  UserDbRepository [(null)] - Creating TestAgeCategoryDbRepository
+2022-03-26 22:29:24,469 [1] INFO  UserDbRepository [(null)] - Creating TestTypeDbRepository
+2022-03-26 22:29:24,470 [1] INFO  UserDbRepository [(null)] - Creating ParticipantDbRepository
+2022-03-26 22:29:24,471 [1] INFO  UserDbRepository [(null)] - Creating TestParticipantRelationRepository
+2022-03-26 22:29:26,849 [1] INFO  UserDbRepository [(null)] - Find one with value testUsername
+2022-03-26 22:29:27,025 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-26 22:29:27,036 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-26 22:29:27,037 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-26 22:29:27,038 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-26 22:29:27,039 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-26 22:29:27,039 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-26 22:29:27,040 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-26 22:29:27,040 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-26 22:29:27,041 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-26 22:29:27,041 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-26 22:29:27,041 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-26 22:29:27,042 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-26 22:29:27,042 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-26 22:29:27,042 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-26 22:29:27,043 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-26 22:29:27,044 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-26 22:29:27,044 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-26 22:29:27,044 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-26 22:29:27,045 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-26 22:29:27,045 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-26 22:29:27,045 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-26 22:29:27,046 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-26 22:29:27,046 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-26 22:29:27,046 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-26 22:29:27,047 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-26 22:29:27,047 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-26 22:29:27,047 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-26 22:29:27,048 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-26 22:29:27,048 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-26 22:29:27,048 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-26 22:29:27,049 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-26 22:29:27,049 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-26 22:29:27,049 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-26 22:29:27,050 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-26 22:29:27,050 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-26 22:29:27,050 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-26 22:29:27,051 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:31:27,775 [1] INFO  UserDbRepository [(null)] - Creating UserDbRepository
+2022-03-28 09:31:27,803 [1] INFO  UserDbRepository [(null)] - Creating TestDbRepository
+2022-03-28 09:31:27,804 [1] INFO  UserDbRepository [(null)] - Creating TestAgeCategoryDbRepository
+2022-03-28 09:31:27,805 [1] INFO  UserDbRepository [(null)] - Creating TestTypeDbRepository
+2022-03-28 09:31:27,805 [1] INFO  UserDbRepository [(null)] - Creating ParticipantDbRepository
+2022-03-28 09:31:27,806 [1] INFO  UserDbRepository [(null)] - Creating TestParticipantRelationRepository
+2022-03-28 09:31:35,374 [1] INFO  UserDbRepository [(null)] - Find one with value testUsername
+2022-03-28 09:31:35,729 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:31:35,736 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:31:35,737 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:31:35,738 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:31:35,739 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:31:35,740 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:31:35,740 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:31:35,741 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:31:35,741 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:31:35,741 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:31:35,742 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:31:35,742 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:31:35,743 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:31:35,743 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:31:35,743 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:31:35,744 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:31:35,744 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:31:35,744 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:31:35,745 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:31:35,745 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:31:35,745 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:31:35,746 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:31:35,746 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:31:35,746 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:31:35,747 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:31:35,747 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:31:35,748 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:31:35,748 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:31:35,748 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:31:35,749 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:31:35,749 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:31:35,749 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:31:35,750 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:31:35,750 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:31:35,750 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:31:35,751 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:31:35,751 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:33:05,112 [1] INFO  UserDbRepository [(null)] - Creating UserDbRepository
+2022-03-28 09:33:05,148 [1] INFO  UserDbRepository [(null)] - Creating TestDbRepository
+2022-03-28 09:33:05,149 [1] INFO  UserDbRepository [(null)] - Creating TestAgeCategoryDbRepository
+2022-03-28 09:33:05,150 [1] INFO  UserDbRepository [(null)] - Creating TestTypeDbRepository
+2022-03-28 09:33:05,151 [1] INFO  UserDbRepository [(null)] - Creating ParticipantDbRepository
+2022-03-28 09:33:05,152 [1] INFO  UserDbRepository [(null)] - Creating TestParticipantRelationRepository
+2022-03-28 09:33:10,653 [1] INFO  UserDbRepository [(null)] - Find one with value testUsername
+2022-03-28 09:33:11,131 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:33:11,143 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:33:11,144 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:33:11,145 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:33:11,146 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:33:11,147 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:33:11,147 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:33:11,148 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:33:11,148 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:33:11,149 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:33:11,149 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:33:11,149 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:33:11,150 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:33:11,150 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:33:11,151 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:33:11,151 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:33:11,151 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:33:11,152 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:33:11,152 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:33:11,152 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:33:11,153 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:33:11,153 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:33:11,154 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:33:11,155 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:33:11,155 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:33:11,155 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:33:11,156 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:33:11,156 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:33:11,156 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:33:11,157 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:33:11,157 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:33:11,157 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:33:11,158 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:33:11,158 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:33:11,158 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:33:11,159 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:33:11,159 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:34:06,743 [1] INFO  UserDbRepository [(null)] - Creating UserDbRepository
+2022-03-28 09:34:06,803 [1] INFO  UserDbRepository [(null)] - Creating TestDbRepository
+2022-03-28 09:34:06,804 [1] INFO  UserDbRepository [(null)] - Creating TestAgeCategoryDbRepository
+2022-03-28 09:34:06,805 [1] INFO  UserDbRepository [(null)] - Creating TestTypeDbRepository
+2022-03-28 09:34:06,806 [1] INFO  UserDbRepository [(null)] - Creating ParticipantDbRepository
+2022-03-28 09:34:06,808 [1] INFO  UserDbRepository [(null)] - Creating TestParticipantRelationRepository
+2022-03-28 09:34:09,388 [1] INFO  UserDbRepository [(null)] - Find one with value testUsername
+2022-03-28 09:34:09,479 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:34:09,499 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:34:09,500 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:34:09,501 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:34:09,502 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:34:09,502 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:34:09,503 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:34:09,503 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:34:09,503 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:34:09,504 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:34:09,504 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:34:09,504 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:34:09,505 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:34:09,505 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:34:09,505 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:34:09,505 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:34:09,506 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:34:09,506 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:34:09,506 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:34:09,506 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:34:09,507 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:34:09,507 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:34:09,507 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:34:09,508 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:34:09,508 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:34:09,508 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:34:09,508 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:34:09,509 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:34:09,509 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:34:09,509 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:34:09,510 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:34:09,510 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:34:09,510 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:34:09,510 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:34:09,511 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:34:09,511 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:34:09,511 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:34:14,398 [1] INFO  UserDbRepository [(null)] - Find one with value testUsername
+2022-03-28 09:34:14,398 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:34:14,403 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:34:14,404 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:34:14,404 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:34:14,404 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:34:14,405 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:34:14,405 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:34:14,405 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:34:14,405 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:34:14,406 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:34:14,406 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:34:14,406 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:34:14,407 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:34:14,407 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:34:14,407 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:34:14,407 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:34:14,408 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:34:14,408 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:34:14,408 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:34:14,408 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:34:14,409 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:34:14,409 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:34:14,409 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:34:14,410 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:34:14,410 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:34:14,410 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:34:14,410 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:34:14,411 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:34:14,411 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:34:14,412 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:34:14,412 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:34:14,412 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:34:14,413 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:34:14,413 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:34:14,413 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:34:14,413 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:34:14,414 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:37:23,986 [1] INFO  UserDbRepository [(null)] - Creating UserDbRepository
+2022-03-28 09:37:24,009 [1] INFO  UserDbRepository [(null)] - Creating TestDbRepository
+2022-03-28 09:37:24,010 [1] INFO  UserDbRepository [(null)] - Creating TestAgeCategoryDbRepository
+2022-03-28 09:37:24,010 [1] INFO  UserDbRepository [(null)] - Creating TestTypeDbRepository
+2022-03-28 09:37:24,011 [1] INFO  UserDbRepository [(null)] - Creating ParticipantDbRepository
+2022-03-28 09:37:24,011 [1] INFO  UserDbRepository [(null)] - Creating TestParticipantRelationRepository
+2022-03-28 09:37:37,016 [1] INFO  UserDbRepository [(null)] - Find one with value testUsername
+2022-03-28 09:37:37,114 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:37:37,134 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:37:37,134 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:37:37,135 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:37:37,136 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:37:37,136 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:37:37,136 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:37:37,137 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:37:37,137 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:37:37,137 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:37:37,138 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:37:37,138 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:37:37,138 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:37:37,138 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:37:37,139 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:37:37,139 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:37:37,139 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:37:37,140 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:37:37,140 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:37:37,140 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:37:37,140 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:37:37,141 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:37:37,141 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:37:37,142 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:37:37,142 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:37:37,142 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:37:37,142 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:37:37,143 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:37:37,143 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:37:37,143 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:37:37,143 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:37:37,144 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:37:37,144 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:37:37,144 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:37:37,145 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:37:37,145 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:37:37,146 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:47:18,077 [1] INFO  UserDbRepository [(null)] - Creating UserDbRepository
+2022-03-28 09:47:18,107 [1] INFO  UserDbRepository [(null)] - Creating TestDbRepository
+2022-03-28 09:47:18,108 [1] INFO  UserDbRepository [(null)] - Creating TestAgeCategoryDbRepository
+2022-03-28 09:47:18,109 [1] INFO  UserDbRepository [(null)] - Creating TestTypeDbRepository
+2022-03-28 09:47:18,110 [1] INFO  UserDbRepository [(null)] - Creating ParticipantDbRepository
+2022-03-28 09:47:18,111 [1] INFO  UserDbRepository [(null)] - Creating TestParticipantRelationRepository
+2022-03-28 09:47:21,507 [1] INFO  UserDbRepository [(null)] - Find one with value testUsername
+2022-03-28 09:47:21,633 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:47:21,661 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:47:21,662 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:47:21,663 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:47:21,664 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:47:21,665 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:47:21,665 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:47:21,665 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:47:21,666 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:47:21,666 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:47:21,666 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:47:21,667 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:47:21,667 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:47:21,668 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:47:21,668 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:47:21,669 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:47:21,669 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:47:21,669 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:47:21,670 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:47:21,670 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:47:21,671 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:47:21,671 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:47:21,672 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:47:21,672 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:47:21,673 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:47:21,674 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:47:21,674 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:47:21,674 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:47:21,675 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:47:21,675 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:47:21,676 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:47:21,676 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:47:21,677 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:47:21,677 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:47:21,678 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:47:21,678 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:47:21,678 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:47:40,585 [1] INFO  UserDbRepository [(null)] - Find one with value robertU
+2022-03-28 09:47:40,586 [1] INFO  UserDbRepository [(null)] - exiting findOne with value{0}
+2022-03-28 09:47:40,603 [1] INFO  UserDbRepository [(null)] - Find one with value robertU
+2022-03-28 09:47:40,604 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=14}
+2022-03-28 09:47:40,616 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:47:40,616 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:47:40,617 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:47:40,617 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:47:40,618 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:47:40,618 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:47:40,619 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:47:40,619 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:47:40,620 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:47:40,620 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:47:40,620 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:47:40,621 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:47:40,621 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:47:40,622 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:47:40,622 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:47:40,622 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:47:40,623 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:47:40,623 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:47:40,624 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:47:40,624 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:47:40,624 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:47:40,625 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:47:40,625 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:47:40,626 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:47:40,626 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:47:40,626 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:47:40,626 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:47:40,627 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:47:40,627 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:47:40,627 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:47:40,628 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:47:40,628 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:47:40,628 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:47:40,628 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:47:40,629 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:47:40,629 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:47:44,663 [1] INFO  UserDbRepository [(null)] - Find one with value robertU
+2022-03-28 09:47:44,664 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=14}
+2022-03-28 09:48:01,952 [1] INFO  UserDbRepository [(null)] - Find one with value robertU
+2022-03-28 09:48:01,952 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=14}
+2022-03-28 09:48:40,944 [1] INFO  UserDbRepository [(null)] - Find one with value robertU
+2022-03-28 09:48:40,946 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=14}
+2022-03-28 09:48:40,947 [1] INFO  UserDbRepository [(null)] - Find one with value 14
+2022-03-28 09:48:40,948 [1] INFO  UserDbRepository [(null)] - exiting findOne with value{0}
+2022-03-28 09:48:40,948 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:48:40,949 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:48:40,951 [1] INFO  UserDbRepository [(null)] - Find one with value robertU
+2022-03-28 09:48:40,951 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=14}
+2022-03-28 09:48:40,957 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:48:40,958 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:48:40,959 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:48:40,959 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:48:40,960 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:48:40,960 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:48:40,961 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:48:40,961 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:48:40,962 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:48:40,962 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:48:40,963 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:48:40,963 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:48:40,964 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:48:40,964 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:48:40,965 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:48:40,966 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:48:40,966 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:48:40,967 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:48:40,967 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:48:40,967 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:48:40,968 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:48:40,968 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:48:40,969 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:48:40,969 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:48:40,970 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:48:40,971 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:48:40,971 [1] INFO  UserDbRepository [(null)] - Find one with value 1
+2022-03-28 09:48:40,972 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=1}
+2022-03-28 09:48:40,972 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:48:40,973 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:48:40,973 [1] INFO  UserDbRepository [(null)] - Find one with value 2
+2022-03-28 09:48:40,974 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=2}
+2022-03-28 09:48:40,974 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:48:40,975 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}
+2022-03-28 09:48:40,976 [1] INFO  UserDbRepository [(null)] - Find one with value 3
+2022-03-28 09:48:40,976 [1] INFO  UserDbRepository [(null)] - Exiting findOne with valueEntity { id=3}

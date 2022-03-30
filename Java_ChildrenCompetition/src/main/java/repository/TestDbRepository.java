@@ -14,11 +14,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-public class TestDbRepository implements ITestRepository<Integer, Test>{
+public class TestDbRepository implements ITestRepository {
     private final JdbcUtils dbUtils;
     private static final Logger logger = LogManager.getLogger();
-    private final ITestAgeCategoryRepository<Integer, TestAgeCategory> testAgeCategoryRepository;
-    private final ITestTypeRepository<Integer, TestType> testTypeRepository;
+    private final ITestAgeCategoryRepository testAgeCategoryRepository;
+    private final ITestTypeRepository testTypeRepository;
 
     public TestDbRepository(Properties properties){
         logger.info("initializing TestDbRepository with properties: {} ", properties);

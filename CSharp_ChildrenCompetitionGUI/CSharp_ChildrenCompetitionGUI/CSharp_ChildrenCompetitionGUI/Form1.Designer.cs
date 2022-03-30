@@ -138,14 +138,13 @@
             // panelLogin
             // 
             this.panelLogin.Controls.Add(this.groupBox1);
-            this.panelLogin.Location = new System.Drawing.Point(319, 173);
+            this.panelLogin.Location = new System.Drawing.Point(445, 248);
             this.panelLogin.Name = "panelLogin";
             this.panelLogin.Size = new System.Drawing.Size(381, 237);
             this.panelLogin.TabIndex = 1;
             // 
             // panelMain
             // 
-            this.panelMain.Controls.Add(this.panelLogin);
             this.panelMain.Controls.Add(this.buttonSignUpFoTest);
             this.panelMain.Controls.Add(this.labelProgramError);
             this.panelMain.Controls.Add(this.comboBoxAgeSignUp);
@@ -342,6 +341,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 653);
+            this.Controls.Add(this.panelLogin);
             this.Controls.Add(this.panelMain);
             this.Name = "Form1";
             this.Text = "Competition";
@@ -354,6 +354,8 @@
             ((System.ComponentModel.ISupportInitialize) (this.dataGridViewTests)).EndInit();
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Panel panelLogin;
 
         private System.Windows.Forms.Button buttonSignUpFoTest;
 
@@ -387,8 +389,6 @@
         private System.Windows.Forms.Label label3;
 
         private System.Windows.Forms.Panel panelMain;
-
-        private System.Windows.Forms.Panel panelLogin;
 
         private System.Windows.Forms.Label errorLoginLabel;
 

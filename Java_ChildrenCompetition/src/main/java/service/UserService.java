@@ -5,10 +5,10 @@ import exception.WrongUsernameException;
 import model.User;
 import repository.IUserRepository;
 
-public class UserService implements IUserService<Integer, User> {
-    public final IUserRepository<Integer, User> userRepository;
+public class UserService implements IUserService {
+    public final IUserRepository userRepository;
 
-    public UserService(IUserRepository<Integer, User> userRepository) {
+    public UserService(IUserRepository userRepository) {
         this.userRepository = userRepository;
     }
 

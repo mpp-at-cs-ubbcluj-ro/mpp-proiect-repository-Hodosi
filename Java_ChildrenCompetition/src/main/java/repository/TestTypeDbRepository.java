@@ -10,7 +10,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Properties;
 
-public class TestTypeDbRepository implements ITestTypeRepository<Integer, TestType> {
+public class TestTypeDbRepository implements ITestTypeRepository {
     private final JdbcUtils dbUtils;
     private static final Logger logger = LogManager.getLogger();
 

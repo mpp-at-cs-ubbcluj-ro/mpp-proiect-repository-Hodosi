@@ -19,25 +19,25 @@ import java.util.stream.IntStream;
 
 
 public class CompetitionController {
-    private IUserService<Integer, User> userService;
-    private ITestService<Integer, Test> testService;
-    private IParticipantService<Integer, Participant> participantService;
-    private ITestParticipantRelationService<Tuple<Integer, Integer>, TestParticipantRelation> testParticipantRelationService;
+    private IUserService userService;
+    private ITestService testService;
+    private IParticipantService participantService;
+    private ITestParticipantRelationService testParticipantRelationService;
 
 
-    public void setUserService(IUserService<Integer, User> userService){
+    public void setUserService(IUserService userService){
         this.userService = userService;
     }
 
-    public void setTestService(ITestService<Integer, Test> testService){
+    public void setTestService(ITestService testService){
         this.testService = testService;
     }
 
-    public void setParticipantService(IParticipantService<Integer, Participant> participantService){
+    public void setParticipantService(IParticipantService participantService){
         this.participantService = participantService;
     }
 
-    public void setTestParticipantRelationService(ITestParticipantRelationService<Tuple<Integer, Integer>, TestParticipantRelation> testParticipantRelationService){
+    public void setTestParticipantRelationService(ITestParticipantRelationService testParticipantRelationService){
         this.testParticipantRelationService = testParticipantRelationService;
     }
 
@@ -176,7 +176,7 @@ public class CompetitionController {
         }
 
         if(name.equals("")){
-            labelProgramError.setText("Last error: Username can't be empty");
+            labelProgramError.setText("Last error: Name can't be empty");
             return;
         }
 

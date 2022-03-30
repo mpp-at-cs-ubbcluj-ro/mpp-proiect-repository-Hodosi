@@ -8,11 +8,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class TestService implements ITestService<Integer, Test> {
-    public final ITestRepository<Integer, Test> testRepository;
-    public final IParticipantRepository<Integer, Participant> participantRepository;
+public class TestService implements ITestService {
+    public final ITestRepository testRepository;
+    public final IParticipantRepository participantRepository;
 
-    public TestService(ITestRepository<Integer, Test> testRepository, IParticipantRepository<Integer, Participant> participantRepository) {
+    public TestService(ITestRepository testRepository, IParticipantRepository participantRepository) {
         this.testRepository = testRepository;
         this.participantRepository = participantRepository;
     }

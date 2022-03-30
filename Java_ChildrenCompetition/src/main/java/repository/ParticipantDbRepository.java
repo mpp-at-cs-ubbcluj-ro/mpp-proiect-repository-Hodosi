@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-public class ParticipantDbRepository implements IParticipantRepository<Integer, Participant> {
+public class ParticipantDbRepository implements IParticipantRepository {
     private final JdbcUtils dbUtils;
     private static final Logger logger = LogManager.getLogger();
 

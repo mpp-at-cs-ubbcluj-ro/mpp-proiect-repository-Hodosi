@@ -22,7 +22,7 @@ public class TestDbTest {
             System.out.println("Cannot find bd.config " + e);
         }
         //DRAWING, TREASURE_HUNT, POETRY
-        ITestRepository<Integer, model.Test> testRepository = new TestDbRepository(properties);
+        ITestRepository testRepository = new TestDbRepository(properties);
         model.Test test;
         test = testRepository.findOne(1);
         assertEquals(1, test.getId());

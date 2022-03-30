@@ -10,7 +10,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Properties;
 
-public class TestAgeCategoryDbRepository implements ITestAgeCategoryRepository<Integer, TestAgeCategory> {
+public class TestAgeCategoryDbRepository implements ITestAgeCategoryRepository {
     private final JdbcUtils dbUtils;
     private static final Logger logger = LogManager.getLogger();
 

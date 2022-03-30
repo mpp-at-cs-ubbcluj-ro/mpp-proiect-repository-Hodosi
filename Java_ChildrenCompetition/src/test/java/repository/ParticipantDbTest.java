@@ -24,7 +24,7 @@ public class ParticipantDbTest {
             System.out.println("Cannot find bd.config " + e);
         }
 
-        IParticipantRepository<Integer, Participant> participantRepository = new ParticipantDbRepository(properties);
+        IParticipantRepository participantRepository = new ParticipantDbRepository(properties);
         Participant participant = participantRepository.findByUsername("t1");
         assertEquals(1, participant.getId());
         assertEquals("test1", participant.getName());
