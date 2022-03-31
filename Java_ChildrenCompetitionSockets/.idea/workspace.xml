@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4ac7a1f3-5ca7-448a-b96a-b836142e2e64" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionClient/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionClientFX/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionClientFX/src/main/java/competition/client/StartRpcClientFX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionClientFX/src/main/java/competition/client/gui/CompetitionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionClientFX/src/main/resources/views/competitionPage.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionModel/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionModel/src/main/java/competition/model/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionModel/src/main/java/competition/model/HasId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionModel/src/main/java/competition/model/Participant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionModel/src/main/java/competition/model/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionModel/src/main/java/competition/model/TestAgeCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionModel/src/main/java/competition/model/TestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionModel/src/main/java/competition/model/TestParticipantRelation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionModel/src/main/java/competition/model/TestType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionModel/src/main/java/competition/model/Tuple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionModel/src/main/java/competition/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionNetworking/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionNetworking/src/main/java/competition/network/rpcprotocol/CompetitionClientRpcWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionNetworking/src/main/java/competition/network/rpcprotocol/CompetitionServicesRpcProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionNetworking/src/main/java/competition/network/rpcprotocol/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionNetworking/src/main/java/competition/network/rpcprotocol/RequestType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionNetworking/src/main/java/competition/network/rpcprotocol/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionNetworking/src/main/java/competition/network/rpcprotocol/ResponseType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionNetworking/src/main/java/competition/network/utils/AbstractConcurrentServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionNetworking/src/main/java/competition/network/utils/AbstractServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionNetworking/src/main/java/competition/network/utils/CompetitionRpcConcurrentServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionNetworking/src/main/java/competition/network/utils/ServerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionPersistence/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionPersistence/src/main/java/competition/persistence/IParticipantRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionPersistence/src/main/java/competition/persistence/IRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionPersistence/src/main/java/competition/persistence/ITestAgeCategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionPersistence/src/main/java/competition/persistence/ITestParticipantRelationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionPersistence/src/main/java/competition/persistence/ITestRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionPersistence/src/main/java/competition/persistence/ITestTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionPersistence/src/main/java/competition/persistence/IUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/JdbcUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/ParticipantDbRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/TestAgeCategoryDbRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/TestDbRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/TestParticipantRelationDbRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/TestTypeDbRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/UserDbRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionServer/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionServer/src/main/java/StartRpcServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionServices/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionServices/src/main/java/competition/services/CompetitionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionServices/src/main/java/competition/services/ICompetitionObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionServices/src/main/java/competition/services/ICompetitionServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetition/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetition/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetition/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetition/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetition/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetition/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetition/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetition/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetition/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetition/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetition/target/competition.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetition/target/competition.log" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="279P46NOtfCDsPb6pCy3zVeoyiU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MPP\mpp-proiect-repository-Hodosi\Java_ChildrenCompetitionSockets\CompetitionPersistence\src\main\java\competition\persistence\repository\jdbc" />
+      <recent name="C:\MPP\mpp-proiect-repository-Hodosi\Java_ChildrenCompetitionSockets\CompetitionPersistence\src\main\java\competition\persistence" />
+      <recent name="C:\MPP\mpp-proiect-repository-Hodosi\Java_ChildrenCompetitionSockets\CompetitionModel\src\main\java\competition\model" />
+      <recent name="C:\MPP\mpp-proiect-repository-Hodosi\Java_ChildrenCompetitionSockets\CompetitionClientFX\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="competition.client.gui" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4ac7a1f3-5ca7-448a-b96a-b836142e2e64" name="Changes" comment="" />
+      <created>1648729139258</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648729139258</updated>
+      <workItem from="1648729141472" duration="4558000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

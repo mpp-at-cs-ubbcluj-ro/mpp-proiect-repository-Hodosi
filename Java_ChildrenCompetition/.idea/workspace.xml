@@ -4,42 +4,74 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbe51b6f-7032-4a40-926b-adfa049f8c13" name="Changes" comment="Code refactoring: add username for participants">
-      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/Form1.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/Form1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/bin/Debug/CSharp_ChildrenCompetitionGUI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/bin/Debug/CSharp_ChildrenCompetitionGUI.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/bin/Debug/CSharp_ChildrenCompetitionGUI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/bin/Debug/CSharp_ChildrenCompetitionGUI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/bin/Debug/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/bin/Debug/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/database/competition.db" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/database/competition.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/obj/Debug/CSharp_ChildrenCompetitionGUI.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/obj/Debug/CSharp_ChildrenCompetitionGUI.csproj.GenerateResource.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/obj/Debug/CSharp_ChildrenCompetitionGUI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/obj/Debug/CSharp_ChildrenCompetitionGUI.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/obj/Debug/CSharp_ChildrenCompetitionGUI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/CSharp_ChildrenCompetitionGUI/obj/Debug/CSharp_ChildrenCompetitionGUI.pdb" afterDir="false" />
+    <list default="true" id="fbe51b6f-7032-4a40-926b-adfa049f8c13" name="Changes" comment="Code refactoring: remove useless genericity">
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionClient/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionClientFX/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionClientFX/src/main/java/competition/client/StartRpcClientFX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionClientFX/src/main/java/competition/client/gui/CompetitionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionClientFX/src/main/resources/views/competitionPage.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/src/main/java/competition/model/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/src/main/java/competition/model/HasId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/src/main/java/competition/model/Participant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/src/main/java/competition/model/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/src/main/java/competition/model/TestAgeCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/src/main/java/competition/model/TestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/src/main/java/competition/model/TestParticipantRelation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/src/main/java/competition/model/TestType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/src/main/java/competition/model/Tuple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/src/main/java/competition/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/rpcprotocol/CompetitionClientRpcWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/rpcprotocol/CompetitionServicesRpcProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/rpcprotocol/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/rpcprotocol/RequestType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/rpcprotocol/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/rpcprotocol/ResponseType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/utils/AbstractConcurrentServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/utils/AbstractServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/utils/CompetitionRpcConcurrentServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/utils/ServerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/IParticipantRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/IRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/ITestAgeCategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/ITestParticipantRelationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/ITestRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/ITestTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/IUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/JdbcUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/ParticipantDbRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/TestAgeCategoryDbRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/TestDbRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/TestParticipantRelationDbRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/TestTypeDbRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/UserDbRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServer/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServer/src/main/java/StartRpcServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServices/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServices/src/main/java/competition/services/CompetitionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServices/src/main/java/competition/services/ICompetitionObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServices/src/main/java/competition/services/ICompetitionServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/CompetitionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/CompetitionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/IParticipantRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/IParticipantRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/ITestAgeCategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/ITestAgeCategoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/ITestParticipantRelationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/ITestParticipantRelationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/ITestRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/ITestRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/ITestTypeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/ITestTypeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/IUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/IUserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/ParticipantDbRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/ParticipantDbRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/TestAgeCategoryDbRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/TestAgeCategoryDbRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/TestDbRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/TestDbRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/TestParticipantRelationDbRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/TestParticipantRelationDbRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/TestTypeDbRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/TestTypeDbRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/UserDbRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/UserDbRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/IParticipantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/IParticipantService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/ITestParticipantRelationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ITestParticipantRelationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/ITestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ITestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/ParticipantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ParticipantService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/TestParticipantRelationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/TestParticipantRelationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/TestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/repository/ParticipantDbTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/repository/ParticipantDbTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/repository/TestDbTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/repository/TestDbTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/repository/UserDbTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/repository/UserDbTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/competition.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/competition.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +161,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../MySpace/3.Workspace/Faculty/MPP/Cursuri/Curs6/Java11ChatSockets" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.46363637" />
@@ -271,7 +303,8 @@
       <workItem from="1648033331813" duration="149000" />
       <workItem from="1648226720041" duration="16171000" />
       <workItem from="1648293121421" duration="6697000" />
-      <workItem from="1648667931718" duration="3395000" />
+      <workItem from="1648667931718" duration="4295000" />
+      <workItem from="1648721757654" duration="7050000" />
     </task>
     <task id="LOCAL-00001" summary="Create model classes and repository interfaces">
       <created>1646491999942</created>
@@ -301,7 +334,21 @@
       <option name="project" value="LOCAL" />
       <updated>1648230357224</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Code refactoring: remove useless genericity">
+      <created>1648671673422</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1648671673422</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Code refactoring: remove useless genericity">
+      <created>1648671733907</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1648671733907</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,6 +372,7 @@
     <MESSAGE value="Refactor model classes, repository interfaces and implement repo interfaces" />
     <MESSAGE value="Implement GUI, Controller and Services" />
     <MESSAGE value="Code refactoring: add username for participants" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code refactoring: add username for participants" />
+    <MESSAGE value="Code refactoring: remove useless genericity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code refactoring: remove useless genericity" />
   </component>
 </project>
