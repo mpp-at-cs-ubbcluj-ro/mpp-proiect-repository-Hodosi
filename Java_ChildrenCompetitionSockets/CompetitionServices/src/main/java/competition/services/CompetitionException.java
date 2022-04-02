@@ -1,4 +1,15 @@
 package competition.services;
 
-public class CompetitionException {
+public class CompetitionException extends Exception {
+    public CompetitionException(){
+
+    }
+
+    public CompetitionException(String message) {
+        super(message);
+    }
+
+    public CompetitionException(String message, Throwable cause) {
+        super(message, cause);
+    }
 }

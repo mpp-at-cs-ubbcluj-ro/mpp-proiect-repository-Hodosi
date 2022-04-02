@@ -1,6 +1,7 @@
 package competition.persistence.repository.jdbc;
 
-import model.TestAgeCategory;
+import competition.model.TestAgeCategory;
+import competition.persistence.ITestAgeCategoryRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

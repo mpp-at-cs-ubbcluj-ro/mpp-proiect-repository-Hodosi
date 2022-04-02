@@ -9,6 +9,7 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 
+
 public class JdbcUtils {
 
     private Properties jdbcProps;
@@ -24,7 +25,8 @@ public class JdbcUtils {
     private Connection getNewConnection(){
         logger.traceEntry();
 
-        String url=jdbcProps.getProperty("jdbc.url");
+//        String url=jdbcProps.getProperty("jdbc.url");
+        String url=jdbcProps.getProperty("competition.jdbc.url");
         String user=jdbcProps.getProperty("jdbc.user");
         String pass=jdbcProps.getProperty("jdbc.pass");
         logger.info("trying to connect to database ... {}",url);

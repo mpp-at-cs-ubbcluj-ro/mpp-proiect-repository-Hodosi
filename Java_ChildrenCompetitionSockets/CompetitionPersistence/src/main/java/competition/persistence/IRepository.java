@@ -1,6 +1,7 @@
 package competition.persistence;
 
-import model.HasId;
+
+import competition.model.HasId;
 
 public interface IRepository <ID, T extends HasId<ID>> {
     int size();

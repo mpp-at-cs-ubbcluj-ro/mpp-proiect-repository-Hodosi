@@ -1,6 +1,7 @@
 package competition.persistence.repository.jdbc;
 
-import model.TestType;
+import competition.model.TestType;
+import competition.persistence.ITestTypeRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -11,12 +12,12 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 public class TestTypeDbRepository implements ITestTypeRepository {
-    private final repository.JdbcUtils dbUtils;
+    private final JdbcUtils dbUtils;
     private static final Logger logger = LogManager.getLogger();
 
     public TestTypeDbRepository(Properties properties){
         logger.info("initializing TestDbRepository with properties: {} ", properties);
-        dbUtils = new repository.JdbcUtils(properties);
+        dbUtils = new JdbcUtils(properties);
     }
 
     @Override

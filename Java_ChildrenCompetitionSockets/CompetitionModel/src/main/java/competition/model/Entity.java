@@ -1,9 +1,10 @@
 package competition.model;
 
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Entity<ID> implements model.HasId<ID> {
+public class Entity<ID> implements HasId<ID>, Serializable {
     protected ID id;
 
     @Override

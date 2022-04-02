@@ -1,8 +1,12 @@
 package competition.persistence.repository.jdbc;
 
-import model.Test;
-import model.TestAgeCategory;
-import model.TestType;
+
+import competition.model.Test;
+import competition.model.TestAgeCategory;
+import competition.model.TestType;
+import competition.persistence.ITestAgeCategoryRepository;
+import competition.persistence.ITestRepository;
+import competition.persistence.ITestTypeRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -14,16 +18,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
+
 public class TestDbRepository implements ITestRepository {
-    private final repository.JdbcUtils dbUtils;
+    private final JdbcUtils dbUtils;
     private static final Logger logger = LogManager.getLogger();
     private final ITestAgeCategoryRepository testAgeCategoryRepository;
     private final ITestTypeRepository testTypeRepository;
 
     public TestDbRepository(Properties properties){
         logger.info("initializing TestDbRepository with properties: {} ", properties);
-        dbUtils = new repository.JdbcUtils(properties);
-        testAgeCategoryRepository = new repository.TestAgeCategoryDbRepository(properties);
+        dbUtils = new JdbcUtils(properties);
+        testAgeCategoryRepository = new TestAgeCategoryDbRepository(properties);
         testTypeRepository = new TestTypeDbRepository(properties);
     }
 

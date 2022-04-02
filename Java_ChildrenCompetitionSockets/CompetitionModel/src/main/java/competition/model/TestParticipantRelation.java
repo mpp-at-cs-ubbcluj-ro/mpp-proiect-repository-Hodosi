@@ -1,6 +1,8 @@
 package competition.model;
 
-public class TestParticipantRelation implements model.HasId<Tuple<Integer, Integer>> {
+import java.io.Serializable;
+
+public class TestParticipantRelation implements HasId<Tuple<Integer, Integer>>, Serializable {
     Tuple<Integer, Integer> testParticipantID;
 
     public TestParticipantRelation(Tuple<Integer, Integer> testParticipantID) {

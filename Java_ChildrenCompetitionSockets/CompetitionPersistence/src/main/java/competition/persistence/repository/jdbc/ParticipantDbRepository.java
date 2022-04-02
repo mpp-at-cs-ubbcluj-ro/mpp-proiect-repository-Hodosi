@@ -1,6 +1,7 @@
 package competition.persistence.repository.jdbc;
 
-import model.Participant;
+import competition.model.Participant;
+import competition.persistence.IParticipantRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

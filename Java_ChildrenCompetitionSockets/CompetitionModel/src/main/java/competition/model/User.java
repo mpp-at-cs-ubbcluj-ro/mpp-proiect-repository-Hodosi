@@ -1,6 +1,8 @@
 package competition.model;
 
-public class User extends Entity<Integer> {
+import java.io.Serializable;
+
+public class User extends Entity<Integer> implements Serializable {
     private final String firstname;
     private final String lastname;
     private final String username;

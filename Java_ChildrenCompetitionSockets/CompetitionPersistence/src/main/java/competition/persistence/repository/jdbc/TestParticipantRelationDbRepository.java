@@ -1,6 +1,8 @@
 package competition.persistence.repository.jdbc;
 
-import model.*;
+import competition.model.TestParticipantRelation;
+import competition.model.Tuple;
+import competition.persistence.ITestParticipantRelationRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

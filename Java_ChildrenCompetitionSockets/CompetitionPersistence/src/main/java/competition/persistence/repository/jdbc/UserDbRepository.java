@@ -1,6 +1,10 @@
 package competition.persistence.repository.jdbc;
 
-import model.User;
+import competition.model.Test;
+import competition.model.TestAgeCategory;
+import competition.model.TestType;
+import competition.model.User;
+import competition.persistence.IUserRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -8,6 +12,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
 
 public class UserDbRepository implements IUserRepository {
@@ -142,6 +148,29 @@ public class UserDbRepository implements IUserRepository {
 
     @Override
     public Iterable<User> findAll() {
-        return null;
+        logger.traceEntry("finding all users");
+        Connection connection = dbUtils.getConnection();
+        List<User> userList = new ArrayList<>();
+        String query = "SELECT * from users";
+        try(PreparedStatement preparedStatement = connection.prepareStatement(query)){
+            try (ResultSet resultSet = preparedStatement.executeQuery()){
+                while (resultSet.next()){
+                    int idUser = resultSet.getInt("id_user");
+                    String firstname = resultSet.getString("firstname");
+                    String lastname = resultSet.getString("lastname");
+                    String usernameUser = resultSet.getString("username");
+                    String password = resultSet.getString("password");
+                    User user = new User(firstname, lastname, usernameUser, password);
+                    user.setId(idUser);
+                    userList.add(user);
+                }
+            }
+        } catch (SQLException exception){
+            logger.error(exception);
+            System.err.println("Error DB " + exception);
+        }
+        logger.traceExit();
+
+        return userList;
     }
 }

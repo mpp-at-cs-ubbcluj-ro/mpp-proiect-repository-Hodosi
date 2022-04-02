@@ -1,6 +1,5 @@
 package competition.persistence;
 
-import model.User;
 
 //public interface IUserRepository <ID, T extends HasId<ID>> extends IRepository<ID, T>{
 //    void setCurrentUser(T entity);
@@ -8,7 +7,9 @@ import model.User;
 //    T findByUsername(String username);
 //}
 
-public interface IUserRepository extends repository.IRepository<Integer, User> {
+import competition.model.User;
+
+public interface IUserRepository extends IRepository<Integer, User> {
     void setCurrentUser(User entity);
     User getCurrentUser();
     User findByUsername(String username);

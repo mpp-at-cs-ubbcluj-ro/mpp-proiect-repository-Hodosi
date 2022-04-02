@@ -5,73 +5,119 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbe51b6f-7032-4a40-926b-adfa049f8c13" name="Changes" comment="Code refactoring: remove useless genericity">
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionClient/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionClientFX/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionClientFX/src/main/java/competition/client/StartRpcClientFX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionClientFX/src/main/java/competition/client/gui/CompetitionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionClientFX/src/main/resources/views/competitionPage.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/src/main/java/competition/model/Entity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/src/main/java/competition/model/HasId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/src/main/java/competition/model/Participant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/src/main/java/competition/model/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/src/main/java/competition/model/TestAgeCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/src/main/java/competition/model/TestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/src/main/java/competition/model/TestParticipantRelation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/src/main/java/competition/model/TestType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/src/main/java/competition/model/Tuple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/src/main/java/competition/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/rpcprotocol/CompetitionClientRpcWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/rpcprotocol/CompetitionServicesRpcProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/rpcprotocol/Request.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/rpcprotocol/RequestType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/rpcprotocol/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/rpcprotocol/ResponseType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/utils/AbstractConcurrentServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/utils/AbstractServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/utils/CompetitionRpcConcurrentServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/utils/ServerException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/IParticipantRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/IRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/ITestAgeCategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/ITestParticipantRelationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/ITestRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/ITestTypeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/IUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/JdbcUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/ParticipantDbRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/TestAgeCategoryDbRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/TestDbRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/TestParticipantRelationDbRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/TestTypeDbRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/UserDbRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServer/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServer/src/main/java/StartRpcServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServices/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServices/src/main/java/competition/services/CompetitionException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServices/src/main/java/competition/services/ICompetitionObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServices/src/main/java/competition/services/ICompetitionServices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.idea/dataSources/eca9c5eb-2210-4d30-a259-56389de69417.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionClientFX/build/classes/java/main/competition/client/StartRpcClientFX.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionClientFX/build/classes/java/main/competition/client/gui/CompetitionController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionClientFX/build/resources/main/competitionclient.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionClientFX/build/resources/main/views/competitionPage.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionClientFX/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionClientFX/src/main/resources/competitionclient.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/build/classes/java/main/competition/model/Entity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/build/classes/java/main/competition/model/HasId.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/build/classes/java/main/competition/model/Participant.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/build/classes/java/main/competition/model/Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/build/classes/java/main/competition/model/TestAgeCategory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/build/classes/java/main/competition/model/TestDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/build/classes/java/main/competition/model/TestParticipantRelation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/build/classes/java/main/competition/model/TestType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/build/classes/java/main/competition/model/Tuple.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/build/classes/java/main/competition/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/build/libs/CompetitionModel-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/build/classes/java/main/competition/network/rpcprotocol/CompetitionClientRpcWorker.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/build/classes/java/main/competition/network/rpcprotocol/CompetitionServicesRpcProxy$ReaderThread.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/build/classes/java/main/competition/network/rpcprotocol/CompetitionServicesRpcProxy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/build/classes/java/main/competition/network/rpcprotocol/Request$Builder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/build/classes/java/main/competition/network/rpcprotocol/Request.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/build/classes/java/main/competition/network/rpcprotocol/RequestType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/build/classes/java/main/competition/network/rpcprotocol/Response$Builder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/build/classes/java/main/competition/network/rpcprotocol/Response.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/build/classes/java/main/competition/network/rpcprotocol/ResponseType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/build/classes/java/main/competition/network/utils/AbstractConcurrentServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/build/classes/java/main/competition/network/utils/AbstractServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/build/classes/java/main/competition/network/utils/CompetitionRpcConcurrentServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/build/classes/java/main/competition/network/utils/ServerException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/build/libs/CompetitionNetworking-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/build/classes/java/main/competition/persistence/IParticipantRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/build/classes/java/main/competition/persistence/IRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/build/classes/java/main/competition/persistence/ITestAgeCategoryRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/build/classes/java/main/competition/persistence/ITestParticipantRelationRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/build/classes/java/main/competition/persistence/ITestRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/build/classes/java/main/competition/persistence/ITestTypeRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/build/classes/java/main/competition/persistence/IUserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/build/classes/java/main/competition/persistence/repository/jdbc/JdbcUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/build/classes/java/main/competition/persistence/repository/jdbc/ParticipantDbRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/build/classes/java/main/competition/persistence/repository/jdbc/TestAgeCategoryDbRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/build/classes/java/main/competition/persistence/repository/jdbc/TestDbRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/build/classes/java/main/competition/persistence/repository/jdbc/TestParticipantRelationDbRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/build/classes/java/main/competition/persistence/repository/jdbc/TestTypeDbRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/build/classes/java/main/competition/persistence/repository/jdbc/UserDbRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/build/libs/CompetitionPersistence-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServer/build/classes/java/main/StartRpcServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServer/build/classes/java/main/competition/server/CompetitionServicesImplementation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServer/build/resources/main/competitionserver.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServer/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServer/database/competition.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServer/src/main/java/competition/server/CompetitionServicesImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServer/src/main/resources/competitionserver.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServices/build/classes/java/main/competition/services/CompetitionException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServices/build/classes/java/main/competition/services/ICompetitionObserver.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServices/build/classes/java/main/competition/services/ICompetitionServices.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServices/build/libs/CompetitionServices-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServices/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServices/build/tmp/jar/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/competition.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/competition.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionClientFX/src/main/java/competition/client/StartRpcClientFX.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionClientFX/src/main/java/competition/client/StartRpcClientFX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionClientFX/src/main/java/competition/client/gui/CompetitionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionClientFX/src/main/java/competition/client/gui/CompetitionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionClientFX/src/main/resources/views/competitionPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionClientFX/src/main/resources/views/competitionPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/src/main/java/competition/model/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/src/main/java/competition/model/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/src/main/java/competition/model/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/src/main/java/competition/model/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/src/main/java/competition/model/TestParticipantRelation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/src/main/java/competition/model/TestParticipantRelation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/src/main/java/competition/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionModel/src/main/java/competition/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/rpcprotocol/CompetitionClientRpcWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/rpcprotocol/CompetitionClientRpcWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/rpcprotocol/CompetitionServicesRpcProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/rpcprotocol/CompetitionServicesRpcProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/rpcprotocol/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/rpcprotocol/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/rpcprotocol/RequestType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/rpcprotocol/RequestType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/rpcprotocol/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/rpcprotocol/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/rpcprotocol/ResponseType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/rpcprotocol/ResponseType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/utils/AbstractConcurrentServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/utils/AbstractConcurrentServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/utils/AbstractServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/utils/AbstractServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/utils/CompetitionRpcConcurrentServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/utils/CompetitionRpcConcurrentServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/utils/ServerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionNetworking/src/main/java/competition/network/utils/ServerException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/IParticipantRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/IParticipantRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/IRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/IRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/ITestAgeCategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/ITestAgeCategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/ITestParticipantRelationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/ITestParticipantRelationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/ITestRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/ITestRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/ITestTypeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/ITestTypeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/IUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/IUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/JdbcUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/JdbcUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/ParticipantDbRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/ParticipantDbRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/TestAgeCategoryDbRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/TestAgeCategoryDbRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/TestDbRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/TestDbRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/TestParticipantRelationDbRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/TestParticipantRelationDbRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/TestTypeDbRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/TestTypeDbRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/UserDbRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/UserDbRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServer/src/main/java/StartRpcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServer/src/main/java/StartRpcServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServices/src/main/java/competition/services/CompetitionException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServices/src/main/java/competition/services/CompetitionException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServices/src/main/java/competition/services/ICompetitionObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServices/src/main/java/competition/services/ICompetitionObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServices/src/main/java/competition/services/ICompetitionServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServices/src/main/java/competition/services/ICompetitionServices.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -305,6 +351,7 @@
       <workItem from="1648293121421" duration="6697000" />
       <workItem from="1648667931718" duration="4295000" />
       <workItem from="1648721757654" duration="7050000" />
+      <workItem from="1648823492269" duration="10426000" />
     </task>
     <task id="LOCAL-00001" summary="Create model classes and repository interfaces">
       <created>1646491999942</created>
