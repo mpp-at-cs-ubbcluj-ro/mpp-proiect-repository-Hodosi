@@ -329,8 +329,15 @@ public class CompetitionController implements Initializable, ICompetitionObserve
                 alert.showAndWait();
                 return;
             }
-            List<Participant> participantList = new ArrayList<>();
-            participantObservableList.setAll(participantList);
+
+            try{
+                TestDTO testDTO = tableViewTests.getSelectionModel().getSelectedItem();
+                List<Participant> participantList = List.of(server.findAllParticipantsForTest(testDTO.getId()));
+                participantObservableList.setAll(participantList);
+            }catch (Exception e){
+                List<Participant> participantList = new ArrayList<>();
+                participantObservableList.setAll(participantList);
+            }
         });
     }
 }

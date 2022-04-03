@@ -1,8 +1,9 @@
 package competition.model;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Tuple <E1, E2>{
+public class Tuple <E1, E2> implements Serializable {
     private E1 e1;
     private E2 e2;
 

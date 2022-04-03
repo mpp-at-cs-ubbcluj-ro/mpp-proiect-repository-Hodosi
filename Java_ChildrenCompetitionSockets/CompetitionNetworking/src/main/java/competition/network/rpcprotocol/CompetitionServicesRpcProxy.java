@@ -33,23 +33,12 @@ public class CompetitionServicesRpcProxy implements ICompetitionServices {
     }
 
     @Override
-    public synchronized void login(User user, ICompetitionObserver client) throws CompetitionException {
-        System.out.println("LOGIN");
-//        User user = userRepository.findByUsername(username);
-//        if(user != null) {
-//            if(!user.getPassword().equals(password)){
-//                throw new WrongPasswordException();
-//            }
-//            userRepository.setCurrentUser(user);
-//        }
-//        else {
-//            throw new WrongUsernameException();
-//        }
+    public void login(User user, ICompetitionObserver client) throws CompetitionException {
+        System.out.println("PROXY - LOGIN");
         initializeConnection();
         Request req=new Request.Builder().type(RequestType.LOGIN).data(user).build();
         sendRequest(req);
         Response response=readResponse();
-        System.out.println(response);
         if (response.type()== ResponseType.OK){
             this.client=client;
             return;
@@ -62,12 +51,11 @@ public class CompetitionServicesRpcProxy implements ICompetitionServices {
     }
 
     @Override
-    public synchronized void logout(User user, ICompetitionObserver client) throws CompetitionException {
-        System.out.println("LOGOUT");
-        Request req=new Request.Builder().type(RequestType.LOGIN).data(user).build();
+    public void logout(User user, ICompetitionObserver client) throws CompetitionException {
+        System.out.println("PROXY - LOGOUT");
+        Request req=new Request.Builder().type(RequestType.LOGOUT).data(user).build();
         sendRequest(req);
         Response response=readResponse();
-        System.out.println(response);
         closeConnection();
         if (response.type()== ResponseType.ERROR){
             String err=response.data().toString();
@@ -76,13 +64,12 @@ public class CompetitionServicesRpcProxy implements ICompetitionServices {
     }
 
     @Override
-    public synchronized User findUserByUsername(String username) throws CompetitionException {
-        System.out.println("FIND BY USERNAME");
+    public User findUserByUsername(String username) throws CompetitionException {
+        System.out.println("PROXY - FIND BY USERNAME");
         User userDTO = new User("test", "test", username, "test");
         Request req=new Request.Builder().type(RequestType.FIND_USER_BY_USERNAME).data(userDTO).build();
         sendRequest(req);
         Response response=readResponse();
-        System.out.println(response);
         if (response.type()== ResponseType.ERROR){
             String err=response.data().toString();
             throw new CompetitionException(err);
@@ -92,8 +79,8 @@ public class CompetitionServicesRpcProxy implements ICompetitionServices {
     }
 
     @Override
-    public synchronized Participant findParticipantByUsername(String username) throws CompetitionException {
-        System.out.println("FIND BY PARTICIPANT USERNAME");
+    public Participant findParticipantByUsername(String username) throws CompetitionException {
+        System.out.println("PROXY - FIND PARTICIPANT BY USERNAME");
         Participant participantDTO = new Participant(username, "test", 1000);
         Request req=new Request.Builder().type(RequestType.FIND_PARTICIPANT_BY_USERNAME).data(participantDTO).build();
         sendRequest(req);
@@ -108,6 +95,7 @@ public class CompetitionServicesRpcProxy implements ICompetitionServices {
     }
 
     public void saveParticipant(String username, String name, int age, int testId) throws CompetitionException {
+        System.out.println("PROXY - SAVE PARTICIPANT");
         Participant participant = new Participant(username, name, age);
         participant.setId(testId);
         Request req=new Request.Builder().type(RequestType.SAVE_PARTICIPANT).data(participant).build();
@@ -120,6 +108,7 @@ public class CompetitionServicesRpcProxy implements ICompetitionServices {
     }
 
     public void saveRelation(int idTest, int idParticipant) throws CompetitionException {
+        System.out.println("PROXY - SAVE RELATION");
         Tuple<Integer, Integer> id = new Tuple<>(idTest, idParticipant);
         TestParticipantRelation testParticipantRelation = new TestParticipantRelation(id);
         Request req=new Request.Builder().type(RequestType.SAVE_RELATION).data(testParticipantRelation).build();
@@ -132,6 +121,7 @@ public class CompetitionServicesRpcProxy implements ICompetitionServices {
     }
 
     public User[] getLoggedUsers(User user) throws CompetitionException {
+        System.out.println("PROXY - GET LOGGED USERS");
         Request req=new Request.Builder().type(RequestType.GET_LOGGED_USERS).data(user).build();
         sendRequest(req);
         Response response=readResponse();
@@ -144,7 +134,8 @@ public class CompetitionServicesRpcProxy implements ICompetitionServices {
     }
 
     public TestDTO[] findAllTestDTOs() throws CompetitionException {
-        Request req=new Request.Builder().type(RequestType.GET_ALL_TEST_DTO).data(null).build();
+        System.out.println("PROXY - FIND ALL TEST DTOs");
+        Request req=new Request.Builder().type(RequestType.FIND_ALL_TEST_DTO).data(null).build();
         sendRequest(req);
         Response response=readResponse();
         if (response.type()== ResponseType.ERROR){
@@ -156,6 +147,7 @@ public class CompetitionServicesRpcProxy implements ICompetitionServices {
     }
 
     public Participant[] findAllParticipantsForTest(Integer id) throws CompetitionException{
+        System.out.println("PROXY - FIND ALL PARTICIPANT FOR TEST");
         Test tesDTO = new Test(null, null);
         tesDTO.setId(id);
         Request req=new Request.Builder().type(RequestType.FIND_ALL_PARTICIPANTS_FOR_TEST).data(tesDTO).build();
@@ -170,7 +162,8 @@ public class CompetitionServicesRpcProxy implements ICompetitionServices {
     }
 
 
-    private synchronized void closeConnection() {
+    private void closeConnection() {
+        System.out.println("PROXY - CLOSE CONNECTION");
         finished=true;
         try {
             input.close();
@@ -182,9 +175,8 @@ public class CompetitionServicesRpcProxy implements ICompetitionServices {
         }
     }
 
-    private synchronized void sendRequest(Request request) throws CompetitionException {
-        System.out.println("SEND REQUEST");
-
+    private  void sendRequest(Request request) throws CompetitionException {
+        System.out.println("PROXY - SEND REQUEST");
         try {
             output.writeObject(request);
             output.flush();
@@ -193,8 +185,8 @@ public class CompetitionServicesRpcProxy implements ICompetitionServices {
         }
     }
 
-    private synchronized Response readResponse() throws CompetitionException {
-        System.out.println("READ RESPONSE");
+    private Response readResponse() throws CompetitionException {
+        System.out.println("PROXY - READ RESPONSE");
         Response response=null;
         try{
             response=qresponses.take();
@@ -202,12 +194,12 @@ public class CompetitionServicesRpcProxy implements ICompetitionServices {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("RESPONSE READED");
+        System.out.println("PROXY - RESPONSE READ");
         return response;
     }
 
-    private synchronized void initializeConnection() throws CompetitionException {
-        System.out.println("INITIALIZE CONNECTION");
+    private void initializeConnection() throws CompetitionException {
+        System.out.println("PROXY - INITIALIZE CONNECTION");
         try{
             connection=new Socket(host,port);
             output=new ObjectOutputStream(connection.getOutputStream());
@@ -221,16 +213,16 @@ public class CompetitionServicesRpcProxy implements ICompetitionServices {
         }
     }
 
-    private synchronized void startReader(){
-        System.out.println("START READER");
+    private void startReader(){
+        System.out.println("PROXY - START READER");
 
         Thread tw=new Thread(new ReaderThread());
         tw.start();
     }
 
-    private synchronized void handleUpdate(Response response){
-        System.out.println("HANDLE UPDATE");
-        if (response.type()== ResponseType.USER_LOGGED_IN){
+    private void handleUpdate(Response response){
+        System.out.println("PROXY - HANDLE UPDATE");
+        if (response.type() == ResponseType.USER_LOGGED_IN){
 
             User user = (User) response.data();
             System.out.println("User logged in "+ user);
@@ -252,6 +244,7 @@ public class CompetitionServicesRpcProxy implements ICompetitionServices {
         }
 
         if(response.type() == ResponseType.NEW_PARTICIPANT){
+            System.out.println("new participant ");
             try{
                 client.participantSaved();
             }catch (CompetitionException exception){
@@ -260,14 +253,14 @@ public class CompetitionServicesRpcProxy implements ICompetitionServices {
         }
     }
 
-    private synchronized boolean isUpdate(Response response){
-        System.out.println("IS UPDATE");
+    private boolean isUpdate(Response response){
+        System.out.println("PROXY - IS UPDATE");
         return response.type()== ResponseType.USER_LOGGED_IN || response.type()== ResponseType.USER_LOGGED_OUT || response.type()== ResponseType.NEW_PARTICIPANT;
     }
 
     private class ReaderThread implements Runnable{
-        public synchronized void run() {
-            System.out.println("READER THREAD");
+        public void run() {
+            System.out.println("PROXY - READER THREAD");
             while(!finished){
                 try {
                     System.out.println("try to read response");
@@ -285,7 +278,7 @@ public class CompetitionServicesRpcProxy implements ICompetitionServices {
                     }
                 } catch (IOException e) {
                     System.out.println("IO");
-                    System.out.println("Reading error "+e);
+                    System.out.println("Reading error " + e);
                 } catch (ClassNotFoundException e) {
                     System.out.println("Class");
                     System.out.println("Reading error "+e);
@@ -293,5 +286,4 @@ public class CompetitionServicesRpcProxy implements ICompetitionServices {
             }
         }
     }
-
 }

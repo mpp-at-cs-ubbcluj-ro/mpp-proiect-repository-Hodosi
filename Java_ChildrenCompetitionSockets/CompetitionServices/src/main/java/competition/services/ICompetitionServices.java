@@ -11,6 +11,7 @@ public interface ICompetitionServices {
     Participant findParticipantByUsername(String username) throws CompetitionException;
     void saveParticipant(String username, String name, int age, int testId) throws CompetitionException;
     void saveRelation(int idTest, int idParticipant) throws CompetitionException;
+    User[] getLoggedUsers(User user)throws CompetitionException;
     TestDTO[] findAllTestDTOs() throws CompetitionException;
     Participant[] findAllParticipantsForTest(Integer id) throws CompetitionException;
 }

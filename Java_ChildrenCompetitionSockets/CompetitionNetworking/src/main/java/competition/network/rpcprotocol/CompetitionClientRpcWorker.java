@@ -1,6 +1,6 @@
 package competition.network.rpcprotocol;
 
-import competition.model.User;
+import competition.model.*;
 import competition.services.CompetitionException;
 import competition.services.ICompetitionObserver;
 import competition.services.ICompetitionServices;
@@ -31,6 +31,7 @@ public class CompetitionClientRpcWorker implements Runnable, ICompetitionObserve
     }
 
     public void run() {
+        System.out.println("WORKER - RUN");
         while(connected){
             try {
                 System.out.println("read request");
@@ -63,6 +64,7 @@ public class CompetitionClientRpcWorker implements Runnable, ICompetitionObserve
 
     @Override
     public void userLoggedIn(User user) throws CompetitionException {
+        System.out.println("WORKER - USER LOGGED IN");
         Response resp=new Response.Builder().type(ResponseType.USER_LOGGED_IN).data(user).build();
         System.out.println("Friend logged in " + user);
         try {
@@ -74,6 +76,7 @@ public class CompetitionClientRpcWorker implements Runnable, ICompetitionObserve
 
     @Override
     public void userLoggedOut(User user) throws CompetitionException {
+        System.out.println("WORKER - USER LOGGED OUT");
         Response resp=new Response.Builder().type(ResponseType.USER_LOGGED_IN).data(user).build();
         System.out.println("Friend logged out " + user);
         try {
@@ -85,6 +88,7 @@ public class CompetitionClientRpcWorker implements Runnable, ICompetitionObserve
 
     @Override
     public void participantSaved() throws CompetitionException {
+        System.out.println("WORKER - PARTICIPANT SAVED");
         Response resp=new Response.Builder().type(ResponseType.NEW_PARTICIPANT).data(null).build();
         System.out.println("Participant saved");
         try {
@@ -95,9 +99,10 @@ public class CompetitionClientRpcWorker implements Runnable, ICompetitionObserve
     }
 
 
-    private static Response okResponse = new Response.Builder().type(ResponseType.OK).build();
+    private static final Response okResponse = new Response.Builder().type(ResponseType.OK).build();
 
     private Response handleRequest(Request request){
+        System.out.println("WORKER - HANDLE REQUEST");
         Response response=null;
         if (request.type()== RequestType.LOGIN){
             System.out.println("Login request ..."+request.type());
@@ -105,7 +110,9 @@ public class CompetitionClientRpcWorker implements Runnable, ICompetitionObserve
             try {
                 server.login(user, this);
                 return okResponse;
-            } catch (CompetitionException e) {
+
+            }
+            catch (CompetitionException e) {
                 connected=false;
                 return new Response.Builder().type(ResponseType.ERROR).data(e.getMessage()).build();
             }
@@ -118,16 +125,112 @@ public class CompetitionClientRpcWorker implements Runnable, ICompetitionObserve
                 connected=false;
                 return okResponse;
 
-            } catch (CompetitionException e) {
+            }
+            catch (CompetitionException e) {
                 return new Response.Builder().type(ResponseType.ERROR).data(e.getMessage()).build();
             }
         }
+
+        if (request.type() == RequestType.GET_LOGGED_USERS){
+            System.out.println("Get logged users request");
+            User user = (User)request.data();
+            try{
+                User[] users = server.getLoggedUsers(user);
+                return new Response.Builder().type(ResponseType.GET_LOGGED_USERS).data(users).build();
+
+            }
+            catch (CompetitionException e){
+                return new Response.Builder().type(ResponseType.ERROR).data(e.getMessage()).build();
+            }
+        }
+
+        if (request.type() == RequestType.FIND_USER_BY_USERNAME){
+            System.out.println("Find by user by username request");
+            User userDTO = (User) request.data();
+            try{
+                User user = server.findUserByUsername(userDTO.getUsername());
+                return new Response.Builder().type(ResponseType.FIND_USER_BY_USERNAME).data(user).build();
+
+            }
+            catch (CompetitionException e){
+                return new Response.Builder().type(ResponseType.ERROR).data(e.getMessage()).build();
+            }
+        }
+
+        if (request.type() == RequestType.SAVE_PARTICIPANT){
+            System.out.println("Save participant request");
+            Participant participant = (Participant) request.data();
+            try{
+                server.saveParticipant(participant.getUsername(), participant.getName(), participant.getAge(), participant.getId());
+                return okResponse;
+
+            }
+            catch (CompetitionException e){
+                return new Response.Builder().type(ResponseType.ERROR).data(e.getMessage()).build();
+            }
+        }
+
+        if(request.type() == RequestType.FIND_ALL_TEST_DTO){
+            System.out.println("Find all test dto request");
+            try{
+                TestDTO[] testDTOs = server.findAllTestDTOs();
+                return new Response.Builder().type(ResponseType.FIND_ALL_TEST_DTO).data(testDTOs).build();
+
+            }
+            catch (CompetitionException e){
+                return new Response.Builder().type(ResponseType.ERROR).data(e.getMessage()).build();
+            }
+        }
+
+
+
+        if(request.type() == RequestType.SAVE_RELATION){
+            System.out.println("Save relation request");
+            try {
+                TestParticipantRelation testParticipantRelation = (TestParticipantRelation) request.data();
+                server.saveRelation(testParticipantRelation.getId().getLeft(), testParticipantRelation.getId().getRight());
+                return okResponse;
+            }
+            catch (CompetitionException e){
+                return new Response.Builder().type(ResponseType.ERROR).data(e.getMessage()).build();
+            }
+        }
+
+        if(request.type() == RequestType.FIND_PARTICIPANT_BY_USERNAME){
+            System.out.println("Find participant by username request");
+            Participant participantDTO = (Participant) request.data();
+            try {
+                Participant participant = server.findParticipantByUsername(participantDTO.getUsername());
+                return new Response.Builder().type(ResponseType.FIND_PARTICIPANT_BY_USERNAME).data(participant).build();
+
+            }
+            catch (CompetitionException e){
+                return new Response.Builder().type(ResponseType.ERROR).data(e.getMessage()).build();
+            }
+        }
+
+        if(request.type() == RequestType.FIND_ALL_PARTICIPANTS_FOR_TEST){
+            System.out.println("Find all test dto request");
+            Test testDTO = (Test) request.data();
+            try{
+                Participant[] participants = server.findAllParticipantsForTest(testDTO.getId());
+                return new Response.Builder().type(ResponseType.FIND_ALL_PARTICIPANTS_FOR_TEST).data(participants).build();
+
+            }
+            catch (CompetitionException e){
+                return new Response.Builder().type(ResponseType.ERROR).data(e.getMessage()).build();
+            }
+        }
+
         return response;
     }
 
     private void sendResponse(Response response) throws IOException{
+        System.out.println("WORKER - SEND RESPONSE");
         System.out.println("sending response "+response);
-        output.writeObject(response);
-        output.flush();
+        synchronized (output){
+            output.writeObject(response);
+            output.flush();
+        }
     }
 }

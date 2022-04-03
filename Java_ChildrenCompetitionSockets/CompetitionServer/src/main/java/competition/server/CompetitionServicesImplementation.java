@@ -36,6 +36,7 @@ public class CompetitionServicesImplementation implements ICompetitionServices {
 
     @Override
     public synchronized void login(User user, ICompetitionObserver client) throws CompetitionException {
+        System.out.println("IMPLEMENTATION - LOGIN");
         User crtUser = userRepository.findByUsername(user.getUsername());
         if(crtUser != null) {
             if(loggedClients.get(crtUser.getUsername()) != null){
@@ -55,17 +56,18 @@ public class CompetitionServicesImplementation implements ICompetitionServices {
 
     private final int defaultThreadsNo=5;
     private void notifyUsersLoggedIn(User user) throws CompetitionException {
+        System.out.println("IMPLEMENTATION - NOTIFY USERS LOGGED IN");
         Iterable<User> users=userRepository.findAll();
         System.out.println("Logged "+ users);
 
         ExecutorService executor= Executors.newFixedThreadPool(defaultThreadsNo);
         for(User us : users){
-            ICompetitionObserver comppetitionClient=loggedClients.get(us.getUsername());
-            if (comppetitionClient!=null)
+            ICompetitionObserver competitionClient=loggedClients.get(us.getUsername());
+            if (competitionClient!=null)
                 executor.execute(() -> {
                     try {
                         System.out.println("Notifying [" + us.getId()+ "] friend ["+user.getId()+"] logged in.");
-                        comppetitionClient.userLoggedIn(user);
+                        competitionClient.userLoggedIn(user);
                     } catch (CompetitionException e) {
                         System.err.println("Error notifying friend " + e);
                     }
@@ -76,6 +78,7 @@ public class CompetitionServicesImplementation implements ICompetitionServices {
     }
 
     private void notifyUsersLoggedOut(User user) throws CompetitionException {
+        System.out.println("IMPLEMENTATION - NOTIFY USERS LOGGED OUT");
         Iterable<User> users=userRepository.findAll();
         ExecutorService executor= Executors.newFixedThreadPool(defaultThreadsNo);
 
@@ -97,13 +100,15 @@ public class CompetitionServicesImplementation implements ICompetitionServices {
     }
 
     private void notifySavedParticipant() throws CompetitionException{
+        System.out.println("IMPLEMENTATION - NOTIFY SAVED PARTICIPANT");
         for (Map.Entry<String, ICompetitionObserver> entry : loggedClients.entrySet()){
             entry.getValue().participantSaved();
         }
     }
 
     @Override
-    public void logout(User user, ICompetitionObserver client) throws CompetitionException {
+    public synchronized void logout(User user, ICompetitionObserver client) throws CompetitionException {
+        System.out.println("IMPLEMENTATION - LOGOUT");
         ICompetitionObserver localClient=loggedClients.remove(user.getUsername());
         if (localClient==null)
             throw new CompetitionException("User "+user.getId()+" is not logged in.");
@@ -111,6 +116,7 @@ public class CompetitionServicesImplementation implements ICompetitionServices {
     }
 
     public synchronized User[] getLoggedUsers(User user) throws CompetitionException {
+        System.out.println("IMPLEMENTATION - GET LOGGED USERS");
         Iterable<User> users=userRepository.findAll();
         Set<User> result=new TreeSet<User>();
         System.out.println("Logged friends for: "+user.getId());
@@ -124,7 +130,8 @@ public class CompetitionServicesImplementation implements ICompetitionServices {
         return result.toArray(new User[result.size()]);
     }
 
-    public TestDTO[] findAllTestDTOs() throws CompetitionException {
+    public synchronized TestDTO[] findAllTestDTOs() throws CompetitionException {
+        System.out.println("IMPLEMENTATION - FIND ALL TEST DTOs");
         Iterable<Test> tests =  testRepository.findAll();
 
         List<TestDTO> testDTOs = new ArrayList<TestDTO>();
@@ -145,13 +152,15 @@ public class CompetitionServicesImplementation implements ICompetitionServices {
         return testDTOs.toArray(new TestDTO[testDTOs.size()]);
     }
 
-    public Participant[] findAllParticipantsForTest(Integer id) throws CompetitionException{
+    public synchronized Participant[] findAllParticipantsForTest(Integer id) throws CompetitionException{
+        System.out.println("IMPLEMENTATION - FIND ALL PARTICIPANT FOR TEST");
         List<Participant> participants = (List<Participant>) participantRepository.findAllParticipantsForTest(id);
         return participants.toArray(new Participant[participants.size()]);
     }
 
     @Override
     public synchronized User findUserByUsername(String username) throws CompetitionException {
+        System.out.println("IMPLEMENTATION - FIND USER BY USERNAME");
         System.out.println("Find by username : " + username);
         User user = userRepository.findByUsername(username);
         return user;
@@ -159,6 +168,7 @@ public class CompetitionServicesImplementation implements ICompetitionServices {
 
     @Override
     public synchronized Participant findParticipantByUsername(String username) throws CompetitionException {
+        System.out.println("IMPLEMENTATION - FIND PARTICIPANT BY USERNAME");
         System.out.println("Find by username : " + username);
         Participant participant = participantRepository.findByUsername(username);
         return participant;
@@ -166,7 +176,8 @@ public class CompetitionServicesImplementation implements ICompetitionServices {
 
 
     @Override
-    public void saveParticipant(String username, String name, int age, int testId) throws CompetitionException {
+    public synchronized void saveParticipant(String username, String name, int age, int testId) throws CompetitionException {
+        System.out.println("IMPLEMENTATION - SAVE PARTICIPANT");
         Participant participant = participantRepository.findByUsername(username);
         if(participant == null){
             Participant newParticipant = new Participant(username, name, age);
@@ -188,7 +199,8 @@ public class CompetitionServicesImplementation implements ICompetitionServices {
     }
 
     @Override
-    public void saveRelation(int idTest, int idParticipant) throws CompetitionException {
+    public synchronized void saveRelation(int idTest, int idParticipant) throws CompetitionException {
+        System.out.println("IMPLEMENTATION - SAVE RELATION");
         Tuple<Integer, Integer> id = new Tuple<>(idTest, idParticipant);
         TestParticipantRelation testParticipantRelation = new TestParticipantRelation(id);
         this.testParticipantRelationRepository.save(testParticipantRelation);
