@@ -1,0 +1,8 @@
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\model\bin\Debug\model.exe
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\model\bin\Debug\model.pdb
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\model\obj\Debug\model.csproj.AssemblyReference.cache
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\model\obj\Debug\model.csproj.CoreCompileInputs.cache
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\model\obj\Debug\model.exe
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\model\obj\Debug\model.pdb
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\model\obj\Debug\model.Form1.resources
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\model\obj\Debug\model.csproj.GenerateResource.cache

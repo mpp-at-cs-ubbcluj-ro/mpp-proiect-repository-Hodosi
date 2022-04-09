@@ -1,0 +1,16 @@
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\client\bin\Debug\client.exe.config
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\client\bin\Debug\client.exe
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\client\bin\Debug\client.pdb
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\client\obj\Debug\client.csproj.AssemblyReference.cache
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\client\obj\Debug\client.Properties.Resources.resources
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\client\obj\Debug\client.csproj.GenerateResource.cache
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\client\obj\Debug\client.csproj.CoreCompileInputs.cache
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\client\obj\Debug\client.exe
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\client\obj\Debug\client.pdb
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\client\bin\Debug\model.exe
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\client\bin\Debug\networking.exe
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\client\bin\Debug\services.exe
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\client\bin\Debug\model.pdb
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\client\bin\Debug\networking.pdb
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\client\bin\Debug\services.pdb
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\client\obj\Debug\client.csproj.CopyComplete

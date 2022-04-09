@@ -1,0 +1,9 @@
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\services\bin\Debug\services.exe
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\services\bin\Debug\services.pdb
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\services\bin\Debug\model.exe
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\services\bin\Debug\model.pdb
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\services\obj\Debug\services.csproj.AssemblyReference.cache
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\services\obj\Debug\services.csproj.CoreCompileInputs.cache
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\services\obj\Debug\services.csproj.CopyComplete
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\services\obj\Debug\services.exe
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\services\obj\Debug\services.pdb
