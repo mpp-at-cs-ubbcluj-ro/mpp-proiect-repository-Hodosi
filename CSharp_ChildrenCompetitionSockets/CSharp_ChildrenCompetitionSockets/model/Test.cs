@@ -1,5 +1,8 @@
-﻿namespace CSharp_ChildrenCompetitionGUI.model
+﻿using System;
+
+namespace CSharp_ChildrenCompetitionGUI.model
 {
+    [Serializable]
     public class Test : Entity<int>
     {
         public TestType type { get; }

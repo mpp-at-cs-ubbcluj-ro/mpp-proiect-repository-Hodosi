@@ -1,5 +1,8 @@
-﻿namespace CSharp_ChildrenCompetitionGUI.model
+﻿using System;
+
+namespace CSharp_ChildrenCompetitionGUI.model
 {
+    [Serializable]
     public class TestType : Entity<int>
     {
         //DRAWING, TREASURE_HUNT, POETRY

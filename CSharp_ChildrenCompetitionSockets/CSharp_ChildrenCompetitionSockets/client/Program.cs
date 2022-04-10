@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using networking;
+using services;
 
 namespace client
 {
@@ -16,7 +18,9 @@ namespace client
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            ICompetitionServices server = new CompetitionServerProxy("127.0.0.1", 55556);
+            CompetitionClientCtrl controller = new CompetitionClientCtrl(server);
+            Application.Run(new Form1(controller));
         }
     }
 }

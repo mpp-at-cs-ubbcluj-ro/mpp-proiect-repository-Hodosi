@@ -62,7 +62,8 @@ namespace CSharp_ChildrenCompetitionGUI.repository
         public override IDbConnection createConnection()
         {
             Console.WriteLine("creating ... sqlite connection");
-            String connectionString = "URI=file:ChatMPP2017.db,Version=3";
+            //String connectionString = "URI=file:ChatMPP2017.db,Version=3";
+            String connectionString = "URI=file:C:/MPP/mpp-proiect-repository-Hodosi/CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/server/database/competition.db";
             return new SQLiteConnection(connectionString);
 
 

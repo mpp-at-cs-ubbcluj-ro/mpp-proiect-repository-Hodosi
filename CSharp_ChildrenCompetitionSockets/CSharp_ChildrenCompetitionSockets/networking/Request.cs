@@ -8,7 +8,7 @@ namespace networking
         public RequestType type { get; set; }
         public Object data { get; set; }
 
-        private Request(){}
+        public Request(){}
         
         public string toString() {
             return "Request{" +

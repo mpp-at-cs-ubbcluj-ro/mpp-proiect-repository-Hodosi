@@ -5,8 +5,8 @@ namespace networking
     [Serializable]
     public class Response
     {
-        private ResponseType type { get; set; }
-        private Object data { get; set; }
+        public ResponseType type { get; set; }
+        public Object data { get; set; }
 
         private Response(){}
         

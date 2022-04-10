@@ -2,6 +2,7 @@
 
 namespace CSharp_ChildrenCompetitionGUI.model
 {
+    [Serializable]
     public class TestParticipantRelation : HasId<Tuple<int, int>>
     {
         public Tuple<int, int> id { get; set; }
