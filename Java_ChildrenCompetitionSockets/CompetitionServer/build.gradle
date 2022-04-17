@@ -11,7 +11,8 @@ repositories {
 }
 
 application {
-    mainClass = 'StartRpcServer'
+//    mainClass = 'StartRpcServer'
+    mainClass = 'StratProtobuffServer'
 }
 
 dependencies {

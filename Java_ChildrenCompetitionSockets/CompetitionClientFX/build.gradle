@@ -12,7 +12,8 @@ repositories {
 }
 
 application {
-    mainClass = 'competition.client.StartRpcClientFX'
+//    mainClass = 'competition.client.StartRpcClientFX'
+    mainClass = 'competition.client.StartProtobuffClient'
 }
 
 dependencies {

@@ -10,103 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0cb01ba-cc9a-4d16-a2f3-c9ae27586d71" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/persistence/bin/Debug/EntityFramework.SqlServer.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/bin/Debug/EntityFramework.SqlServer.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/bin/Debug/EntityFramework.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/bin/Debug/EntityFramework.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/bin/Debug/System.Data.SQLite.EF6.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/bin/Debug/System.Data.SQLite.Linq.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/bin/Debug/System.Data.SQLite.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/bin/Debug/System.Data.SQLite.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/bin/Debug/model.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/bin/Debug/model.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/bin/Debug/persistence.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/bin/Debug/persistence.exe.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/bin/Debug/persistence.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/bin/Debug/x64/SQLite.Interop.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/bin/Debug/x86/SQLite.Interop.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/obj/Debug/persistence.csproj.CopyComplete" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/obj/Debug/persistence.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/obj/Debug/persistence.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/obj/Debug/persistence.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/obj/Debug/persistence.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/bin/Debug/EntityFramework.SqlServer.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/bin/Debug/EntityFramework.SqlServer.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/bin/Debug/EntityFramework.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/bin/Debug/EntityFramework.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/bin/Debug/System.Data.SQLite.EF6.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/bin/Debug/System.Data.SQLite.Linq.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/bin/Debug/System.Data.SQLite.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/bin/Debug/System.Data.SQLite.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/bin/Debug/model.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/bin/Debug/model.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/bin/Debug/networking.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/bin/Debug/networking.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/bin/Debug/persistence.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/bin/Debug/persistence.exe.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/bin/Debug/persistence.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/bin/Debug/server.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/bin/Debug/server.exe.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/bin/Debug/server.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/bin/Debug/services.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/bin/Debug/services.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/bin/Debug/x64/SQLite.Interop.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/bin/Debug/x86/SQLite.Interop.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/database/competition.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/obj/Debug/server.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/obj/Debug/server.csproj.CopyComplete" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/obj/Debug/server.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/obj/Debug/server.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/obj/Debug/server.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/obj/Debug/server.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CSharp_ChildrenCompetitionSockets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CSharp_ChildrenCompetitionSockets/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/CompetitionClientCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/client/CompetitionClientCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/CompetitionUserEventArgs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/client/CompetitionUserEventArgs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/client/Form1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/client/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/bin/Debug/client.exe" beforeDir="false" afterPath="$PROJECT_DIR$/client/bin/Debug/client.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/bin/Debug/client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/client/bin/Debug/client.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/bin/Debug/model.exe" beforeDir="false" afterPath="$PROJECT_DIR$/client/bin/Debug/model.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/bin/Debug/model.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/client/bin/Debug/model.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/bin/Debug/networking.exe" beforeDir="false" afterPath="$PROJECT_DIR$/client/bin/Debug/networking.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/bin/Debug/networking.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/client/bin/Debug/networking.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/obj/Debug/client.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/client.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/obj/Debug/client.exe" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/client.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/obj/Debug/client.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/client.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/model/Entity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Participant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/model/Participant.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/model/Test.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/TestAgeCategory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/model/TestAgeCategory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/TestDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/model/TestDTO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/TestParticipantRelation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/model/TestParticipantRelation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/TestType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/model/TestType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/model/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/bin/Debug/model.exe" beforeDir="false" afterPath="$PROJECT_DIR$/model/bin/Debug/model.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/bin/Debug/model.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/model/bin/Debug/model.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/obj/Debug/model.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/model/obj/Debug/model.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/obj/Debug/model.exe" beforeDir="false" afterPath="$PROJECT_DIR$/model/obj/Debug/model.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/obj/Debug/model.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/model/obj/Debug/model.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/networking/CompetitionClientRpcWorker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/networking/CompetitionClientRpcWorker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/networking/CompetitionServicesRpcProxy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/networking/CompetitionServicesRpcProxy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/networking/Request.cs" beforeDir="false" afterPath="$PROJECT_DIR$/networking/Request.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/networking/Response.cs" beforeDir="false" afterPath="$PROJECT_DIR$/networking/Response.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/networking/bin/Debug/model.exe" beforeDir="false" afterPath="$PROJECT_DIR$/networking/bin/Debug/model.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/networking/bin/Debug/model.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/networking/bin/Debug/model.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/networking/bin/Debug/networking.exe" beforeDir="false" afterPath="$PROJECT_DIR$/networking/bin/Debug/networking.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/networking/bin/Debug/networking.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/networking/bin/Debug/networking.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/networking/obj/Debug/networking.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/networking/obj/Debug/networking.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/networking/obj/Debug/networking.exe" beforeDir="false" afterPath="$PROJECT_DIR$/networking/obj/Debug/networking.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/networking/obj/Debug/networking.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/networking/obj/Debug/networking.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/App.config" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/App.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/DBUtils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/DBUtils.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/persistence/obj/Debug/persistence.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/obj/Debug/persistence.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/CompetitionServerImpl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/server/CompetitionServerImpl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/server/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/StartServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/server/StartServer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/bin/Debug/model.exe" beforeDir="false" afterPath="$PROJECT_DIR$/services/bin/Debug/model.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/bin/Debug/model.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/services/bin/Debug/model.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/obj/Debug/services.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/services/obj/Debug/services.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/bin/Debug/server.exe" beforeDir="false" afterPath="$PROJECT_DIR$/server/bin/Debug/server.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/bin/Debug/server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/server/bin/Debug/server.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/database/competition.db" beforeDir="false" afterPath="$PROJECT_DIR$/server/database/competition.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/obj/Debug/server.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/server.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/obj/Debug/server.exe" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/server.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/obj/Debug/server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/server.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Java_ChildrenCompetitionSockets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java_ChildrenCompetitionSockets/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -250,7 +163,9 @@
       <option name="presentableId" value="Default" />
       <updated>1649493042586</updated>
       <workItem from="1649493072102" duration="8152000" />
-      <workItem from="1649579437930" duration="19553000" />
+      <workItem from="1649579437930" duration="20216000" />
+      <workItem from="1649658861242" duration="2980000" />
+      <workItem from="1649714180841" duration="998000" />
     </task>
     <task id="LOCAL-00001" summary="Have a nice day!">
       <created>1649504121525</created>
@@ -259,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649504121525</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Have a nice day">
+      <created>1649607034401</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1649607034401</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +193,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Have a nice day!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Have a nice day!" />
+    <MESSAGE value="Have a nice day" />
+    <option name="LAST_COMMIT_MESSAGE" value="Have a nice day" />
   </component>
 </project>

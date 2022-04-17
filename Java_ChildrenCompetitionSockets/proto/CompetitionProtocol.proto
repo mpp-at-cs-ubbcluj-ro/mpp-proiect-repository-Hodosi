@@ -1,0 +1,74 @@
+syntax="proto3";
+package chat.protocol;
+
+option java_package = "competition.network.protobuffprotocol";
+option java_outer_classname = "CompetitionProtobufs";
+
+message User {
+  string firstname = 1;
+  string lastname = 2;
+  string username = 3;
+  string password = 4;
+}
+
+message Participant {
+  string username = 1;
+  string name = 2;
+  string age = 3;
+  string testId = 4;
+}
+
+message Test {
+  string testId = 1;
+}
+
+message TestDTO {
+  string testType = 1;
+  string testAgeCategory = 2;
+  string noCompetitors = 3;
+  string testId = 4;
+}
+
+message TestParticipantRelation {
+  string testId = 1;
+  string participantId = 2;
+}
+
+message CompetitionRequest {
+//    LOGIN, LOGOUT, GET_LOGGED_USERS, FIND_USER_BY_USERNAME, SAVE_PARTICIPANT, FIND_ALL_TEST_DTO,
+//    SAVE_RELATION, FIND_PARTICIPANT_BY_USERNAME, FIND_ALL_PARTICIPANTS_FOR_TEST
+  enum Type {Unknown=0; Login = 1; Logout = 2; GetLoggedUsers = 3; FindUserByUsername = 4; SaveParticipant = 5;
+            FindAllTestDto = 6; SaveRelation = 7; FindParticipantByUsername = 8; FinAllParticipantsForTest = 9;}
+
+  // Identifies which request is filled in.
+  Type type = 1;
+
+  // One of the following will be filled in, depending on the type.
+  oneof payload{
+    string empty = 2;
+    User user = 3;
+    Participant participant = 4;
+    TestDTO testDTO = 5;
+    TestParticipantRelation testParticipantRelation = 6;
+    Test test = 7;
+  }
+}
+
+message CompetitionResponse{
+//    OK, ERROR, NEW_PARTICIPANT, USER_LOGGED_IN, USER_LOGGED_OUT, GET_LOGGED_USERS,
+//    FIND_USER_BY_USERNAME, FIND_ALL_TEST_DTO, FIND_PARTICIPANT_BY_USERNAME,FIND_ALL_PARTICIPANTS_FOR_TEST
+  enum Type { Unknown = 0; Ok = 1; Error = 2; NewParticipant = 3; UserLoggedIn = 4; UserLoggedOut = 5; GetLoggedUsers = 6;
+            FindUserByUsername = 7; FindAllTestDto = 8; FindParticipantByUsername = 9; FindAllParticipantsForTest = 10;}
+
+  // Identifies which request is filled in.
+  Type type = 1;
+
+  // One of the following will be filled in, depending on the type.
+  string empty = 2;
+  string error = 3;
+  repeated User users = 4;
+  User user = 5;
+  repeated TestDTO testDTOs = 6;
+  repeated Participant participants = 7;
+  Participant participant = 8;
+}
