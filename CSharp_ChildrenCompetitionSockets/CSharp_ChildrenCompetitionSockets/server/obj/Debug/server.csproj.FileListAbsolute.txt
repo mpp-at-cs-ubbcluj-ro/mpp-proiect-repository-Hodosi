@@ -23,3 +23,14 @@ C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_Ch
 C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\server\obj\Debug\server.csproj.CopyComplete
 C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\server\obj\Debug\server.exe
 C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\server\obj\Debug\server.pdb
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\server\bin\Debug\Google.Protobuf.dll
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\server\bin\Debug\System.Memory.dll
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\server\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\server\bin\Debug\System.Numerics.Vectors.dll
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\server\bin\Debug\System.Buffers.dll
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\server\bin\Debug\Google.Protobuf.pdb
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\server\bin\Debug\Google.Protobuf.xml
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\server\bin\Debug\System.Memory.xml
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\server\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\server\bin\Debug\System.Numerics.Vectors.xml
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_ChildrenCompetitionSockets\server\bin\Debug\System.Buffers.xml

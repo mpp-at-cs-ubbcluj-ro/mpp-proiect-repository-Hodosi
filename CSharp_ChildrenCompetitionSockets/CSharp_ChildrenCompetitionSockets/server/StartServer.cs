@@ -22,7 +22,8 @@ namespace server
             ICompetitionServices services = new CompetitionServerImpl(userRepository, participantRepository,
                 testRepository, testParticipantRelationRepository);
 
-            SerialCompetitionServer server = new SerialCompetitionServer("127.0.0.1", 55556, services);
+            // SerialCompetitionServer server = new SerialCompetitionServer("127.0.0.1", 55556, services);
+            ProtoCompetitionServer server = new ProtoCompetitionServer("127.0.0.1", 55556, services);
             server.Start();
             Console.WriteLine("Server started ...");
             Console.ReadLine();
@@ -41,6 +42,23 @@ namespace server
         protected override Thread createWorker(TcpClient client)
         {
             worker = new CompetitionClientWorker(server, client);
+            return new Thread(new ThreadStart(worker.run));
+        }
+    }
+    
+    public class ProtoCompetitionServer : ConcurrentServer
+    {
+        private ICompetitionServices server;
+        private ProtoCompetitionWorker worker;
+        public ProtoCompetitionServer(string host, int port, ICompetitionServices server)
+            : base(host, port)
+        {
+            this.server = server;
+            Console.WriteLine("ProtoChatServer...");
+        }
+        protected override Thread createWorker(TcpClient client)
+        {
+            worker = new ProtoCompetitionWorker(server, client);
             return new Thread(new ThreadStart(worker.run));
         }
     }

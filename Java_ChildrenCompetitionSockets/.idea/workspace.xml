@@ -5,42 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ac7a1f3-5ca7-448a-b96a-b836142e2e64" name="Changes" comment="Have a nice day!">
-      <change afterPath="$PROJECT_DIR$/CompetitionClientFX/src/main/java/competition/client/StartProtobuffClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CompetitionNetworking/src/main/java/competition/network/protobuffprotocol/CompetitionProtobufs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CompetitionNetworking/src/main/java/competition/network/protobuffprotocol/ProtoCompetitionProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CompetitionNetworking/src/main/java/competition/network/protobuffprotocol/ProtoCompetitionWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CompetitionNetworking/src/main/java/competition/network/protobuffprotocol/ProtoUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CompetitionNetworking/src/main/java/competition/network/utils/CompetitionProtobuffConcurrentServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CompetitionServer/src/main/java/StratProtobuffServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proto/CompetitionProtocol.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proto/csharpFiles/CompetitionProtocol.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proto/javaFiles/competition/network/protobuffprotocol/CompetitionProtobufs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/networking/CompetitionProtocol.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/networking/ProtoCompetitionWorker.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/networking/ProtoUtils.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/.idea/.idea.CSharp_ChildrenCompetitionSockets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/.idea/.idea.CSharp_ChildrenCompetitionSockets/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/client/obj/Debug/client.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/client/obj/Debug/client.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/networking/networking.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/networking/networking.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/networking/obj/Debug/networking.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/networking/obj/Debug/networking.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/persistence/obj/Debug/persistence.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/persistence/obj/Debug/persistence.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/server/bin/Debug/server.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/server/bin/Debug/server.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/server/bin/Debug/server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/server/bin/Debug/server.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/server/database/competition.db" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/server/database/competition.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/server/obj/Debug/server.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/server/obj/Debug/server.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/server/obj/Debug/server.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/server/obj/Debug/server.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/server/obj/Debug/server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/server/obj/Debug/server.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompetitionClientFX/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionClientFX/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompetitionClientFX/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionClientFX/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompetitionNetworking/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionNetworking/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompetitionNetworking/build/libs/CompetitionNetworking-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionNetworking/build/libs/CompetitionNetworking-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompetitionNetworking/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionNetworking/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompetitionServer/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionServer/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompetitionServer/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionServer/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompetitionServer/database/competition.db" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionServer/database/competition.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -268,7 +245,7 @@
       <workItem from="1650109112781" duration="6573000" />
       <workItem from="1650119624430" duration="39000" />
       <workItem from="1650119964293" duration="1012000" />
-      <workItem from="1650196879479" duration="25418000" />
+      <workItem from="1650196879479" duration="29287000" />
     </task>
     <task id="LOCAL-00001" summary="Have a nice day!">
       <created>1648738815870</created>
@@ -291,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649026699519</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Have a nice day!">
+      <created>1650236319722</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1650236319722</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
