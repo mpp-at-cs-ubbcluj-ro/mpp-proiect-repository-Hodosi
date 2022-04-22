@@ -10,28 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0cb01ba-cc9a-4d16-a2f3-c9ae27586d71" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/networking/CompetitionProtocol.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/networking/ProtoCompetitionWorker.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/networking/ProtoUtils.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CSharp_ChildrenCompetitionSockets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CSharp_ChildrenCompetitionSockets/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/networking/bin/Debug/networking.exe" beforeDir="false" afterPath="$PROJECT_DIR$/networking/bin/Debug/networking.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/networking/bin/Debug/networking.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/networking/bin/Debug/networking.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/networking/networking.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/networking/networking.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/obj/Debug/client.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/client.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/networking/obj/Debug/networking.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/networking/obj/Debug/networking.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/networking/obj/Debug/networking.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/networking/obj/Debug/networking.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/networking/obj/Debug/networking.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/networking/obj/Debug/networking.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/networking/obj/Debug/networking.exe" beforeDir="false" afterPath="$PROJECT_DIR$/networking/obj/Debug/networking.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/networking/obj/Debug/networking.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/networking/obj/Debug/networking.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/StartServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/server/StartServer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/bin/Debug/networking.exe" beforeDir="false" afterPath="$PROJECT_DIR$/server/bin/Debug/networking.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/bin/Debug/networking.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/server/bin/Debug/networking.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/bin/Debug/server.exe" beforeDir="false" afterPath="$PROJECT_DIR$/server/bin/Debug/server.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/bin/Debug/server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/server/bin/Debug/server.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/database/competition.db" beforeDir="false" afterPath="$PROJECT_DIR$/server/database/competition.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/Debug/server.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/server.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/server.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/server.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/server.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/server.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/Debug/server.exe" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/server.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/Debug/server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/server.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java_ChildrenCompetitionSockets/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java_ChildrenCompetitionSockets/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java_ChildrenCompetitionSockets/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java_ChildrenCompetitionSockets/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java_ChildrenCompetitionSockets/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java_ChildrenCompetitionSockets/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Java_ChildrenCompetitionSockets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java_ChildrenCompetitionSockets/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -178,7 +168,8 @@
       <workItem from="1649579437930" duration="20216000" />
       <workItem from="1649658861242" duration="2980000" />
       <workItem from="1649714180841" duration="998000" />
-      <workItem from="1650236980797" duration="7108000" />
+      <workItem from="1650236980797" duration="7752000" />
+      <workItem from="1650264521203" duration="1833000" />
     </task>
     <task id="LOCAL-00001" summary="Have a nice day!">
       <created>1649504121525</created>
@@ -194,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649607034401</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Have a nice day!">
+      <created>1650244439128</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1650244439128</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,8 +203,8 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Have a nice day!" />
     <MESSAGE value="Have a nice day" />
-    <option name="LAST_COMMIT_MESSAGE" value="Have a nice day" />
+    <MESSAGE value="Have a nice day!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Have a nice day!" />
   </component>
 </project>

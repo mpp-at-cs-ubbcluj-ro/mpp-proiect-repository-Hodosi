@@ -6,19 +6,44 @@ import competition.persistence.IParticipantRepository;
 import competition.persistence.ITestParticipantRelationRepository;
 import competition.persistence.ITestRepository;
 import competition.persistence.IUserRepository;
-import competition.persistence.repository.jdbc.ParticipantDbRepository;
-import competition.persistence.repository.jdbc.TestDbRepository;
-import competition.persistence.repository.jdbc.TestParticipantRelationDbRepository;
-import competition.persistence.repository.jdbc.UserDbRepository;
+import competition.persistence.repository.jdbc.*;
 import competition.server.CompetitionServicesImplementation;
 import competition.services.ICompetitionServices;
+import org.hibernate.SessionFactory;
+import org.hibernate.boot.MetadataSources;
+import org.hibernate.boot.registry.StandardServiceRegistry;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 import java.io.IOException;
 import java.util.Properties;
 
 public class StratProtobuffServer {
+    private static SessionFactory sessionFactory;
+
+    static void initialize() {
+        // A SessionFactory is set up once for an application!
+        final StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
+                .configure() // configures settings from hibernate.cfg.xml
+                .build();
+        try {
+            sessionFactory = new MetadataSources( registry ).buildMetadata().buildSessionFactory();
+        }
+        catch (Exception e) {
+            System.err.println("Exceptie "+e);
+            StandardServiceRegistryBuilder.destroy( registry );
+        }
+    }
+
+    static void close() {
+        if ( sessionFactory != null ) {
+            sessionFactory.close();
+        }
+    }
+
     private static int defaultPort=55555;
     public static void main(String[] args) {
+        initialize();
+
         Properties serverProps=new Properties();
         try {
             serverProps.load(StartRpcServer.class.getResourceAsStream("/competitionserver.properties"));
@@ -29,7 +54,8 @@ public class StratProtobuffServer {
             return;
         }
         IUserRepository userRepository = new UserDbRepository(serverProps);
-        IParticipantRepository participantRepository = new ParticipantDbRepository(serverProps);
+//        IParticipantRepository participantRepository = new ParticipantDbRepository(serverProps);
+        IParticipantRepository participantRepository = new ParticipantOrmRepository(serverProps, sessionFactory);
         ITestRepository testRepository = new TestDbRepository(serverProps);
         ITestParticipantRelationRepository testParticipantRelationRepository = new TestParticipantRelationDbRepository(serverProps);
         ICompetitionServices competitionServerImplementation = new CompetitionServicesImplementation(userRepository, participantRepository, testRepository, testParticipantRelationRepository);
