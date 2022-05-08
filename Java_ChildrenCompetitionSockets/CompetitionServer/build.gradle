@@ -22,7 +22,6 @@ dependencies {
     implementation 'org.hibernate:hibernate-core:5.2.10.Final'
     implementation "jakarta.xml.bind:jakarta.xml.bind-api:2.3.2"
     implementation "org.glassfish.jaxb:jaxb-runtime:2.3.2"
-//    implementation 'org.javassist:javassist:3.28.0-GA'
 
     // https://mvnrepository.com/artifact/org.javassist/javassist
     implementation group: 'org.javassist', name: 'javassist', version: '3.28.0-GA'

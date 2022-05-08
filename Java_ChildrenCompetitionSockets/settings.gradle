@@ -6,4 +6,5 @@ include 'CompetitionNetworking'
 include 'CompetitionPersistence'
 include 'CompetitionServer'
 include 'CompetitionServices'
+include 'RestServices'
 

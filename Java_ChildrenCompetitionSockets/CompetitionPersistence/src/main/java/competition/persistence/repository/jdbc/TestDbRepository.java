@@ -9,7 +9,9 @@ import competition.persistence.ITestRepository;
 import competition.persistence.ITestTypeRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.stereotype.Component;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -18,12 +20,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
-
+@Component
 public class TestDbRepository implements ITestRepository {
-    private final JdbcUtils dbUtils;
+    private  JdbcUtils dbUtils;
     private static final Logger logger = LogManager.getLogger();
-    private final ITestAgeCategoryRepository testAgeCategoryRepository;
-    private final ITestTypeRepository testTypeRepository;
+    private  ITestAgeCategoryRepository testAgeCategoryRepository;
+    private  ITestTypeRepository testTypeRepository;
 
     public TestDbRepository(Properties properties){
         logger.info("initializing TestDbRepository with properties: {} ", properties);
@@ -32,6 +34,23 @@ public class TestDbRepository implements ITestRepository {
         testTypeRepository = new TestTypeDbRepository(properties);
     }
 
+    public TestDbRepository(){
+        Properties properties=new Properties();
+        try {
+            properties.load(TestDbRepository.class.getResourceAsStream("/competitionserver.properties"));
+            System.out.println("Server properties set. ");
+            properties.list(System.out);
+        } catch (IOException e) {
+            System.err.println("Cannot find competitionserver.properties "+e);
+            return;
+        }
+        logger.info("initializing TestDbRepository with properties: {} ", properties);
+        dbUtils = new JdbcUtils(properties);
+        testAgeCategoryRepository = new TestAgeCategoryDbRepository(properties);
+        testTypeRepository = new TestTypeDbRepository(properties);
+    }
+
+
     @Override
     public int size() {
         return 0;
@@ -39,16 +58,59 @@ public class TestDbRepository implements ITestRepository {
 
     @Override
     public void save(Test entity) {
+        logger.traceEntry("saving test {} ", entity);
+        Connection connection = dbUtils.getConnection();
+        String query = "INSERT into tests(id_test_type, id_test_age_category) values (?,?)";
+
+        try(PreparedStatement preparedStatement = connection.prepareStatement(query)){
+            preparedStatement.setInt(1, entity.getType().getId());
+            preparedStatement.setInt(2, entity.getCategory().getId());
+
+            int result = preparedStatement.executeUpdate();
+            logger.trace("saved {} instances", result);
+
+        } catch (SQLException exception){
+            logger.error(exception);
+            System.err.println("Error DB " + exception);
+        }
+        logger.traceExit();
 
     }
 
     @Override
     public void delete(Integer integer) {
+        logger.traceEntry("deleting test with {} ", integer);
+        Connection connection = dbUtils.getConnection();
+        String query = "DELETE from tests where id_test = ?";
 
+        try(PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+            preparedStatement.setInt(1, integer);
+            int result = preparedStatement.executeUpdate();
+
+        } catch (SQLException exception){
+            logger.error(exception);
+            System.err.println("Error DB " + exception);
+        }
+        logger.traceExit();
     }
 
     @Override
     public void update(Integer integer, Test entity) {
+        logger.traceEntry("updateing test with {} ", integer);
+        Connection connection = dbUtils.getConnection();
+        String query = "UPDATE tests SET id_test_type=?, id_test_age_category=? where id_test=?";
+
+        try(PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+            preparedStatement.setInt(1, entity.getType().getId());
+            preparedStatement.setInt(2, entity.getCategory().getId());
+            preparedStatement.setInt(3, integer);
+            int result = preparedStatement.executeUpdate();
+
+        } catch (SQLException exception){
+            logger.error(exception);
+            System.err.println("Error DB " + exception);
+        }
+        logger.traceExit();
 
     }
 

@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbe51b6f-7032-4a40-926b-adfa049f8c13" name="Changes" comment="Code refactoring: remove useless genericity" />
+    <list default="true" id="fbe51b6f-7032-4a40-926b-adfa049f8c13" name="Changes" comment="Code refactoring: remove useless genericity">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.idea/dataSources/5ac86eb0-546b-46d7-8c70-d3d70fa609ee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.idea/dataSources/5ac86eb0-546b-46d7-8c70-d3d70fa609ee.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServer/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets/CompetitionServer/build.gradle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -239,6 +244,10 @@
       <workItem from="1648721757654" duration="7050000" />
       <workItem from="1648823492269" duration="10426000" />
       <workItem from="1649025285385" duration="1169000" />
+      <workItem from="1650643243871" duration="982000" />
+      <workItem from="1650706017761" duration="8149000" />
+      <workItem from="1650793693055" duration="2282000" />
+      <workItem from="1650817716129" duration="1189000" />
     </task>
     <task id="LOCAL-00001" summary="Create model classes and repository interfaces">
       <created>1646491999942</created>

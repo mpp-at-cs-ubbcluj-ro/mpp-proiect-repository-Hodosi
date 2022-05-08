@@ -1,8 +1,12 @@
 package competition.model;
 
 public class TestAgeCategory extends Entity<Integer> {
-    private final int minAge;
-    private final int maxAge;
+    private int minAge;
+    private int maxAge;
+
+    public TestAgeCategory(){
+
+    }
 
     public TestAgeCategory(int minAge, int maxAge) {
         this.minAge = minAge;

@@ -5,47 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ac7a1f3-5ca7-448a-b96a-b836142e2e64" name="Changes" comment="Have a nice day!">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/CompetitionPersistence/Java_ChildrenCompetitionSockets.CompetitionPersistence.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CompetitionModel/src/main/java/competition/model/ParticipantORM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/ParticipantOrmRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CompetitionServer/database/competitionORM.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CompetitionServer/src/main/java/dialect/SQLiteDialect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CompetitionServer/src/main/java/dialect/identity/SQLiteDialectIdentityColumnSupport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CompetitionServer/src/main/resources/competition.model/Participant.hbm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CompetitionServer/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/.idea/.idea.CSharp_ChildrenCompetitionSockets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/.idea/.idea.CSharp_ChildrenCompetitionSockets/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/client/obj/Debug/client.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/client/obj/Debug/client.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/networking/obj/Debug/networking.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/networking/obj/Debug/networking.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/server/bin/Debug/server.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/server/bin/Debug/server.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/server/bin/Debug/server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/server/bin/Debug/server.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/server/database/competition.db" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/server/database/competition.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/server/obj/Debug/server.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/server/obj/Debug/server.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/server/obj/Debug/server.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/server/obj/Debug/server.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/server/obj/Debug/server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/server/obj/Debug/server.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionPersistence/src/main/resources/competitionserver.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestServices/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestServices/src/main/java/competition/services/rest/CompetitionTestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestServices/src/main/java/competition/services/rest/ServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestServices/src/main/java/rest/client/TestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RestServices/src/main/java/start/StartRestServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetition/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetition/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5ac86eb0-546b-46d7-8c70-d3d70fa609ee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5ac86eb0-546b-46d7-8c70-d3d70fa609ee.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompetitionClientFX/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionClientFX/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompetitionModel/build/libs/CompetitionModel-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionModel/build/libs/CompetitionModel-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompetitionModel/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionModel/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompetitionModel/src/main/java/competition/model/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionModel/src/main/java/competition/model/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompetitionModel/src/main/java/competition/model/TestAgeCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionModel/src/main/java/competition/model/TestAgeCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompetitionModel/src/main/java/competition/model/TestType.java" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionModel/src/main/java/competition/model/TestType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CompetitionPersistence/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionPersistence/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompetitionPersistence/build/classes/java/main/competition/persistence/repository/jdbc/TestDbRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionPersistence/build/classes/java/main/competition/persistence/repository/jdbc/TestDbRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CompetitionPersistence/build/libs/CompetitionPersistence-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionPersistence/build/libs/CompetitionPersistence-1.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CompetitionPersistence/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionPersistence/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/TestDbRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/TestDbRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CompetitionServer/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionServer/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompetitionServer/build/classes/java/main/StratProtobuffServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionServer/build/classes/java/main/StratProtobuffServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompetitionServer/build/resources/main/competitionserver.properties" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionServer/build/resources/main/competitionserver.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CompetitionServer/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionServer/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompetitionServer/src/main/java/StratProtobuffServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionServer/src/main/java/StratProtobuffServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompetitionServer/src/main/resources/competitionserver.properties" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionServer/src/main/resources/competitionserver.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompetitionServer/database/competitionORM.db" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionServer/database/competitionORM.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,20 +147,24 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/CompetitionServer/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CompetitionPersistence/src/main/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MPP\mpp-proiect-repository-Hodosi\Java_ChildrenCompetitionSockets\CompetitionPersistence\src\main\resources" />
       <recent name="C:\MPP\mpp-proiect-repository-Hodosi\Java_ChildrenCompetitionSockets\CompetitionServer\src\main\resources" />
       <recent name="C:\MPP\mpp-proiect-repository-Hodosi\Java_ChildrenCompetitionSockets\CompetitionServer\src\main\java" />
       <recent name="C:\MPP\mpp-proiect-repository-Hodosi\Java_ChildrenCompetitionSockets\CompetitionServer\database" />
       <recent name="C:\MPP\mpp-proiect-repository-Hodosi\Java_ChildrenCompetitionSockets\CompetitionNetworking\src\main\java\competition\network\protobuffprotocol" />
-      <recent name="C:\MPP\mpp-proiect-repository-Hodosi\Java_ChildrenCompetitionSockets\CompetitionClientFX\src\main\resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -177,7 +173,7 @@
       <recent name="competition.client.gui" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Java_ChildrenCompetitionSockets:CompetitionClientFX [run]">
+  <component name="RunManager" selected="Spring Boot.StartRestServices">
     <configuration name="StartRpcClientFX" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="competition.client.StartRpcClientFX" />
       <module name="Java_ChildrenCompetitionSockets.CompetitionClientFX.main" />
@@ -240,10 +236,24 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="StartRestServices" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Java_ChildrenCompetitionSockets.RestServices.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="start.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="start.StartRestServices" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Java_ChildrenCompetitionSockets:CompetitionClientFX [run]" />
+        <item itemvalue="Spring Boot.StartRestServices" />
         <item itemvalue="Gradle.Java_ChildrenCompetitionSockets:CompetitionServer [run]" />
+        <item itemvalue="Gradle.Java_ChildrenCompetitionSockets:CompetitionClientFX [run]" />
         <item itemvalue="Application.StartRpcClientFX" />
         <item itemvalue="Application.StartRpcServer" />
       </list>
@@ -276,7 +286,17 @@
       <workItem from="1650196879479" duration="29914000" />
       <workItem from="1650264398228" duration="1894000" />
       <workItem from="1650317891869" duration="100000" />
-      <workItem from="1650625112878" duration="13159000" />
+      <workItem from="1650625112878" duration="14340000" />
+      <workItem from="1650706525458" duration="14402000" />
+      <workItem from="1650793654077" duration="2391000" />
+      <workItem from="1650817369795" duration="1864000" />
+      <workItem from="1651482103818" duration="985000" />
+      <workItem from="1651568618700" duration="1611000" />
+      <workItem from="1651588974482" duration="93000" />
+      <workItem from="1651592521352" duration="35000" />
+      <workItem from="1651825036351" duration="2218000" />
+      <workItem from="1651912375329" duration="123000" />
+      <workItem from="1652003944600" duration="13072000" />
     </task>
     <task id="LOCAL-00001" summary="Have a nice day!">
       <created>1648738815870</created>
@@ -306,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650236319722</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Have a nice day!">
+      <created>1650643024450</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1650643024450</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

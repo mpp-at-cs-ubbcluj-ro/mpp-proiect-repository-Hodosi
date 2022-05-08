@@ -28,6 +28,7 @@ dependencies {
     // https://mvnrepository.com/artifact/org.javassist/javassist
     implementation group: 'org.javassist', name: 'javassist', version: '3.28.0-GA'
 
+    implementation 'org.springframework:spring-context:4.3.8.RELEASE'
 
     implementation project(':CompetitionModel')
 }
