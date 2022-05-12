@@ -1,0 +1,11 @@
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_RestClient\CSharp_RestClient\bin\Debug\CSharp_RestClient.exe
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_RestClient\CSharp_RestClient\bin\Debug\CSharp_RestClient.pdb
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_RestClient\CSharp_RestClient\bin\Debug\Newtonsoft.Json.dll
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_RestClient\CSharp_RestClient\bin\Debug\System.Net.Http.Formatting.dll
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_RestClient\CSharp_RestClient\bin\Debug\Newtonsoft.Json.xml
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_RestClient\CSharp_RestClient\bin\Debug\System.Net.Http.Formatting.xml
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_RestClient\CSharp_RestClient\obj\Debug\CSharp_RestClient.csproj.AssemblyReference.cache
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_RestClient\CSharp_RestClient\obj\Debug\CSharp_RestClient.csproj.CoreCompileInputs.cache
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_RestClient\CSharp_RestClient\obj\Debug\CSharp_RestClient.csproj.CopyComplete
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_RestClient\CSharp_RestClient\obj\Debug\CSharp_RestClient.exe
+C:\MPP\mpp-proiect-repository-Hodosi\CSharp_ChildrenCompetitionSockets\CSharp_RestClient\CSharp_RestClient\obj\Debug\CSharp_RestClient.pdb
