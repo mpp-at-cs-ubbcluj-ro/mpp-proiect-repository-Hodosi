@@ -9,4 +9,6 @@ import competition.model.Test;
 
 public interface ITestRepository extends IRepository<Integer, Test>{
     Iterable<Test> findAllTestsForParticipant(int id);
+
+    Test add(Test entity);
 }

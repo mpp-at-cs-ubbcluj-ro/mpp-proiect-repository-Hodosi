@@ -12,10 +12,7 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
@@ -75,6 +72,39 @@ public class TestDbRepository implements ITestRepository {
         }
         logger.traceExit();
 
+    }
+
+    @Override
+    public Test add(Test entity) {
+        logger.traceEntry("saving test {} ", entity);
+        Connection connection = dbUtils.getConnection();
+        String query = "INSERT into tests(id_test_type, id_test_age_category) values (?,?)";
+
+        try(PreparedStatement preparedStatement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)){
+            preparedStatement.setInt(1, entity.getType().getId());
+            preparedStatement.setInt(2, entity.getCategory().getId());
+
+            int result = preparedStatement.executeUpdate();
+            logger.trace("saved {} instances", result);
+
+            if (result>0){
+                //obtinem ID-ul generat de baza de date
+                ResultSet rs = preparedStatement.getGeneratedKeys();
+                if (rs.next()) {
+                    int id=rs.getInt(1);
+                    entity.setId(id);
+                    logger.trace("Generated id {} ",id);
+                    System.out.println("Generated id "+ String.valueOf(id));
+                }
+
+            }
+
+        } catch (SQLException exception){
+            logger.error(exception);
+            System.err.println("Error DB " + exception);
+        }
+        logger.traceExit();
+        return entity;
     }
 
     @Override

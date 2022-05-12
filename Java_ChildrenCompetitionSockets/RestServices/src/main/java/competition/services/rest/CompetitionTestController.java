@@ -41,11 +41,20 @@ public class CompetitionTestController {
             return new ResponseEntity<Test>(test, HttpStatus.OK);
         }
     }
+    // bad
+//    @RequestMapping(method = RequestMethod.POST)
+//    public Test create(@RequestBody Test test) {
+//        System.out.println("Saving test...");
+//        testRepository.save(test);
+//        List<Test> testList = (List<Test>) testRepository.findAll();
+//        test.setId(testList.get(testList.size() - 1).getId());
+//        return test;
+//    }
 
     @RequestMapping(method = RequestMethod.POST)
     public Test create(@RequestBody Test test) {
         System.out.println("Saving test...");
-        testRepository.save(test);
+        test = testRepository.add(test);
         return test;
     }
 

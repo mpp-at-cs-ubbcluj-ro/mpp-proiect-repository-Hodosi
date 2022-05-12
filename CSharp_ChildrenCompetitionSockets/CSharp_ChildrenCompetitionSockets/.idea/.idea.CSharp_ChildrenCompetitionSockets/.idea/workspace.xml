@@ -10,19 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0cb01ba-cc9a-4d16-a2f3-c9ae27586d71" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CSharp_ChildrenCompetitionSockets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CSharp_ChildrenCompetitionSockets/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/obj/Debug/client.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/client/obj/Debug/client.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/networking/obj/Debug/networking.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/networking/obj/Debug/networking.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/bin/Debug/server.exe" beforeDir="false" afterPath="$PROJECT_DIR$/server/bin/Debug/server.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/bin/Debug/server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/server/bin/Debug/server.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/database/competition.db" beforeDir="false" afterPath="$PROJECT_DIR$/server/database/competition.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CSharp_ChildrenCompetitionSockets/.idea/dataSources/23268d4b-087f-4239-b88f-bc900c686024.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CSharp_ChildrenCompetitionSockets/.idea/dataSources/23268d4b-087f-4239-b88f-bc900c686024.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/obj/Debug/server.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/server.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/server.exe" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/server.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/obj/Debug/server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/server/obj/Debug/server.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java_ChildrenCompetitionSockets/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java_ChildrenCompetitionSockets/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Java_ChildrenCompetitionSockets/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java_ChildrenCompetitionSockets/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java_ChildrenCompetitionSockets/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java_ChildrenCompetitionSockets/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Java_ChildrenCompetitionSockets/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java_ChildrenCompetitionSockets/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Java_ChildrenCompetitionSockets/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java_ChildrenCompetitionSockets/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Java_ChildrenCompetitionSockets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java_ChildrenCompetitionSockets/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java_ChildrenCompetitionSockets/CompetitionServer/database/competitionORM.db" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java_ChildrenCompetitionSockets/CompetitionServer/database/competitionORM.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java_ChildrenCompetitionSockets/RestServices/build/classes/java/main/competition/services/rest/CompetitionTestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java_ChildrenCompetitionSockets/RestServices/build/classes/java/main/competition/services/rest/CompetitionTestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java_ChildrenCompetitionSockets/RestServices/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java_ChildrenCompetitionSockets/RestServices/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java_ChildrenCompetitionSockets/RestServices/src/main/java/competition/services/rest/CompetitionTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java_ChildrenCompetitionSockets/RestServices/src/main/java/competition/services/rest/CompetitionTestController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,6 +169,7 @@
       <workItem from="1649714180841" duration="998000" />
       <workItem from="1650236980797" duration="7752000" />
       <workItem from="1650264521203" duration="1833000" />
+      <workItem from="1652353264780" duration="821000" />
     </task>
     <task id="LOCAL-00001" summary="Have a nice day!">
       <created>1649504121525</created>
