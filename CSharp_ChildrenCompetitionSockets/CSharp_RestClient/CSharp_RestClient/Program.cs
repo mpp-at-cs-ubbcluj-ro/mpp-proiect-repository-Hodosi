@@ -42,8 +42,8 @@ namespace CSharp_RestClient
             category.id = 77;
             Test newTest = new Test(type, category);
 
-            // result = await create("http://localhost:8088/competition/tests/", newTest);
-            // Console.WriteLine(result);
+            result = await create("http://localhost:8088/competition/tests/", newTest);
+            Console.WriteLine(result);
 
             type.id = 88;
             category.id = 88;

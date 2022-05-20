@@ -4,28 +4,54 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ac7a1f3-5ca7-448a-b96a-b836142e2e64" name="Changes" comment="Implement Rest Services">
-      <change afterPath="$PROJECT_DIR$/RestServices/src/main/java/start/StartRestClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/.idea/.idea.CSharp_ChildrenCompetitionSockets/.idea/dataSources/23268d4b-087f-4239-b88f-bc900c686024.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/.idea/.idea.CSharp_ChildrenCompetitionSockets/.idea/dataSources/23268d4b-087f-4239-b88f-bc900c686024.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/.idea/.idea.CSharp_ChildrenCompetitionSockets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/.idea/.idea.CSharp_ChildrenCompetitionSockets/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/server/obj/Debug/server.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_ChildrenCompetitionSockets/server/obj/Debug/server.csproj.AssemblyReference.cache" afterDir="false" />
+    <list default="true" id="4ac7a1f3-5ca7-448a-b96a-b836142e2e64" name="Changes" comment="Have a nice day!">
+      <change afterPath="$PROJECT_DIR$/CompetitionReactClient/an-react-app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionReactClient/an-react-app/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionReactClient/an-react-app/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionReactClient/an-react-app/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionReactClient/an-react-app/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionReactClient/an-react-app/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionReactClient/an-react-app/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionReactClient/an-react-app/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionReactClient/an-react-app/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionReactClient/an-react-app/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionReactClient/an-react-app/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionReactClient/an-react-app/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionReactClient/an-react-app/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionReactClient/an-react-app/src/TestApp.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionReactClient/an-react-app/src/TestApp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionReactClient/an-react-app/src/TestForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionReactClient/an-react-app/src/TestTable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionReactClient/an-react-app/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionReactClient/an-react-app/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionReactClient/an-react-app/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionReactClient/an-react-app/src/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionReactClient/an-react-app/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionReactClient/an-react-app/src/utils/consts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionReactClient/an-react-app/src/utils/rest-calls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionReactClient/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CompetitionReactClient/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_RestClient/CSharp_RestClient/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_RestClient/CSharp_RestClient/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_RestClient/CSharp_RestClient/bin/Debug/CSharp_RestClient.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_RestClient/CSharp_RestClient/bin/Debug/CSharp_RestClient.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_RestClient/CSharp_RestClient/bin/Debug/CSharp_RestClient.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_RestClient/CSharp_RestClient/bin/Debug/CSharp_RestClient.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_RestClient/CSharp_RestClient/obj/Debug/CSharp_RestClient.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_RestClient/CSharp_RestClient/obj/Debug/CSharp_RestClient.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_RestClient/CSharp_RestClient/obj/Debug/CSharp_RestClient.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_RestClient/CSharp_RestClient/obj/Debug/CSharp_RestClient.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_RestClient/CSharp_RestClient/obj/Debug/CSharp_RestClient.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../CSharp_ChildrenCompetitionSockets/CSharp_RestClient/CSharp_RestClient/obj/Debug/CSharp_RestClient.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_ChildrenCompetitionSockets.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompetitionPersistence/build/classes/java/main/competition/persistence/ITestRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionPersistence/build/classes/java/main/competition/persistence/ITestRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompetitionPersistence/build/classes/java/main/competition/persistence/repository/jdbc/TestDbRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionPersistence/build/classes/java/main/competition/persistence/repository/jdbc/TestDbRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompetitionPersistence/build/libs/CompetitionPersistence-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionPersistence/build/libs/CompetitionPersistence-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompetitionPersistence/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionPersistence/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompetitionPersistence/src/main/java/competition/persistence/ITestRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionPersistence/src/main/java/competition/persistence/ITestRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/TestDbRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionPersistence/src/main/java/competition/persistence/repository/jdbc/TestDbRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CompetitionServer/database/competitionORM.db" beforeDir="false" afterPath="$PROJECT_DIR$/CompetitionServer/database/competitionORM.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RestServices/build/classes/java/main/competition/services/rest/CompetitionTestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestServices/build/classes/java/main/competition/services/rest/CompetitionTestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestServices/build/classes/java/main/start/StartRestClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/RestServices/build/classes/java/main/start/StartRestClient.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RestServices/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/RestServices/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RestServices/src/main/java/competition/services/rest/CompetitionTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestServices/src/main/java/competition/services/rest/CompetitionTestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RestServices/src/main/java/start/StartRestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/RestServices/src/main/java/start/StartRestClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,6 +171,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/CompetitionPersistence/src/main/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -161,7 +190,7 @@
       <recent name="competition.client.gui" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StartRestClient">
+  <component name="RunManager" selected="Spring Boot.StartRestServices">
     <configuration name="StartRestClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="start.StartRestClient" />
       <module name="Java_ChildrenCompetitionSockets.RestServices.main" />
@@ -293,7 +322,13 @@
       <workItem from="1652003944600" duration="13263000" />
       <workItem from="1652077977146" duration="3424000" />
       <workItem from="1652353102330" duration="4004000" />
-      <workItem from="1652374372173" duration="5996000" />
+      <workItem from="1652374372173" duration="6746000" />
+      <workItem from="1652620499982" duration="127000" />
+      <workItem from="1652683520792" duration="1431000" />
+      <workItem from="1652689475675" duration="55000" />
+      <workItem from="1652819182761" duration="992000" />
+      <workItem from="1652987676431" duration="14417000" />
+      <workItem from="1653029960913" duration="5906000" />
     </task>
     <task id="LOCAL-00001" summary="Have a nice day!">
       <created>1648738815870</created>
@@ -344,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652020313947</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Have a nice day!">
+      <created>1652381185779</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1652381185780</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,8 +406,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Have a nice day!" />
     <MESSAGE value="Implement Rest Services" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement Rest Services" />
+    <MESSAGE value="Have a nice day!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Have a nice day!" />
   </component>
 </project>

@@ -7,4 +7,5 @@ include 'CompetitionPersistence'
 include 'CompetitionServer'
 include 'CompetitionServices'
 include 'RestServices'
+include 'CompetitionReactClient'
 

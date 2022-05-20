@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/competition/tests")
 public class CompetitionTestController {
@@ -54,6 +55,9 @@ public class CompetitionTestController {
     @RequestMapping(method = RequestMethod.POST)
     public Test create(@RequestBody Test test) {
         System.out.println("Saving test...");
+        System.out.println(test.getId());
+        System.out.println(test.getType());
+        System.out.println(test.getCategory());
         test = testRepository.add(test);
         return test;
     }

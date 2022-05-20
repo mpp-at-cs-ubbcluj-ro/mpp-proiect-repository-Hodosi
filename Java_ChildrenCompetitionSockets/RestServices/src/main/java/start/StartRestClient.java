@@ -34,14 +34,14 @@ public class StartRestClient {
                 System.out.println(created.getId());
             });
             show(()->{
-                testType.setId(4);
-                ageCategory.setId(3);
+                testType.setId(3);
+                ageCategory.setId(4);
                 Test testUpdate = new Test(testType, ageCategory);
                 testUpdate.setId(19);
                 testsClient.update(testUpdate);
             });
             show(()-> {
-                testsClient.delete(String.valueOf(20));
+                testsClient.delete(String.valueOf(21));
             });
         }catch (Exception ex){
             System.out.println("Exception test client: " + ex.getMessage());
